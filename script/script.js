@@ -1,1210 +1,5146 @@
 document.addEventListener('DOMContentLoaded', () => {
     const questions = [
-        // --- MATEMÁTICA - Capítulo 10: Quadriláteros (40 Questões) ---
+        // --- Português: Vozes Verbais (15 Questões) ---
         {
-            question: "O que define um polígono como um quadrilátero?",
-            options: ["Ter 3 lados e 3 vértices", "Ter 4 lados, 4 vértices e 4 ângulos", "Ter lados curvos", "Possuir apenas ângulos retos"],
-            answer: "Ter 4 lados, 4 vértices e 4 ângulos",
-            solution: "A definição fundamental de um quadrilátero é ser um polígono que possui exatamente quatro lados, quatro vértices e quatro ângulos internos."
+            question: "Qual a voz verbal da frase 'Os cientistas descobriram a cura'?",
+            options: ["Voz ativa", "Voz passiva", "Voz reflexiva", "Voz impessoal"],
+            answer: "Voz ativa",
+            solution: "A voz é ativa porque o sujeito 'Os cientistas' pratica a ação de descobrir."
         },
         {
-            question: "Qual é a soma das medidas dos ângulos internos de qualquer quadrilátero convexo?",
-            options: ["180°", "270°", "360°", "540°"],
-            answer: "360°",
-            solution: "É possível decompor qualquer quadrilátero convexo em dois triângulos traçando uma diagonal. Como a soma dos ângulos internos de cada triângulo é 180°, a soma total para o quadrilátero é 2 * 180° = 360°."
+            question: "A frase 'O trabalho foi concluído por nós' está na voz passiva. Qual é a sua forma na voz ativa?",
+            options: ["Nós concluímos o trabalho.", "O trabalho se concluiu.", "Nós fomos concluídos pelo trabalho.", "Concluíram o trabalho."],
+            answer: "Nós concluímos o trabalho.",
+            solution: "Na conversão da voz passiva para a ativa, o agente da passiva ('por nós') torna-se o sujeito ('Nós'), e o sujeito paciente ('O trabalho') torna-se o objeto direto."
         },
         {
-            question: "Três ângulos de um quadrilátero medem 70°, 100° e 120°. Qual é a medida do quarto ângulo?",
-            options: ["50°", "60°", "70°", "80°"],
-            answer: "70°",
-            solution: "A soma dos ângulos internos de um quadrilátero é 360°. Somando os ângulos conhecidos: 70° + 100° + 120° = 290°. O quarto ângulo será a diferença: 360° - 290° = 70°."
+            question: "Em 'Os atletas se cumprimentaram antes da competição', a voz verbal é:",
+            options: ["Ativa", "Passiva", "Reflexiva", "Recíproca"],
+            answer: "Recíproca",
+            solution: "A voz é classificada como recíproca (um tipo de voz reflexiva) porque a ação de cumprimentar é trocada entre os elementos do sujeito ('um cumprimentou o outro')."
         },
         {
-            question: "Como se chama um quadrilátero que possui pelo menos um ângulo interno maior que 180°?",
-            options: ["Convexo", "Côncavo", "Complexo", "Regular"],
-            answer: "Côncavo",
-            solution: "Um quadrilátero é côncavo (ou não convexo) se uma de suas diagonais fica parcialmente ou totalmente fora da figura, o que ocorre quando ele possui um ângulo interno com medida superior a 180°."
+            question: "Qual frase está na voz passiva analítica?",
+            options: ["Vende-se a casa.", "A casa foi vendida.", "Ele vendeu a casa.", "Ele se vendeu."],
+            answer: "A casa foi vendida.",
+            solution: "A voz passiva analítica é formada pelo verbo auxiliar 'ser' (foi) + particípio do verbo principal (vendida)."
         },
         {
-            question: "O que define um quadrilátero como um paralelogramo?",
-            options: ["Ter apenas um par de lados paralelos", "Ter os lados opostos paralelos", "Ter todos os lados com a mesma medida", "Ter todos os ângulos retos"],
-            answer: "Ter os lados opostos paralelos",
-            solution: "A definição estrita de um paralelogramo é ser um quadrilátero que possui dois pares de lados opostos paralelos."
+            question: "Transforme 'O governo implementará novas medidas' para a voz passiva.",
+            options: ["As novas medidas se implementarão.", "Implementaram-se novas medidas.", "Novas medidas serão implementadas pelo governo.", "O governo se implementará."],
+            answer: "Novas medidas serão implementadas pelo governo.",
+            solution: "O objeto 'novas medidas' vira sujeito, o verbo vai para a forma passiva 'serão implementadas' e o sujeito 'o governo' vira agente da passiva."
         },
         {
-            question: "Qual das seguintes afirmações sobre paralelogramos é SEMPRE verdadeira?",
-            options: ["As diagonais são iguais", "As diagonais são perpendiculares", "Os ângulos opostos são congruentes", "Todos os ângulos são agudos"],
-            answer: "Os ângulos opostos são congruentes",
-            solution: "Uma das propriedades fundamentais de todo paralelogramo é que seus ângulos opostos (não consecutivos) possuem sempre a mesma medida."
+            question: "A oração 'Ela se penteava em frente ao espelho' apresenta voz:",
+            options: ["Ativa", "Passiva", "Reflexiva", "Recíproca"],
+            answer: "Reflexiva",
+            solution: "A voz é reflexiva porque o sujeito 'Ela' pratica e recebe a ação de pentear (penteava a si mesma)."
         },
         {
-            question: "Em um paralelogramo, as diagonais se cruzam de que maneira?",
-            options: ["Formando um ângulo de 90°", "Em seus respectivos pontos médios", "Em um ponto que divide uma na razão 2:1", "Fora da figura"],
-            answer: "Em seus respectivos pontos médios",
-            solution: "Outra propriedade essencial dos paralelogramos é que suas diagonais se interceptam exatamente no ponto médio de cada uma delas."
+            question: "Identifique a frase na voz ativa.",
+            options: ["O relatório será revisado amanhã.", "Os ingressos foram comprados por eles.", "A comunidade construiu a nova escola.", "Alugam-se apartamentos."],
+            answer: "A comunidade construiu a nova escola.",
+            solution: "Nesta frase, o sujeito 'A comunidade' é o agente que pratica a ação de construir."
         },
         {
-            question: "Se um ângulo de um paralelogramo mede 65°, quais são as medidas dos outros três?",
-            options: ["65°, 65°, 65°", "115°, 115°, 65°", "65°, 115°, 115°", "115°, 125°, 65°"],
-            answer: "65°, 115°, 115°",
-            solution: "O ângulo oposto também medirá 65°. Os ângulos consecutivos são suplementares (somam 180°), então os outros dois medirão 180° - 65° = 115° cada. Os ângulos são 65°, 115°, 65°, 115°."
+            question: "Qual o agente da passiva na frase 'A cidade foi destruída pelo furacão'?",
+            options: ["A cidade", "foi destruída", "pelo furacão", "Não há agente da passiva"],
+            answer: "pelo furacão",
+            solution: "O agente da passiva é o termo que, na voz passiva, pratica a ação sofrida pelo sujeito. Neste caso, 'pelo furacão'."
         },
         {
-            question: "O que é um retângulo?",
-            options: ["Um paralelogramo com quatro lados iguais", "Um quadrilátero com diagonais perpendiculares", "Um paralelogramo com quatro ângulos retos", "Um quadrilátero com apenas um par de lados paralelos"],
-            answer: "Um paralelogramo com quatro ângulos retos",
-            solution: "Um retângulo é um tipo especial de paralelogramo cuja característica distintiva é possuir todos os quatro ângulos internos medindo 90°."
+            question: "A conversão de 'Eles lerão o livro' para a voz passiva resulta em:",
+            options: ["O livro será lido por eles.", "O livro foi lido por eles.", "O livro é lido por eles.", "O livro se lerá."],
+            answer: "O livro será lido por eles.",
+            solution: "O verbo 'lerão' (futuro do presente) na voz ativa passa para 'será lido' na voz passiva, mantendo o tempo verbal."
         },
         {
-            question: "Qual propriedade das diagonais é específica de um retângulo (e não de todos os paralelogramos)?",
-            options: ["Elas se cruzam no ponto médio", "Elas são perpendiculares", "Elas são congruentes (têm o mesmo comprimento)", "Uma é o dobro da outra"],
-            answer: "Elas são congruentes (têm o mesmo comprimento)",
-            solution: "Enquanto em todo paralelogramo as diagonais se cruzam no ponto médio, apenas nos retângulos (e quadrados) elas possuem, adicionalmente, o mesmo comprimento."
+            question: "A frase 'O árbitro encerrou a partida' está em qual voz?",
+            options: ["Voz passiva", "Voz reflexiva", "Voz ativa", "Voz neutra"],
+            answer: "Voz ativa",
+            solution: "O sujeito 'O árbitro' é quem pratica a ação de 'encerrar'."
         },
         {
-            question: "O que é um losango?",
-            options: ["Um paralelogramo com quatro ângulos retos", "Um paralelogramo com quatro lados congruentes", "Um quadrilátero com diagonais iguais", "Um quadrilátero com dois ângulos agudos e dois obtusos"],
-            answer: "Um paralelogramo com quatro lados congruentes",
-            solution: "Um losango é um tipo especial de paralelogramo cuja característica principal é possuir todos os quatro lados com a mesma medida."
+            question: "Qual das alternativas contém uma oração em voz reflexiva?",
+            options: ["As cartas foram enviadas.", "O gato se escondeu.", "Nós nos abraçamos fortemente.", "O sol nasceu."],
+            answer: "O gato se escondeu.",
+            solution: "A ação de esconder é praticada e recebida pelo próprio sujeito 'O gato'."
         },
         {
-            question: "Qual propriedade das diagonais é específica de um losango?",
-            options: ["São congruentes", "São perpendiculares entre si", "São paralelas aos lados", "Não se cruzam"],
-            answer: "São perpendiculares entre si",
-            solution: "Uma propriedade exclusiva dos losangos (e quadrados) é que suas diagonais se interceptam formando um ângulo reto (90°), ou seja, são perpendiculares."
+            question: "Converter 'A lei foi aprovada pelos senadores' para a voz ativa resulta em:",
+            options: ["Aprovaram a lei.", "Os senadores aprovaram a lei.", "A lei se aprovou.", "Os senadores foram aprovados pela lei."],
+            answer: "Os senadores aprovaram a lei.",
+            solution: "O agente da passiva 'pelos senadores' torna-se o sujeito, e o sujeito paciente 'A lei' torna-se o objeto direto."
         },
         {
-            question: "Em um losango, as diagonais também atuam como:",
-            options: ["Medianas dos lados", "Alturas do losango", "Bissetrizes dos ângulos internos", "Lados da figura"],
-            answer: "Bissetrizes dos ângulos internos",
-            solution: "Além de serem perpendiculares, as diagonais de um losango dividem os ângulos internos de seus vértices ao meio, funcionando como bissetrizes."
+            question: "'As árvores foram derrubadas pela tempestade.' Qual é o sujeito desta oração?",
+            options: ["As árvores", "A tempestade", "derrubadas", "Oculto"],
+            answer: "As árvores",
+            solution: "Na voz passiva, o sujeito é o termo que sofre a ação. 'As árvores' sofrem a ação de serem derrubadas. É um sujeito paciente."
         },
         {
-            question: "O que é um quadrado?",
-            options: ["É um losango, mas não um retângulo", "É um retângulo, mas não um losango", "É simultaneamente um retângulo e um losango", "Não é considerado um paralelogramo"],
-            answer: "É simultaneamente um retângulo e um losango",
-            solution: "Um quadrado possui as propriedades do retângulo (4 ângulos retos) e as do losango (4 lados iguais), sendo a intersecção desses dois conjuntos de figuras."
+            question: "A frase 'Os namorados beijaram-se' tem voz:",
+            options: ["Ativa", "Passiva", "Reflexiva", "Recíproca"],
+            answer: "Recíproca",
+            solution: "A ação é mútua, trocada entre os elementos do sujeito. Um beijou o outro."
         },
         {
-            question: "Qual das seguintes afirmações sobre um quadrado é FALSA?",
-            options: ["Suas diagonais são iguais", "Suas diagonais são perpendiculares", "Seus lados são iguais", "Seus ângulos internos somam 180°"],
-            answer: "Seus ângulos internos somam 180°",
-            solution: "Como todo quadrilátero, a soma dos ângulos internos de um quadrado é 360°. As outras três afirmações são propriedades verdadeiras do quadrado."
+            question: "Qual a forma passiva da frase 'Eu farei o jantar'?",
+            options: ["O jantar será feito por mim.", "O jantar foi feito por mim.", "O jantar é feito por mim.", "Eu serei feito pelo jantar."],
+            answer: "O jantar será feito por mim.",
+            solution: "O tempo futuro ('farei') é mantido na voz passiva com o verbo auxiliar no futuro ('será feito')."
         },
+
+        // --- Português: Transitividade Verbal (15 Questões) ---
         {
-            question: "O que define um quadrilátero como um trapézio?",
-            options: ["Ter exatamente um par de lados paralelos", "Ter exatamente dois pares de lados paralelos", "Não ter nenhum lado paralelo", "Ter lados opostos congruentes"],
-            answer: "Ter exatamente um par de lados paralelos",
-            solution: "A definição de trapézio é ser um quadrilátero que possui apenas um par de lados opostos paralelos. Estes lados são chamados de bases."
+            question: "Na frase 'O sol brilha', o verbo 'brilhar' é:",
+            options: ["Transitivo direto", "Transitivo indireto", "Bitransitivo", "Intransitivo"],
+            answer: "Intransitivo",
+            solution: "O verbo 'brilhar' possui sentido completo, não exigindo nenhum complemento para ser compreendido."
         },
         {
-            question: "Como se chama um trapézio cujos lados não paralelos são congruentes?",
-            options: ["Trapézio retângulo", "Trapézio escaleno", "Trapézio isósceles", "Trapézio regular"],
-            answer: "Trapézio isósceles",
-            solution: "Um trapézio é classificado como isósceles quando seus lados não paralelos (oblíquos) têm a mesma medida. Isso resulta em outras propriedades, como ângulos da base e diagonais congruentes."
+            question: "Em 'Ela necessita de atenção', qual a transitividade do verbo 'necessitar'?",
+            options: ["Verbo transitivo direto (VTD)", "Verbo transitivo indireto (VTI)", "Verbo intransitivo", "Verbo de ligação"],
+            answer: "Verbo transitivo indireto (VTI)",
+            solution: "O verbo 'necessitar' exige um complemento regido pela preposição 'de'. Quem necessita, necessita DE algo."
         },
         {
-            question: "Em um trapézio isósceles, qual outra propriedade é sempre verdadeira?",
-            options: ["As diagonais são perpendiculares", "Os ângulos de cada base são congruentes", "Um dos lados não paralelos é perpendicular às bases", "As bases têm o mesmo comprimento"],
-            answer: "Os ângulos de cada base são congruentes",
-            solution: "Uma consequência de ter os lados não paralelos iguais é que os dois ângulos adjacentes a cada base são congruentes entre si."
+            question: "Qual o objeto direto na frase 'O menino chutou a bola'?",
+            options: ["O menino", "chutou", "a bola", "Não há objeto direto"],
+            answer: "a bola",
+            solution: "O verbo 'chutou' é transitivo direto, e 'a bola' é o complemento que se liga a ele sem preposição."
         },
         {
-            question: "O que caracteriza um trapézio retângulo?",
-            options: ["Possuir diagonais do mesmo tamanho", "Possuir dois ângulos de 90°", "Possuir todos os lados diferentes", "Possuir lados não paralelos congruentes"],
-            answer: "Possuir dois ângulos de 90°",
-            solution: "Um trapézio é retângulo quando um de seus lados não paralelos forma um ângulo de 90° com as bases, resultando em dois ângulos retos na figura."
+            question: "'Ele deu o livro ao professor.' Como se classifica o verbo 'dar'?",
+            options: ["Transitivo direto", "Transitivo indireto", "Intransitivo", "Bitransitivo"],
+            answer: "Bitransitivo",
+            solution: "O verbo é bitransitivo (ou transitivo direto e indireto) pois possui dois complementos: 'o livro' (objeto direto) e 'ao professor' (objeto indireto)."
         },
         {
-            question: "O que é um trapézio escaleno?",
-            options: ["Aquele com lados não paralelos de medidas diferentes", "Aquele com ângulos da base iguais", "Aquele com um ângulo reto", "Aquele com diagonais iguais"],
-            answer: "Aquele com lados não paralelos de medidas diferentes",
-            solution: "Um trapézio é dito escaleno quando seus lados não paralelos possuem comprimentos diferentes e ele não possui nenhum ângulo reto."
+            question: "Na oração 'Todos acreditam em dias melhores', o verbo é:",
+            options: ["Intransitivo", "Transitivo direto", "Transitivo indireto", "De ligação"],
+            answer: "Transitivo indireto",
+            solution: "O verbo 'acreditar' pede um complemento com a preposição 'em'. Quem acredita, acredita EM alguma coisa."
         },
         {
-            question: "Todo quadrado é um paralelogramo?",
-            options: ["Não, pois tem ângulos retos", "Sim, pois tem lados opostos paralelos", "Não, pois tem lados iguais", "Apenas se a diagonal for par"],
-            answer: "Sim, pois tem lados opostos paralelos",
-            solution: "Sim. Como o quadrado tem dois pares de lados opostos paralelos, ele atende à definição de paralelogramo. É um caso especial de paralelogramo."
+            question: "Qual frase contém um verbo transitivo direto?",
+            options: ["O cachorro latiu muito.", "Eu gosto de chocolate.", "Ela comprou flores.", "A criança dorme."],
+            answer: "Ela comprou flores.",
+            solution: "O verbo 'comprou' tem seu sentido completado por 'flores' (objeto direto), que se liga ao verbo sem preposição."
         },
         {
-            question: "Todo paralelogramo é um retângulo?",
-            options: ["Sim, sempre", "Não, um paralelogramo pode não ter ângulos de 90°", "Sim, se suas diagonais forem perpendiculares", "Não, pois retângulos não têm lados paralelos"],
-            answer: "Não, um paralelogramo pode não ter ângulos de 90°",
-            solution: "Para ser um retângulo, o paralelogramo precisa ter todos os ângulos internos iguais a 90°. Um losango com ângulos de 60° e 120°, por exemplo, é um paralelogramo mas não é um retângulo."
+            question: "'As plantas morreram.' O verbo 'morrer' nesta frase é:",
+            options: ["Transitivo direto", "Intransitivo", "De ligação", "Transitivo indireto"],
+            answer: "Intransitivo",
+            solution: "O verbo 'morrer' expressa um fenômeno que tem sentido completo em si mesmo, não precisando de complemento."
         },
         {
-            question: "Qual figura é um quadrilátero equilátero (lados iguais) mas não equiângulo (ângulos iguais)?",
-            options: ["Quadrado", "Retângulo não quadrado", "Losango não quadrado", "Trapézio isósceles"],
-            answer: "Losango não quadrado",
-            solution: "Um losango, por definição, tem os quatro lados iguais. No entanto, a menos que seja um quadrado, seus ângulos não são todos iguais (terá dois ângulos agudos e dois obtusos)."
+            question: "Identifique a oração com verbo bitransitivo.",
+            options: ["Eu li o livro.", "Ele obedeceu aos pais.", "A empresa ofereceu um cargo ao funcionário.", "O bebê chorou."],
+            answer: "A empresa ofereceu um cargo ao funcionário.",
+            solution: "O verbo 'ofereceu' tem dois objetos: 'um cargo' (direto) e 'ao funcionário' (indireto)."
         },
         {
-            question: "Qual figura é um quadrilátero equiângulo (ângulos iguais) mas não equilátero (lados iguais)?",
-            options: ["Quadrado", "Retângulo não quadrado", "Losango não quadrado", "Trapézio retângulo"],
-            answer: "Retângulo não quadrado",
-            solution: "Um retângulo, por definição, tem os quatro ângulos iguais a 90°. No entanto, a menos que seja um quadrado, seus lados adjacentes têm comprimentos diferentes."
+            question: "Qual o objeto indireto em 'O filho desobedeceu ao pai'?",
+            options: ["O filho", "desobedeceu", "ao pai", "Não há objeto indireto"],
+            answer: "ao pai",
+            solution: "'ao pai' é o complemento do verbo transitivo indireto 'desobedeceu', regido pela preposição 'a'."
         },
         {
-            question: "Em um trapézio, os ângulos adjacentes a um mesmo lado não paralelo são:",
-            options: ["Congruentes", "Complementares (somam 90°)", "Suplementares (somam 180°)", "Opostos pelo vértice"],
-            answer: "Suplementares (somam 180°)",
-            solution: "Como as bases são paralelas, os lados não paralelos funcionam como transversais. Os ângulos internos de um mesmo lado (colaterais internos) são suplementares."
+            question: "Na frase 'Choveu muito ontem', o verbo 'chover' é:",
+            options: ["Transitivo direto", "Transitivo indireto", "Intransitivo", "De ligação"],
+            answer: "Intransitivo",
+            solution: "Verbos que expressam fenômenos da natureza, como 'chover', são intransitivos."
         },
         {
-            question: "A base maior de um trapézio mede 15 cm e a base menor mede 9 cm. Quanto mede a base média desse trapézio?",
-            options: ["6 cm", "12 cm", "24 cm", "10 cm"],
-            answer: "12 cm",
-            solution: "A base média de um trapézio é a média aritmética de suas bases. Base Média = (Base maior + Base menor) / 2 = (15 + 9) / 2 = 24 / 2 = 12 cm."
+            question: "'Nós assistimos ao filme.' Qual a transitividade do verbo 'assistir' nesse sentido?",
+            options: ["Intransitivo", "Transitivo direto", "Transitivo indireto", "Bitransitivo"],
+            answer: "Transitivo indireto",
+            solution: "No sentido de 'ver' ou 'presenciar', o verbo 'assistir' é transitivo indireto e exige a preposição 'a'."
         },
         {
-            question: "Se as diagonais de um quadrilátero são iguais e se cruzam no ponto médio, esse quadrilátero é necessariamente um:",
-            options: ["Losango", "Trapézio", "Retângulo", "Paralelogramo qualquer"],
-            answer: "Retângulo",
-            solution: "A propriedade de as diagonais se cruzarem no ponto médio garante que a figura é um paralelogramo. A propriedade adicional de as diagonais serem iguais (congruentes) garante que ele é um retângulo."
+            question: "Qual oração possui um verbo intransitivo?",
+            options: ["Ele vendeu o carro.", "O avião caiu.", "Preciso de você.", "Entreguei a chave para ela."],
+            answer: "O avião caiu.",
+            solution: "O verbo 'caiu' tem sentido completo e não necessita de um objeto para complementar sua significação."
         },
         {
-            question: "Se as diagonais de um quadrilátero são perpendiculares e se cruzam no ponto médio, esse quadrilátero é necessariamente um:",
-            options: ["Losango", "Trapézio", "Retângulo", "Quadrilátero qualquer"],
-            answer: "Losango",
-            solution: "A propriedade de as diagonais se cruzarem no ponto médio garante que a figura é um paralelogramo. A propriedade adicional de serem perpendiculares garante que ele é um losango."
+            question: "Em 'Agradeci o favor ao meu amigo', os objetos são, respectivamente:",
+            options: ["Direto e direto", "Indireto e indireto", "Direto e indireto", "Indireto e direto"],
+            answer: "Direto e indireto",
+            solution: "O verbo 'agradecer' é bitransitivo: 'o favor' é o objeto direto (o que foi agradecido) e 'ao meu amigo' é o objeto indireto (a quem foi agradecido)."
         },
         {
-            question: "Quantas diagonais possui um quadrilátero?",
-            options: ["1", "2", "3", "4"],
-            answer: "2",
-            solution: "Um quadrilátero possui exatamente duas diagonais, que são os segmentos de reta que ligam dois vértices não consecutivos."
+            question: "A frase 'Ela confia em você' contém um verbo:",
+            options: ["Intransitivo", "Transitivo direto", "Transitivo indireto", "Bitransitivo"],
+            answer: "Transitivo indireto",
+            solution: "O verbo 'confiar' é transitivo indireto, pois quem confia, confia EM alguém ou EM algo."
         },
         {
-            question: "Um quadrilátero tem seus ângulos internos na proporção 1:2:3:4. Qual a medida do maior ângulo?",
-            options: ["144°", "120°", "108°", "90°"],
-            answer: "144°",
-            solution: "Seja x a constante de proporcionalidade. Os ângulos são x, 2x, 3x, 4x. A soma é 360°. Então, x+2x+3x+4x = 360 => 10x = 360 => x = 36°. O maior ângulo é 4x = 4 * 36° = 144°."
+            question: "Na frase 'O homem abriu a porta', o termo 'a porta' funciona como:",
+            options: ["Sujeito", "Objeto direto", "Objeto indireto", "Adjunto adverbial"],
+            answer: "Objeto direto",
+            solution: "É o complemento do verbo 'abriu' (VTD), ligando-se a ele sem o uso de preposição."
         },
+
+        // --- Português: Sintagmas Nominais (15 Questões) ---
         {
-            question: "A soma dos ângulos externos de um trapézio é:",
-            options: ["180°", "360°", "Depende do tipo de trapézio", "540°"],
-            answer: "360°",
-            solution: "A soma dos ângulos externos de qualquer polígono convexo, independentemente do número de lados, é sempre 360°."
+            question: "Qual o núcleo do sintagma nominal 'o meu melhor amigo de infância'?",
+            options: ["o", "meu", "melhor", "amigo"],
+            answer: "amigo",
+            solution: "O núcleo é sempre o substantivo ou pronome principal. Neste caso, 'amigo' é o substantivo central, e as outras palavras o modificam."
         },
         {
-            question: "Qual das figuras abaixo NÃO é necessariamente um paralelogramo?",
-            options: ["Quadrado", "Losango", "Retângulo", "Trapézio"],
-            answer: "Trapézio",
-            solution: "Quadrados, losangos e retângulos são todos tipos especiais de paralelogramos. Um trapézio, por definição, tem apenas um par de lados paralelos, portanto não é um paralelogramo."
+            question: "No sintagma 'três grandes caixas de papelão', o núcleo é:",
+            options: ["três", "grandes", "caixas", "papelão"],
+            answer: "caixas",
+            solution: "O substantivo principal, que é o elemento central do sintagma, é 'caixas'."
         },
         {
-            question: "As diagonais de um trapézio isósceles são:",
-            options: ["Perpendiculares", "Congruentes (iguais)", "Paralelas", "Diferentes"],
-            answer: "Congruentes (iguais)",
-            solution: "Assim como nos retângulos, uma propriedade importante do trapézio isósceles é que suas diagonais têm o mesmo comprimento."
+            question: "Identifique o sintagma nominal na frase 'O cachorro preto latiu alto'.",
+            options: ["O cachorro preto", "latiu alto", "preto latiu", "O cachorro"],
+            answer: "O cachorro preto",
+            solution: "O sintagma nominal é o grupo de palavras que tem um substantivo como núcleo e funciona como sujeito, objeto, etc. Aqui, é o sujeito da oração."
         },
         {
-            question: "Um piso é ladrilhado com peças de um único tipo de quadrilátero regular. Que quadrilátero é esse?",
-            options: ["Losango", "Trapézio", "Quadrado", "Retângulo"],
-            answer: "Quadrado",
-            solution: "Um quadrilátero regular é aquele que é equilátero (lados iguais) e equiângulo (ângulos iguais) ao mesmo tempo. A única figura que satisfaz ambas as condições é o quadrado."
+            question: "Na frase 'Eu comprei um lindo vestido azul', qual palavra é o núcleo do sintagma nominal que funciona como objeto?",
+            options: ["lindo", "vestido", "azul", "um"],
+            answer: "vestido",
+            solution: "O objeto da frase é 'um lindo vestido azul'. O substantivo principal (núcleo) desse grupo é 'vestido'."
         },
         {
-            question: "A diagonal de um retângulo mede 10 cm e um de seus lados mede 6 cm. Qual a medida do outro lado?",
-            options: ["4 cm", "8 cm", "16 cm", "$\\sqrt{136}$ cm"],
-            answer: "8 cm",
-            solution: "A diagonal, um lado e o outro lado de um retângulo formam um triângulo retângulo. Pelo Teorema de Pitágoras: $10^2 = 6^2 + x^2 => 100 = 36 + x^2 => x^2 = 64 => x = 8$ cm."
+            question: "Em 'Aquelas flores raras do jardim morreram', o núcleo do sujeito é:",
+            options: ["Aquelas", "flores", "raras", "jardim"],
+            answer: "flores",
+            solution: "O sujeito da oração é 'Aquelas flores raras do jardim'. O substantivo central, ao qual os outros termos se referem, é 'flores'."
         },
         {
-            question: "As diagonais de um losango medem 12 cm e 16 cm. Qual é a medida do lado desse losango?",
-            options: ["10 cm", "14 cm", "20 cm", "28 cm"],
-            answer: "10 cm",
-            solution: "As diagonais de um losango se cruzam no ponto médio e são perpendiculares, formando quatro triângulos retângulos. Os catetos de cada triângulo são metade das diagonais (12/2=6 cm e 16/2=8 cm). O lado do losango é a hipotenusa: $L^2 = 6^2 + 8^2 => L^2 = 36 + 64 => L^2 = 100 => L = 10$ cm."
+            question: "Um sintagma nominal tem como núcleo um:",
+            options: ["Verbo", "Advérbio", "Substantivo ou pronome", "Adjetivo"],
+            answer: "Substantivo ou pronome",
+            solution: "Por definição, um sintagma nominal é uma estrutura que se organiza em torno de um nome (substantivo) ou de um pronome."
         },
         {
-            question: "O perímetro de um paralelogramo é 36 cm. Se um lado é o dobro do outro, quais são as medidas dos lados?",
-            options: ["9 cm e 18 cm", "6 cm e 12 cm", "8 cm e 16 cm", "10 cm e 20 cm"],
-            answer: "6 cm e 12 cm",
-            solution: "Sejam os lados x e 2x. O perímetro é 2(x + 2x) = 36. Então, 2(3x) = 36 => 6x = 36 => x = 6 cm. Os lados medem 6 cm e 12 cm."
+            question: "Qual o núcleo do sintagma nominal 'uma questão muito difícil'?",
+            options: ["uma", "questão", "muito", "difícil"],
+            answer: "questão",
+            solution: "O substantivo principal, que é modificado pelos outros termos ('uma', 'muito', 'difícil'), é 'questão'."
         },
         {
-            question: "Qual quadrilátero tem lados opostos congruentes, mas ângulos opostos não necessariamente congruentes?",
-            options: ["Paralelogramo", "Trapézio Isósceles", "Tal quadrilátero não existe", "Pipa (ou Deltoide)"],
-            answer: "Tal quadrilátero não existe",
-            solution: "Se um quadrilátero possui os dois pares de lados opostos congruentes, ele é, por definição, um paralelogramo. E uma propriedade de todo paralelogramo é ter os ângulos opostos congruentes."
+            question: "Na frase 'A menina da casa ao lado viajou', qual é o núcleo do sujeito?",
+            options: ["menina", "casa", "lado", "A"],
+            answer: "menina",
+            solution: "O sujeito é 'A menina da casa ao lado'. O núcleo é 'menina', pois é a palavra principal que executa a ação."
         },
         {
-            question: "A base média de um trapézio mede 20 cm. Se a base maior é 8 cm mais longa que a base menor, quais são os comprimentos das bases?",
-            options: ["16 cm e 24 cm", "18 cm e 26 cm", "15 cm e 23 cm", "14 cm e 22 cm"],
-            answer: "16 cm e 24 cm",
-            solution: "Seja b a base menor e B a maior. B = b+8. A base média é (B+b)/2 = 20. Substituindo: ((b+8)+b)/2 = 20 => (2b+8)/2 = 20 => b+4 = 20 => b = 16 cm. A base maior é B = 16+8 = 24 cm."
+            question: "O termo 'o' em 'o carro' é o núcleo do sintagma nominal?",
+            options: ["Sim, sempre", "Não, o núcleo é 'carro'", "Sim, porque vem primeiro", "Não, é um adjunto"],
+            answer: "Não, o núcleo é 'carro'",
+            solution: "O artigo 'o' é um determinante que acompanha o núcleo, mas o núcleo em si é o substantivo 'carro'."
         },
         {
-            question: "Um quadrilátero convexo é um losango se, e somente se:",
-            options: ["Suas diagonais forem congruentes", "Seus ângulos forem retos", "Seus lados forem paralelos", "Suas diagonais forem perpendiculares e se bissectarem"],
-            answer: "Suas diagonais forem perpendiculares e se bissectarem",
-            solution: "A condição de as diagonais se bissectarem (cruzarem no ponto médio) o torna um paralelogramo. A condição adicional de serem perpendiculares o torna um losango."
+            question: "No sintagma 'água de coco gelada', o núcleo é:",
+            options: ["água", "coco", "gelada", "de"],
+            answer: "água",
+            solution: "O substantivo principal é 'água'. 'De coco' e 'gelada' são especificações dessa água."
         },
-        // --- CIÊNCIAS - Capítulo 6: Processos Reprodutivos e Reprodução Assexuada (30 Questões) ---
         {
-            question: "Qual teoria afirmava que a vida poderia surgir espontaneamente a partir de matéria bruta?",
-            options: ["Biogênese", "Panspermia", "Criacionismo", "Abiogênese"],
-            answer: "Abiogênese",
-            solution: "A teoria da Abiogênese, ou geração espontânea, defendia que seres vivos poderiam se originar de matéria inanimada, como larvas surgindo de carne em decomposição."
+            question: "Qual das opções NÃO é o núcleo do sintagma 'a bela paisagem montanhosa'?",
+            options: ["paisagem", "bela", "a", "montanhosa"],
+            answer: "paisagem",
+            solution: "A pergunta pede o que NÃO é o núcleo. O núcleo é 'paisagem'. As outras palavras ('a', 'bela', 'montanhosa') são determinantes ou modificadores."
         },
         {
-            question: "A famosa frase 'Omne vivum ex vivo' (Toda vida vem da vida) resume qual teoria?",
-            options: ["Abiogênese", "Biogênese", "Evolução Química", "Geração Espontânea"],
-            answer: "Biogênese",
-            solution: "A teoria da Biogênese contrapõe a abiogênese, afirmando que um ser vivo só pode se originar a partir de outro ser vivo preexistente."
+            question: "Em 'O retorno dos campeões foi triunfal', o núcleo do sintagma nominal sujeito é:",
+            options: ["retorno", "campeões", "triunfal", "O"],
+            answer: "retorno",
+            solution: "O sujeito é 'O retorno dos campeões'. A palavra principal, que 'foi triunfal', é 'retorno'."
         },
         {
-            question: "Qual cientista é famoso por seus experimentos com frascos de 'pescoço de cisne', que refutaram a abiogênese?",
-            options: ["Francesco Redi", "Lazzaro Spallanzani", "Louis Pasteur", "Aristóteles"],
-            answer: "Louis Pasteur",
-            solution: "Louis Pasteur utilizou frascos com gargalos curvados (pescoço de cisne) para demonstrar que micro-organismos presentes no ar, e não a 'força vital', eram responsáveis pela contaminação de caldos nutritivos, refutando a abiogênese."
+            question: "'Ele' pode ser um sintagma nominal?",
+            options: ["Não, é apenas um pronome", "Sim, pois um pronome pode ser o núcleo", "Não, porque é muito curto", "Apenas se estiver acompanhado de um substantivo"],
+            answer: "Sim, pois um pronome pode ser o núcleo",
+            solution: "Um sintagma nominal pode ser formado por uma única palavra, desde que ela seja um substantivo ou um pronome. 'Ele' é um pronome que pode funcionar como núcleo de um sintagma."
         },
         {
-            question: "Qual é a principal característica da reprodução assexuada?",
-            options: ["Envolve a fusão de gametas", "Gera alta variabilidade genética", "Um único indivíduo origina descendentes idênticos", "Requer dois progenitores"],
-            answer: "Um único indivíduo origina descendentes idênticos",
-            solution: "A reprodução assexuada se caracteriza pela participação de apenas um genitor, que produz descendentes geneticamente idênticos a si, chamados de clones."
+            question: "Qual é o núcleo do sintagma 'um velho amigo meu'?",
+            options: ["velho", "amigo", "meu", "um"],
+            answer: "amigo",
+            solution: "O substantivo central que recebe as qualificações de 'velho' e 'meu' é 'amigo'."
         },
         {
-            question: "Bactérias e protozoários comumente se reproduzem por um processo em que a célula se divide em duas. Como se chama esse processo?",
-            options: ["Brotamento", "Esporulação", "Fragmentação", "Bipartição (ou Cissiparidade)"],
-            answer: "Bipartição (ou Cissiparidade)",
-            solution: "A bipartição ou cissiparidade é o tipo de reprodução assexuada em que um organismo unicelular se divide ao meio, originando dois novos indivíduos idênticos."
+            question: "Na frase 'Vimos o filme novo no cinema', o núcleo do objeto direto é:",
+            options: ["Vimos", "filme", "novo", "cinema"],
+            answer: "filme",
+            solution: "O objeto direto é 'o filme novo'. O substantivo principal desse sintagma é 'filme'."
         },
+
+        // --- Português: Adjuntos Adverbiais (15 Questões) ---
         {
-            question: "A hidra, um pequeno animal aquático, pode formar um pequeno broto em seu corpo que cresce e se solta, formando um novo indivíduo. Qual o nome desse tipo de reprodução?",
-            options: ["Brotamento", "Esporulação", "Fragmentação", "Partenogênese"],
-            answer: "Brotamento",
-            solution: "O brotamento é um tipo de reprodução assexuada em que um novo indivíduo se desenvolve a partir de uma protuberância ou 'broto' que surge no corpo do progenitor."
+            question: "Na frase 'Eles chegarão amanhã', o termo 'amanhã' é um adjunto adverbial de:",
+            options: ["Lugar", "Modo", "Tempo", "Intensidade"],
+            answer: "Tempo",
+            solution: "O termo 'amanhã' indica a circunstância de tempo em que a ação de chegar ocorrerá."
         },
         {
-            question: "Fungos, como o mofo do pão, liberam células microscópicas muito resistentes que podem germinar em um novo local. Essas células são chamadas de:",
-            options: ["Gametas", "Brotos", "Esporos", "Zigotos"],
-            answer: "Esporos",
-            solution: "A esporulação é o processo em que um organismo produz esporos, que são células reprodutivas especializadas, geralmente muito resistentes, capazes de originar um novo indivíduo sem a necessidade de fecundação."
+            question: "'Ele agiu com calma.' O adjunto adverbial expressa uma circunstância de:",
+            options: ["Causa", "Modo", "Finalidade", "Companhia"],
+            answer: "Modo",
+            solution: "A expressão 'com calma' (equivalente a 'calmamente') indica a maneira como ele agiu."
         },
         {
-            question: "A estrela-do-mar pode regenerar um organismo inteiro a partir de um braço perdido, desde que contenha parte do disco central. Esse processo é um exemplo de:",
-            options: ["Brotamento", "Bipartição", "Fragmentação", "Esporulação"],
-            answer: "Fragmentação",
-            solution: "Na fragmentação, o corpo do indivíduo se divide em dois ou mais fragmentos, e cada fragmento é capaz de regenerar as partes que faltam para formar um novo organismo completo."
+            question: "Em 'Nós moramos muito longe', a palavra 'muito' é um adjunto adverbial de:",
+            options: ["Lugar", "Modo", "Tempo", "Intensidade"],
+            answer: "Intensidade",
+            solution: "O advérbio 'muito' está intensificando outro advérbio ('longe'), expressando um alto grau de distância."
         },
         {
-            question: "A principal vantagem da reprodução assexuada para uma espécie é:",
-            options: ["Aumentar a diversidade genética da população", "Permitir uma rápida colonização de ambientes estáveis", "Facilitar a adaptação a mudanças ambientais", "Economizar energia, pois não produz gametas"],
-            answer: "Permitir uma rápida colonização de ambientes estáveis",
-            solution: "Como não requer parceiros e é um processo rápido, a reprodução assexuada permite que um indivíduo bem adaptado a um ambiente estável gere muitos descendentes rapidamente, colonizando o local."
+            question: "Qual frase contém um adjunto adverbial de lugar?",
+            options: ["Talvez eu vá.", "O carro virou à direita.", "Ele comeu demais.", "Ela cantou bem."],
+            answer: "O carro virou à direita.",
+            solution: "A expressão 'à direita' indica o lugar, a direção para onde o carro virou."
         },
         {
-            question: "Qual é a principal desvantagem da reprodução assexuada?",
-            options: ["É um processo muito lento", "Gasta muita energia", "A baixa variabilidade genética dificulta a adaptação a mudanças", "Requer condições ambientais muito específicas"],
-            answer: "A baixa variabilidade genética dificulta a adaptação a mudanças",
-            solution: "Como todos os descendentes são clones, uma mudança súbita no ambiente (como uma nova doença ou alteração de temperatura) pode ser prejudicial para toda a população, que não possui variações genéticas que poderiam conferir resistência."
+            question: "Na oração 'Por causa da chuva, o jogo foi cancelado', o termo destacado é um adjunto adverbial de:",
+            options: ["Tempo", "Causa", "Consequência", "Condição"],
+            answer: "Causa",
+            solution: "'Por causa da chuva' indica o motivo, a razão pela qual o jogo foi cancelado."
         },
         {
-            question: "O experimento de Francesco Redi com frascos contendo carne, alguns abertos e outros cobertos, foi um dos primeiros a questionar a:",
-            options: ["Biogênese", "Teoria celular", "Abiogênese", "Evolução das espécies"],
-            answer: "Abiogênese",
-            solution: "Redi demonstrou que as larvas na carne só apareciam nos frascos abertos, onde as moscas podiam pousar e depositar seus ovos, sugerindo que a vida (larvas) vinha de outra vida (moscas), e não da carne."
+            question: "Identifique o adjunto adverbial de negação.",
+            options: ["Ele certamente virá.", "Eu jamais faria isso.", "Andei bastante hoje.", "Eles vivem aqui."],
+            answer: "Eu jamais faria isso.",
+            solution: "O advérbio 'jamais' expressa uma negação categórica da ação."
         },
         {
-            question: "A clonagem artificial de uma ovelha (como a famosa Dolly) é um exemplo de tecnologia baseada nos princípios da:",
-            options: ["Reprodução sexuada", "Reprodução assexuada", "Seleção natural", "Engenharia genética"],
-            answer: "Reprodução assexuada",
-            solution: "A clonagem é um processo que produz um indivíduo geneticamente idêntico a outro, sem a combinação de gametas, o que a caracteriza como uma forma artificial de reprodução assexuada."
+            question: "'Estudei para a prova.' O termo 'para a prova' expressa:",
+            options: ["Meio", "Assunto", "Finalidade", "Causa"],
+            answer: "Finalidade",
+            solution: "Indica o objetivo, o propósito com o qual a ação de estudar foi realizada."
         },
         {
-            question: "Qual dos organismos a seguir NÃO se reproduz tipicamente por bipartição?",
-            options: ["Bactéria", "Ameba", "Paramécio", "Levedura"],
-            answer: "Levedura",
-            solution: "As leveduras, que são fungos unicelulares, se reproduzem tipicamente por brotamento. Bactérias, amebas e paramécios são exemplos clássicos de organismos que realizam bipartição."
+            question: "Em 'Falei sobre política com meu pai', temos adjuntos adverbiais de:",
+            options: ["Assunto e companhia", "Modo e lugar", "Tempo e intensidade", "Causa e consequência"],
+            answer: "Assunto e companhia",
+            solution: "'Sobre política' indica o assunto da conversa, e 'com meu pai' indica a companhia."
         },
         {
-            question: "O surgimento de uma batata-inglesa a partir de um 'olho' (gema) de outra batata é um tipo de reprodução assexuada chamada:",
-            options: ["Esporulação", "Brotamento", "Fragmentação vegetativa", "Partenogênese"],
-            answer: "Fragmentação vegetativa",
-            solution: "Esse processo é conhecido como propagação ou multiplicação vegetativa, uma forma de fragmentação em plantas, onde uma parte da planta (como o tubérculo da batata) origina um novo indivíduo completo."
+            question: "'Ele abriu a porta com a chave.' O termo 'com a chave' é adjunto adverbial de:",
+            options: ["Modo", "Companhia", "Instrumento", "Causa"],
+            answer: "Instrumento",
+            solution: "Indica o objeto, a ferramenta utilizada para realizar a ação de abrir a porta."
         },
         {
-            question: "A teoria da Biogênese foi definitivamente estabelecida graças aos experimentos de:",
-            options: ["Aristóteles", "Francesco Redi", "John Needham", "Louis Pasteur"],
-            answer: "Louis Pasteur",
-            solution: "Embora Redi e Spallanzani tenham contribuído, foram os experimentos conclusivos de Pasteur com os frascos de pescoço de cisne que refutaram de forma definitiva a ideia da geração espontânea para os micro-organismos."
+            question: "Qual o valor semântico do adjunto adverbial em 'Com certeza, seremos aprovados'?",
+            options: ["Dúvida", "Modo", "Afirmação", "Negação"],
+            answer: "Afirmação",
+            solution: "A locução adverbial 'Com certeza' serve para reforçar, afirmar a ideia expressa na oração."
         },
         {
-            question: "Na reprodução assexuada, a fonte de variação genética é primariamente a:",
-            options: ["Recombinação gênica", "Mutação", "Permutação cromossômica", "Fusão de gametas"],
-            answer: "Mutação",
-            solution: "Como não há mistura de material genético de diferentes indivíduos, a única fonte de novas características em uma linhagem assexuada é a ocorrência de mutações, que são alterações raras e aleatórias no DNA."
+            question: "Na frase 'Viajamos de avião', o termo 'de avião' indica:",
+            options: ["Lugar", "Meio", "Companhia", "Modo"],
+            answer: "Meio",
+            solution: "Indica o meio de transporte utilizado para realizar a viagem."
         },
         {
-            question: "A regeneração de uma lagartixa que perdeu a cauda é um exemplo de reprodução?",
-            options: ["Sim, por fragmentação", "Sim, por brotamento", "Não, é apenas um processo de regeneração de uma parte do corpo", "Sim, por esporulação"],
-            answer: "Não, é apenas um processo de regeneração de uma parte do corpo",
-            solution: "A regeneração da cauda não origina um novo indivíduo. É apenas a capacidade do organismo de reconstruir uma parte perdida. Para ser reprodução por fragmentação, a parte perdida teria que gerar um novo organismo completo."
+            question: "Em 'Caminhamos por duas horas', o adjunto adverbial é de:",
+            options: ["Tempo/Duração", "Distância", "Intensidade", "Modo"],
+            answer: "Tempo/Duração",
+            solution: "A expressão 'por duas horas' especifica a duração da ação de caminhar."
         },
         {
-            question: "O que era a 'força vital' ou 'princípio ativo' segundo os defensores da abiogênese?",
-            options: ["A energia do Sol", "O material genético (DNA)", "Uma força mística presente na matéria inanimada capaz de gerar vida", "O oxigênio do ar"],
-            answer: "Uma força mística presente na matéria inanimada capaz de gerar vida",
-            solution: "Os abiogenistas acreditavam que existia uma 'força vital' no ar, na lama ou em matéria orgânica em decomposição que era responsável por organizar a matéria e transformá-la em seres vivos."
+            question: "A palavra 'aqui' na frase 'Deixei o livro aqui' é um adjunto adverbial de:",
+            options: ["Modo", "Tempo", "Lugar", "Intensidade"],
+            answer: "Lugar",
+            solution: "'Aqui' é um advérbio que indica o local onde o livro foi deixado."
         },
         {
-            question: "Qual é a principal diferença entre brotamento e bipartição?",
-            options: ["A bipartição gera clones, o brotamento não", "No brotamento, a divisão do citoplasma é desigual, formando indivíduos de tamanhos diferentes", "A bipartição ocorre em animais e o brotamento em bactérias", "Não há diferença, são o mesmo processo"],
-            answer: "No brotamento, a divisão do citoplasma é desigual, formando indivíduos de tamanhos diferentes",
-            solution: "Na bipartição, a célula se divide em duas de tamanho aproximadamente igual. No brotamento, um broto pequeno surge no progenitor e cresce, sendo uma divisão citoplasmática desigual."
+            question: "Qual adjunto adverbial indica modo?",
+            options: ["Talvez", "Não", "Bem", "Hoje"],
+            answer: "Bem",
+            solution: "'Bem' é um advérbio que qualifica a maneira como uma ação é realizada (ex: 'Ele canta bem')."
         },
         {
-            question: "A formação de mudas de violeta a partir de uma folha colocada na água é um exemplo de:",
-            options: ["Reprodução sexuada", "Esporulação", "Propagação vegetativa", "Brotamento"],
-            answer: "Propagação vegetativa",
-            solution: "Este é outro exemplo de propagação vegetativa, um tipo de reprodução assexuada em plantas onde partes como folhas, caules ou raízes podem dar origem a uma planta inteira."
+            question: "Na frase 'O preço da gasolina aumentou muito', 'muito' é adjunto adverbial de:",
+            options: ["Modo", "Intensidade", "Tempo", "Causa"],
+            answer: "Intensidade",
+            solution: "'Muito' intensifica a ação do verbo 'aumentou', indicando que o aumento foi de grande proporção."
         },
+
+        // --- Português: Orações Coordenadas (15 Questões) ---
         {
-            question: "Por que os caldos nutritivos de Spallanzani, que foram fervidos e vedados, não desenvolveram micro-organismos?",
-            options: ["Porque a fervura destruiu a 'força vital'", "Porque a vedação impediu a entrada de micro-organismos do ar", "Porque o vidro do frasco era especial", "Porque o caldo não era nutritivo o suficiente"],
-            answer: "Porque a vedação impediu a entrada de micro-organismos do ar",
-            solution: "O experimento de Spallanzani apoiou a biogênese ao mostrar que a fervura matava os micro-organismos existentes e a vedação impedia a entrada de novos, evitando a contaminação. Os abiogenistas, no entanto, argumentaram que a fervura destruía a 'força vital'."
+            question: "Na frase 'Ele estudou e foi aprovado', a segunda oração é coordenada sindética:",
+            options: ["Adversativa", "Aditiva", "Alternativa", "Conclusiva"],
+            answer: "Aditiva",
+            solution: "A conjunção 'e' introduz uma ideia de soma, de acréscimo em relação à oração anterior."
         },
         {
-            question: "Qual dos seguintes processos de reprodução assexuada está mais associado à capacidade de regeneração?",
-            options: ["Bipartição", "Brotamento", "Fragmentação", "Esporulação"],
-            answer: "Fragmentação",
-            solution: "A fragmentação depende diretamente da capacidade do organismo de regenerar as partes que faltam em um fragmento para formar um novo indivíduo completo. Exemplos são planárias e estrelas-do-mar."
+            question: "A oração 'Estudei muito, mas não passei no teste' estabelece uma relação de:",
+            options: ["Adição", "Oposição", "Alternância", "Explicação"],
+            answer: "Oposição",
+            solution: "A conjunção 'mas' introduz uma ideia contrária, uma adversidade em relação ao que era esperado da primeira oração."
         },
         {
-            question: "Qual das alternativas apresenta APENAS exemplos de reprodução assexuada?",
-            options: ["Brotamento, fecundação, esporulação", "Fragmentação, bipartição, brotamento", "Cissiparidade, meiose, clonagem", "Fecundação, zigoto, brotamento"],
-            answer: "Fragmentação, bipartição, brotamento",
-            solution: "Fecundação, meiose e formação de zigoto são eventos característicos da reprodução sexuada. Fragmentação, bipartição (ou cissiparidade) e brotamento são todos tipos de reprodução assexuada."
+            question: "Em 'Ou você estuda, ou você trabalha', as orações são coordenadas e expressam:",
+            options: ["Conclusão", "Explicação", "Adição", "Alternativa"],
+            answer: "Alternativa",
+            solution: "A conjunção 'ou... ou...' apresenta uma escolha, uma alternância entre duas possibilidades que se excluem."
         },
         {
-            question: "A ideia inicial de que 'vermes' surgiam de um pedaço de queijo era um exemplo de crença na:",
-            options: ["Biogênese", "Geração espontânea", "Seleção artificial", "Panspermia"],
-            answer: "Geração espontânea",
-            solution: "A geração espontânea é outro nome para a teoria da abiogênese, que acreditava que a vida poderia surgir espontaneamente de matéria não viva, como vermes do queijo ou ratos de roupas sujas."
+            question: "'Penso, logo existo.' A segunda oração é classificada como:",
+            options: ["Aditiva", "Adversativa", "Conclusiva", "Explicativa"],
+            answer: "Conclusiva",
+            solution: "A conjunção 'logo' introduz uma conclusão lógica baseada na afirmação da primeira oração."
         },
         {
-            question: "Em termos de evolução, a reprodução assexuada é mais vantajosa em ambientes:",
-            options: ["Que mudam constantemente", "Com alta competição entre espécies", "Estáveis e previsíveis", "Pobres em nutrientes"],
-            answer: "Estáveis e previsíveis",
-            solution: "Em um ambiente que não muda, um indivíduo bem-sucedido pode se replicar rapidamente através da reprodução assexuada, passando suas características vantajosas para todos os descendentes sem alterações."
+            question: "Na frase 'Não demore, que o filme já vai começar', a oração 'que o filme já vai começar' é:",
+            options: ["Coordenada sindética explicativa", "Coordenada sindética conclusiva", "Oração subordinada causal", "Coordenada sindética aditiva"],
+            answer: "Coordenada sindética explicativa",
+            solution: "A conjunção 'que' (com o mesmo valor de 'pois' ou 'porque') está justificando, explicando a ordem dada na oração anterior."
         },
         {
-            question: "A formação de um 'tapete' de mofo verde sobre uma laranja é resultado de qual processo reprodutivo do fungo?",
-            options: ["Bipartição", "Brotamento", "Esporulação", "Fragmentação"],
-            answer: "Esporulação",
-            solution: "O mofo libera milhões de esporos no ar. Quando um deles cai sobre um substrato favorável como a laranja, ele germina e se multiplica, formando a colônia visível (o 'tapete' de mofo)."
+            question: "Qual conjunção poderia substituir 'porém' em 'Ele é inteligente, porém preguiçoso' sem alterar o sentido?",
+            options: ["portanto", "e", "pois", "contudo"],
+            answer: "contudo",
+            solution: "'Contudo', assim como 'porém', 'mas', 'todavia' e 'entretanto', é uma conjunção adversativa."
         },
         {
-            question: "A ameba, ao atingir certo tamanho, simplesmente se divide ao meio. Esse processo é:",
-            options: ["Uma forma de reprodução sexuada", "Chamado de mitose seguida de citocinese", "Uma forma de brotamento", "Um exemplo de esporulação"],
-            answer: "Chamado de mitose seguida de citocinese",
-            solution: "A bipartição em eucariontes como a ameba envolve a duplicação do material genético (mitose) seguida da divisão do citoplasma (citocinese), resultando em duas células-filhas idênticas."
+            question: "A oração 'Ele não só dança, mas também canta' é um exemplo de coordenação:",
+            options: ["Adversativa", "Alternativa", "Aditiva", "Conclusiva"],
+            answer: "Aditiva",
+            solution: "A estrutura 'não só... mas também...' expressa uma soma de ideias ou ações."
         },
         {
-            question: "A principal diferença entre os experimentos de Spallanzani e Pasteur foi:",
-            options: ["O tipo de caldo utilizado", "O uso do microscópio por Pasteur", "O 'pescoço de cisne' nos frascos de Pasteur, que permitia contato com o ar", "A temperatura de fervura"],
-            answer: "O 'pescoço de cisne' nos frascos de Pasteur, que permitia contato com o ar",
-            solution: "A genialidade de Pasteur foi criar um frasco que permitia a entrada do ar (e da suposta 'força vital'), mas impedia a entrada de micro-organismos, que ficavam retidos na curva. Isso respondeu à crítica feita ao experimento de Spallanzani, que vedava completamente o frasco."
+            question: "Em 'O time jogou bem; deve, pois, vencer', a oração 'deve, pois, vencer' é:",
+            options: ["Explicativa", "Conclusiva", "Adversativa", "Aditiva"],
+            answer: "Conclusiva",
+            solution: "A conjunção 'pois' quando vem depois do verbo, como neste caso, tem valor conclusivo, sinônimo de 'portanto'."
         },
         {
-            question: "O cultivo de cana-de-açúcar é feito enterrando-se pedaços do caule da planta. Este método é uma forma de:",
-            options: ["Reprodução por sementes", "Propagação vegetativa", "Reprodução por esporos", "Hibridização"],
-            answer: "Propagação vegetativa",
-            solution: "Essa técnica, chamada de estaquia, é um método de propagação vegetativa (reprodução assexuada) onde um pedaço do caule (a estaca) é usado para gerar uma nova planta completa, idêntica à original."
+            question: "'Quer chova, quer faça sol, eu irei à praia.' As orações coordenadas expressam:",
+            options: ["Oposição", "Adição", "Alternância", "Condição"],
+            answer: "Alternância",
+            solution: "A estrutura 'quer... quer...' indica uma alternância entre duas situações que não impedem a ação principal."
         },
         {
-            question: "A divisão múltipla, onde o núcleo se divide várias vezes antes da divisão do citoplasma, originando várias células, é uma variação da bipartição que ocorre, por exemplo, no protozoário causador da malária. Este processo também é conhecido como:",
-            options: ["Brotamento", "Gemulação", "Esquizogonia", "Estrobilização"],
-            answer: "Esquizogonia",
-            solution: "Esquizogonia é um tipo especial de reprodução assexuada, uma forma de divisão múltipla, característica de alguns protozoários como o Plasmódio, causador da malária."
+            question: "Qual período é composto por coordenação assindética?",
+            options: ["Cheguei, vi, venci.", "Cheguei e vi.", "Cheguei, mas não venci.", "Cheguei, portanto venci."],
+            answer: "Cheguei, vi, venci.",
+            solution: "As orações são assindéticas porque estão unidas apenas por vírgulas, sem a presença de uma conjunção (síndeto)."
         },
-        // --- CIÊNCIAS - Capítulo 7: Reprodução Sexuada (35 Questões) ---
         {
-            question: "Qual é a principal vantagem evolutiva da reprodução sexuada?",
-            options: ["É mais rápida que a assexuada", "Gera descendentes idênticos", "Aumenta a variabilidade genética da população", "Requer menos energia"],
-            answer: "Aumenta a variabilidade genética da população",
-            solution: "A mistura do material genético de dois progenitores diferentes gera descendentes com novas combinações de características, aumentando a variabilidade genética. Isso permite que a população se adapte melhor a mudanças no ambiente."
+            question: "A conjunção 'entretanto' classifica a oração como:",
+            options: ["Aditiva", "Adversativa", "Conclusiva", "Explicativa"],
+            answer: "Adversativa",
+            solution: "'Entretanto' é uma conjunção que introduz uma ideia de oposição ou contraste."
         },
         {
-            question: "As células reprodutivas especializadas envolvidas na reprodução sexuada são chamadas de:",
-            options: ["Células somáticas", "Gametas", "Esporos", "Zigotos"],
-            answer: "Gametas",
-            solution: "Gametas são as células (como espermatozoide e óvulo) que se fundem durante a fecundação para dar origem a um novo indivíduo."
+            question: "'O dia está chuvoso, portanto levarei um guarda-chuva'. A segunda oração é:",
+            options: ["Aditiva", "Adversativa", "Alternativa", "Conclusiva"],
+            answer: "Conclusiva",
+            solution: "A conjunção 'portanto' expressa uma conclusão baseada no fato apresentado na primeira oração."
         },
         {
-            question: "Como são chamadas as células que formam o corpo dos organismos, como as da pele, músculos e ossos?",
-            options: ["Células gaméticas", "Células haploides", "Células somáticas", "Células-tronco"],
-            answer: "Células somáticas",
-            solution: "As células somáticas são todas as células do corpo de um organismo multicelular, exceto as células germinativas que dão origem aos gametas."
+            question: "Qual das frases abaixo contém uma oração coordenada sindética explicativa?",
+            options: ["Ele estudou, logo passou.", "Não vá lá, pois é perigoso.", "Ele caiu, mas não se machucou.", "Ora ele ri, ora ele chora."],
+            answer: "Não vá lá, pois é perigoso.",
+            solution: "A oração 'pois é perigoso' fornece uma justificativa para a ordem expressa em 'Não vá lá'."
         },
         {
-            question: "Em humanos, as células somáticas são diploides (2n), o que significa que:",
-            options: ["Possuem 23 cromossomos", "Os cromossomos ocorrem em pares de homólogos", "Não possuem núcleo", "São geneticamente idênticas aos gametas"],
-            answer: "Os cromossomos ocorrem em pares de homólogos",
-            solution: "Uma célula diploide (2n) possui dois conjuntos de cromossomos, um herdado do pai e outro da mãe. Esses pares de cromossomos com genes para as mesmas características são chamados de homólogos."
+            question: "Em 'A situação é grave, e exige cuidado', a conjunção 'e' tem valor:",
+            options: ["Aditivo", "Adversativo", "Conclusivo", "Alternativo"],
+            answer: "Aditivo",
+            solution: "O 'e' está somando duas informações sobre a situação."
         },
         {
-            question: "Os gametas humanos (espermatozoide e óvulo) são haploides (n). Isso significa que eles contêm:",
-            options: ["46 cromossomos", "Apenas um cromossomo de cada par de homólogos", "O dobro de cromossomos de uma célula da pele", "Apenas cromossomos sexuais"],
-            answer: "Apenas um cromossomo de cada par de homólogos",
-            solution: "Uma célula haploide (n) contém apenas um conjunto de cromossomos, ou seja, metade do número de uma célula diploide. Em humanos, n=23."
+            question: "A oração 'Seja otimista, seja realista' expressa uma ideia de:",
+            options: ["Adição", "Oposição", "Alternância", "Explicação"],
+            answer: "Alternância",
+            solution: "A estrutura 'seja... seja...' apresenta duas possibilidades ou posturas que se alternam."
         },
+
+        // --- Português: Orações Subordinadas Substantivas (15 Questões) ---
         {
-            question: "O processo de fusão de um gameta masculino com um gameta feminino é chamado de:",
-            options: ["Meiose", "Mitose", "Fecundação", "Ovulação"],
-            answer: "Fecundação",
-            solution: "Fecundação é o nome do evento em que o espermatozoide e o óvulo se unem, combinando seus materiais genéticos."
+            question: "Na frase 'É provável que ele viaje amanhã', a oração 'que ele viaje amanhã' tem função de:",
+            options: ["Sujeito", "Objeto direto", "Objeto indireto", "Aposto"],
+            answer: "Sujeito",
+            solution: "A oração funciona como sujeito do verbo 'É'. Por isso, é uma oração subordinada substantiva subjetiva. (Isso é provável)."
         },
         {
-            question: "A primeira célula formada após a fecundação, que é diploide (2n), é chamada de:",
-            options: ["Gameta", "Embrião", "Feto", "Zigoto"],
-            answer: "Zigoto",
-            solution: "O zigoto é a célula resultante da união dos gametas. Ele contém o material genético combinado dos dois progenitores e começará a se dividir para formar o embrião."
+            question: "Em 'Eu quero que você seja feliz', a segunda oração é classificada como:",
+            options: ["Subjetiva", "Objetiva direta", "Objetiva indireta", "Completiva nominal"],
+            answer: "Objetiva direta",
+            solution: "A oração 'que você seja feliz' completa o sentido do verbo transitivo direto 'quero'. Quem quer, quer algo. Funciona como objeto direto."
         },
         {
-            question: "Em peixes e anfíbios, a fêmea geralmente libera seus óvulos na água e o macho libera seus espermatozoides sobre eles. Esse tipo de fecundação é chamado de:",
-            options: ["Interna", "Cruzada", "Externa", "Autofecundação"],
-            answer: "Externa",
-            solution: "A fecundação externa ocorre fora do corpo da fêmea, geralmente em ambiente aquático, o que exige a produção de um grande número de gametas."
+            question: "Qual a função da oração 'de que me ajude' em 'Eu preciso de que me ajude'?",
+            options: ["Objetiva direta", "Objetiva indireta", "Completiva nominal", "Predicativa"],
+            answer: "Objetiva indireta",
+            solution: "A oração completa o sentido do verbo transitivo indireto 'preciso', que exige a preposição 'de'. Funciona como objeto indireto."
         },
         {
-            question: "Em répteis, aves e mamíferos, a união dos gametas ocorre dentro do sistema reprodutor da fêmea. Esse tipo de fecundação é chamado de:",
-            options: ["Interna", "Externa", "Autofecundação", "Global"],
-            answer: "Interna",
-            solution: "A fecundação interna ocorre dentro do corpo da fêmea, o que protege os gametas e o embrião inicial, aumentando as chances de sucesso da reprodução."
+            question: "Na oração 'Tenho certeza de que ele virá', a oração 'de que ele virá' é:",
+            options: ["Objetiva indireta", "Completiva nominal", "Subjetiva", "Apositiva"],
+            answer: "Completiva nominal",
+            solution: "A oração completa o sentido de um nome (o substantivo 'certeza'), e não de um verbo. Por isso, é completiva nominal."
         },
         {
-            question: "Animais que se desenvolvem dentro de ovos que são postos e eclodem fora do corpo da mãe, como as aves, são chamados de:",
-            options: ["Vivíparos", "Marsupiais", "Ovíparos", "Ovovivíparos"],
-            answer: "Ovíparos",
-            solution: "Ovíparos são animais cujo embrião se desenvolve dentro de um ovo com casca, que é depositado no ambiente externo. A nutrição vem da gema (vitelo) presente no ovo."
+            question: "Em 'Meu desejo é que a paz reine', a oração 'que a paz reine' tem função de:",
+            options: ["Sujeito", "Objeto direto", "Predicativo do sujeito", "Aposto"],
+            answer: "Predicativo do sujeito",
+            solution: "A oração funciona como predicativo do sujeito 'Meu desejo', pois está ligada ao sujeito por um verbo de ligação ('é')."
         },
         {
-            question: "Mamíferos, como os seres humanos, em que o embrião se desenvolve totalmente dentro do corpo da mãe, recebendo nutrientes diretamente dela, são chamados de:",
-            options: ["Vivíparos", "Ovíparos", "Ovovivíparos", "Placentários"],
-            answer: "Vivíparos",
-            solution: "Vivíparos são animais cujo embrião se desenvolve dentro do útero materno, nutrido através de uma placenta. O filhote nasce já formado."
+            question: "A oração 'que todos sejam felizes' em 'Só peço isto: que todos sejam felizes' é:",
+            options: ["Subjetiva", "Objetiva direta", "Predicativa", "Apositiva"],
+            answer: "Apositiva",
+            solution: "A oração tem a função de explicar ou especificar um termo anterior (o pronome 'isto'). Por isso, é classificada como apositiva."
         },
         {
-            question: "Algumas espécies de tubarões e serpentes produzem ovos que permanecem dentro do corpo da fêmea até a eclosão. Os filhotes nascem já formados, mas sem ligação nutricional direta com a mãe (sem placenta). Esses animais são chamados de:",
-            options: ["Vivíparos", "Ovíparos", "Ovovivíparos", "Hermafroditas"],
-            answer: "Ovovivíparos",
-            solution: "Os ovovivíparos são um caso intermediário: o desenvolvimento ocorre em um ovo, mas este fica retido no corpo da mãe. A nutrição vem do ovo, não da mãe, mas o filhote já nasce pronto."
+            question: "Qual frase contém uma oração subordinada substantiva subjetiva?",
+            options: ["Disseram que ele voltaria.", "É importante que você estude.", "Lembre-se de que sou seu amigo.", "Meu medo era que chovesse."],
+            answer: "É importante que você estude.",
+            solution: "A oração 'que você estude' exerce a função de sujeito do verbo de ligação 'É'."
         },
         {
-            question: "O que é um organismo hermafrodita?",
-            options: ["Um organismo que se reproduz apenas assexuadamente", "Um organismo que produz tanto gametas masculinos quanto femininos", "Um organismo que não se reproduz", "Um organismo que realiza apenas fecundação externa"],
-            answer: "Um organismo que produz tanto gametas masculinos quanto femininos",
-            solution: "Hermafroditas, como as minhocas e muitos caracóis, são espécies em que o mesmo indivíduo possui os sistemas reprodutores masculino e feminino."
+            question: "'Convém que você participe da reunião.' A oração subordinada é:",
+            options: ["Objetiva direta", "Objetiva indireta", "Subjetiva", "Completiva nominal"],
+            answer: "Subjetiva",
+            solution: "A oração 'que você participe da reunião' funciona como sujeito do verbo 'Convém'. (Isso convém)."
         },
         {
-            question: "Quando dois indivíduos hermafroditas, como as minhocas, trocam gametas entre si, dizemos que ocorreu uma:",
-            options: ["Autofecundação", "Fecundação externa", "Fecundação cruzada", "Bipartição"],
-            answer: "Fecundação cruzada",
-            solution: "Apesar de serem hermafroditas, muitos evitam a autofecundação e realizam a fecundação cruzada, onde um indivíduo fecunda o outro e vice-versa. Isso garante a variabilidade genética."
+            question: "Em 'O problema é que ninguém se entende', a oração 'que ninguém se entende' é:",
+            options: ["Subjetiva", "Objetiva direta", "Predicativa", "Apositiva"],
+            answer: "Predicativa",
+            solution: "A oração está após o verbo de ligação 'é' e serve como uma característica, um predicativo, para o sujeito 'O problema'."
         },
         {
-            question: "A tênia (solitária) é um verme hermafrodita que vive sozinho no intestino humano e consegue se reproduzir fecundando seus próprios óvulos. Esse processo é chamado de:",
-            options: ["Fecundação cruzada", "Autofecundação", "Fecundação interna", "Partenogênese"],
-            answer: "Autofecundação",
-            solution: "A autofecundação ocorre quando um indivíduo hermafrodita utiliza seus próprios gametas masculinos para fecundar seus próprios gametas femininos."
+            question: "Qual a classificação da oração 'se o projeto foi aprovado' em 'O gerente perguntou se o projeto foi aprovado'?",
+            options: ["Subjetiva", "Objetiva direta", "Objetiva indireta", "Apositiva"],
+            answer: "Objetiva direta",
+            solution: "A oração completa o sentido do verbo transitivo direto 'perguntou'. Quem pergunta, pergunta algo."
         },
         {
-            question: "O material genético (DNA) está organizado dentro do núcleo das células em estruturas chamadas:",
-            options: ["Ribossomos", "Mitocôndrias", "Cromossomos", "Lisossomos"],
-            answer: "Cromossomos",
-            solution: "Os cromossomos são longas moléculas de DNA associadas a proteínas, que se tornam visíveis e condensadas durante a divisão celular."
+            question: "Na frase 'Ele se queixou de que o trataram mal', a oração subordinada é:",
+            options: ["Objetiva direta", "Objetiva indireta", "Completiva nominal", "Subjetiva"],
+            answer: "Objetiva indireta",
+            solution: "A oração completa o sentido do verbo 'queixou-se', que exige a preposição 'de'. Funciona como objeto indireto."
         },
         {
-            question: "Em plantas como pinheiros (gimnospermas), a estrutura que contém o gameta masculino e é transportada pelo vento é o:",
-            options: ["Pistilo", "Estame", "Grão de pólen", "Óvulo"],
-            answer: "Grão de pólen",
-            solution: "O grão de pólen é a estrutura que carrega o gameta masculino. Nas gimnospermas, sua dispersão (polinização) é feita principalmente pelo vento."
+            question: "A oração 'que você tenha sucesso' em 'Nosso sonho é que você tenha sucesso' é:",
+            options: ["Subjetiva", "Predicativa", "Apositiva", "Objetiva direta"],
+            answer: "Predicativa",
+            solution: "A oração está ligada ao sujeito 'Nosso sonho' pelo verbo de ligação 'é', funcionando como predicativo do sujeito."
         },
         {
-            question: "Em plantas com flores (angiospermas), após a fecundação, o óvulo se desenvolve em ________ e o ovário se desenvolve em ________.",
-            options: ["fruto; semente", "semente; fruto", "flor; semente", "semente; flor"],
-            answer: "semente; fruto",
-            solution: "Esta é uma característica chave das angiospermas. A dupla fecundação leva ao desenvolvimento do óvulo fecundado em semente (que contém o embrião) e do ovário da flor em fruto (que protege a semente)."
+            question: "Identifique a oração subordinada substantiva completiva nominal.",
+            options: ["É necessário que chova.", "Ele me convenceu de que eu estava errado.", "Tenho necessidade de que me apoiem.", "Espero que você venha."],
+            answer: "Tenho necessidade de que me apoiem.",
+            solution: "A oração 'de que me apoiem' completa o sentido do substantivo 'necessidade', e não de um verbo."
         },
         {
-            question: "A principal vantagem da fecundação interna sobre a externa é:",
-            options: ["Gerar maior número de descendentes", "Não necessitar de gametas", "Maior proteção aos gametas e ao zigoto, aumentando a chance de sobrevivência", "Ocorrer mais rapidamente"],
-            answer: "Maior proteção aos gametas e ao zigoto, aumentando a chance de sobrevivência",
-            solution: "O ambiente interno do corpo feminino protege os gametas do ressecamento e da predação, garantindo um local seguro para a fecundação e o desenvolvimento inicial do embrião."
+            question: "'Foi anunciado que o show começaria mais tarde.' A oração subordinada é:",
+            options: ["Objetiva direta", "Subjetiva", "Predicativa", "Apositiva"],
+            answer: "Subjetiva",
+            solution: "A oração principal está na voz passiva. A oração 'que o show começaria mais tarde' funciona como sujeito. (Isso foi anunciado)."
         },
         {
-            question: "Qual o número de cromossomos em um gameta humano?",
-            options: ["46", "44", "23", "22"],
-            answer: "23",
-            solution: "As células somáticas humanas têm 46 cromossomos (2n=46). Os gametas, sendo haploides (n), possuem metade desse número, ou seja, 23 cromossomos."
+            question: "Em 'A verdade é uma só: que a vida é curta', a segunda oração é classificada como:",
+            options: ["Predicativa", "Apositiva", "Subjetiva", "Objetiva direta"],
+            answer: "Apositiva",
+            solution: "A oração 'que a vida é curta' serve para explicar o termo anterior 'uma só', funcionando como um aposto."
         },
+
+        // --- Espanhol: Pronomes Relativos (15 Questões) ---
         {
-            question: "Qual evento na reprodução sexuada é o principal responsável pela recombinação do material genético dos pais?",
-            options: ["Mitose do zigoto", "Fecundação", "Gametogênese (Meiose)", "Desenvolvimento embrionário"],
-            answer: "Gametogênese (Meiose)",
-            solution: "Durante a meiose, processo de formação dos gametas, ocorre o 'crossing-over' (permutação), que mistura os genes nos cromossomos. A fecundação depois combina os gametas, mas a recombinação inicial ocorre na meiose."
+            question: "Completa la frase: 'El coche ___ compré ayer es rojo.'",
+            options: ["que", "quien", "donde", "cuyo"],
+            answer: "que",
+            solution: "'Que' es el pronombre relativo más común, utilizado para referirse a cosas (en este caso, 'el coche')."
         },
         {
-            question: "O desenvolvimento de um óvulo não fecundado em um novo indivíduo, como ocorre em abelhas (zangões), é chamado de:",
-            options: ["Hermafroditismo", "Fecundação cruzada", "Partenogênese", "Neotenia"],
-            answer: "Partenogênese",
-            solution: "A partenogênese é um tipo de reprodução em que um embrião se desenvolve a partir de um gameta feminino sem que tenha havido fecundação. É comum em alguns insetos, répteis e peixes."
+            question: "Elige la opción correcta: 'Los amigos con ___ fui al cine son muy simpáticos.'",
+            options: ["que", "quienes", "donde", "cuyos"],
+            answer: "quienes",
+            solution: "Se usa 'quien' o 'quienes' para referirse a personas después de una preposición ('con'). Como 'amigos' es plural, se usa 'quienes'."
         },
         {
-            question: "As flores coloridas e os frutos suculentos das angiospermas são adaptações para:",
-            options: ["Realizar fotossíntese", "Proteger a planta contra o frio", "Atrair animais para auxiliar na polinização e dispersão de sementes", "Absorver água do solo"],
-            answer: "Atrair animais para auxiliar na polinização e dispersão de sementes",
-            solution: "As flores atraem polinizadores (insetos, aves) e os frutos atraem dispersores, que comem o fruto e liberam as sementes em outros locais, garantindo o sucesso reprodutivo da planta."
+            question: "Completa la frase: 'Esa es la ciudad ___ nací.'",
+            options: ["que", "la que", "donde", "cuando"],
+            answer: "donde",
+            solution: "'Donde' es el pronombre relativo que se utiliza para referirse a un lugar."
         },
         {
-            question: "A célula resultante da união de um espermatozoide com 23 cromossomos e um óvulo com 23 cromossomos terá:",
-            options: ["23 cromossomos", "46 cromossomos", "69 cromossomos", "Um número variável de cromossomos"],
-            answer: "46 cromossomos",
-            solution: "A fecundação restaura o número diploide da espécie. O zigoto humano é formado pela soma dos cromossomos do espermatozoide (n=23) e do óvulo (n=23), resultando em uma célula com 2n=46 cromossomos."
+            question: "Elige el pronombre correcto: 'Es un escritor ___ obras son famosas en todo el mundo.'",
+            options: ["que", "quien", "cuyas", "cuales"],
+            answer: "cuyas",
+            solution: "'Cuyo/a/os/as' se usa para indicar posesión o pertenencia. En este caso, las obras pertenecen al escritor. Concuerda en género y número con 'obras' (femenino, plural)."
         },
         {
-            question: "O que significa dizer que uma espécie tem desenvolvimento direto?",
-            options: ["O filhote nasce como uma larva e sofre metamorfose", "O filhote já nasce com uma forma semelhante à do adulto", "O desenvolvimento é externo, em ovos", "O desenvolvimento é muito rápido"],
-            answer: "O filhote já nasce com uma forma semelhante à do adulto",
-            solution: "No desenvolvimento direto, não há estágio larval. O indivíduo que nasce ou eclode já se parece com o adulto, apenas em tamanho menor, e cresce até atingir a maturidade. É o caso de répteis, aves e mamíferos."
+            question: "En la frase 'La razón por ___ no vine fue la lluvia', el pronombre que falta es:",
+            options: ["que", "la cual", "quien", "donde"],
+            answer: "la cual",
+            solution: "Después de preposiciones como 'por', es común usar 'el cual', 'la cual', etc., para mayor claridad. 'La razón por la cual...'"
         },
         {
-            question: "Borboletas e sapos são exemplos de animais com desenvolvimento:",
-            options: ["Direto", "Interno", "Indireto", "Assexuado"],
-            answer: "Indireto",
-            solution: "O desenvolvimento indireto envolve um estágio larval (lagarta no caso da borboleta, girino no caso do sapo) que é morfologicamente diferente do adulto e passa por um processo de metamorfose para atingir a forma final."
+            question: "Completa la frase: 'El momento ___ nos conocimos fue inolvidable.'",
+            options: ["que", "en que", "donde", "quien"],
+            answer: "en que",
+            solution: "Aunque 'que' a veces se usa, 'en que' (o 'en el cual') es más preciso para referirse a un momento o tiempo."
         },
         {
-            question: "O pinhão, semente do pinheiro, é um exemplo de estrutura reprodutiva de qual grupo de plantas?",
-            options: ["Briófitas", "Pteridófitas", "Gimnospermas", "Angiospermas"],
-            answer: "Gimnospermas",
-            solution: "As gimnospermas são plantas que produzem sementes 'nuas', ou seja, não protegidas por frutos. O pinheiro é o exemplo mais conhecido, e o pinhão é sua semente."
+            question: "Elige la opción correcta: 'Los temas de ___ hablamos son confidenciales.'",
+            options: ["que", "quienes", "los cuales", "cuyos"],
+            answer: "los cuales",
+            solution: "'De que' o 'de los cuales' se usa para referirse a 'los temas'. 'De los cuales' es más formal y claro en este contexto."
         },
         {
-            question: "Em relação ao local de desenvolvimento, os seres humanos são classificados como:",
-            options: ["Ovíparos com fecundação externa", "Vivíparos com fecundação interna", "Ovovivíparos com fecundação interna", "Ovíparos com fecundação interna"],
-            answer: "Vivíparos com fecundação interna",
-            solution: "A fecundação humana ocorre dentro do corpo da mulher (interna) e o embrião se desenvolve completamente dentro do útero, caracterizando a viviparidade."
+            question: "'Esta es la chica a ___ le di el regalo.'",
+            options: ["que", "quien", "la que", "quién"],
+            answer: "quien",
+            solution: "Se usa 'quien' (o 'a la que') para referirse a una persona cuando es objeto indirecto, introducido por la preposición 'a'."
         },
         {
-            question: "A principal função do vitelo (gema) em um ovo de galinha é:",
-            options: ["Proteger o embrião contra choques mecânicos", "Fornecer nutrientes para o desenvolvimento do embrião", "Realizar trocas gasosas com o ambiente", "Armazenar as excretas do embrião"],
-            answer: "Fornecer nutrientes para o desenvolvimento do embrião",
-            solution: "O vitelo é uma reserva nutritiva rica em lipídios e proteínas que alimenta o embrião durante todo o seu desenvolvimento dentro do ovo."
+            question: "Completa: 'El edificio ___ ventanas están rotas será demolido.'",
+            options: ["que", "cuyas", "donde", "cuales"],
+            answer: "cuyas",
+            solution: "'Cuyas' indica que las ventanas pertenecen al edificio. Es femenino y plural para concordar con 'ventanas'."
         },
         {
-            question: "Qual é a sequência correta dos eventos na reprodução sexuada?",
-            options: ["Fecundação -> Formação de gametas -> Formação do zigoto", "Formação de gametas -> Fecundação -> Formação do zigoto", "Formação do zigoto -> Fecundação -> Formação de gametas", "Fecundação -> Formação do zigoto -> Formação de gametas"],
-            answer: "Formação de gametas -> Fecundação -> Formação do zigoto",
-            solution: "Primeiro, os organismos produzem os gametas (gametogênese). Depois, os gametas se encontram e se fundem (fecundação). A célula resultante dessa fusão é o zigoto."
+            question: "'No me gusta la forma ___ me hablas.'",
+            options: ["que", "en que", "la cual", "como"],
+            answer: "en que",
+            solution: "'En que' o 'como' se usan para referirse a la manera o modo. 'La forma en que' es una construcción muy común."
         },
         {
-            question: "O DNA é a molécula que contém as informações genéticas. Um segmento de DNA que contém a informação para uma característica é chamado de:",
-            options: ["Cromossomo", "Gene", "Gameta", "Proteína"],
-            answer: "Gene",
-            solution: "Um gene é uma porção específica da molécula de DNA que carrega o código para a produção de uma proteína ou para uma característica hereditária."
+            question: "'El autor, ___ ya te hablé, ganó un premio.'",
+            options: ["de que", "de quien", "cuyo", "del que"],
+            answer: "de quien",
+            solution: "'De quien' (o 'del cual'/'del que') se usa para referirse a una persona después de la preposición 'de'."
         },
         {
-            question: "A reprodução sexuada surgiu e se manteve evolutivamente porque:",
-            options: ["É mais simples e rápida que a assexuada", "A variabilidade genética que ela gera é uma grande vantagem adaptativa", "Ela elimina completamente as mutações ruins", "Todos os organismos do planeta a realizam"],
-            answer: "A variabilidade genética que ela gera é uma grande vantagem adaptativa",
-            solution: "A capacidade de gerar novas combinações de genes a cada geração permite que as espécies se adaptem a ambientes em constante mudança, sobrevivendo a novas doenças, predadores e desafios, o que é uma enorme vantagem evolutiva."
+            question: "Completa la frase: 'Recuerdo el día ___ te vi por primera vez.'",
+            options: ["donde", "quien", "que", "cuyo"],
+            answer: "que",
+            solution: "'Que' se puede usar de forma general para referirse al tiempo (el día que, el año que)."
         },
         {
-            question: "Nas angiospermas, a polinização cruzada (pólen de uma flor em outra) é mais vantajosa que a autopolinização porque:",
-            options: ["Gera sementes maiores", "É mais rápida", "Aumenta a variabilidade genética", "Produz mais frutos"],
-            answer: "Aumenta a variabilidade genética",
-            solution: "Assim como em animais, a polinização cruzada combina material genético de dois indivíduos diferentes, aumentando a variabilidade genética da descendência, o que é evolutivamente vantajoso."
+            question: "Elige la opción correcta: 'Tengo un amigo ___ padre es médico.'",
+            options: ["que", "quien", "cuyo", "cual"],
+            answer: "cuyo",
+            solution: "'Cuyo' establece la relación de posesión entre 'amigo' y 'padre' (el padre del amigo)."
         },
         {
-            question: "A principal diferença entre células somáticas e gaméticas reside no:",
-            options: ["Tamanho e formato", "Número de cromossomos (diploide vs. haploide)", "Local onde são encontradas no corpo", "Tipo de metabolismo que realizam"],
-            answer: "Número de cromossomos (diploide vs. haploide)",
-            solution: "A diferença fundamental é a ploidia: células somáticas são diploides (2n), com pares de cromossomos, enquanto os gametas são haploides (n), com apenas um cromossomo de cada par."
+            question: "En la frase 'Los niños, ___ jugaban en el parque, eran mis sobrinos', el pronombre correcto es:",
+            options: ["que", "quienes", "donde", "cuyos"],
+            answer: "quienes",
+            solution: "Se usa 'quienes' en una cláusula explicativa (entre comas) para referirse a personas en plural."
         },
         {
-            question: "Dois indivíduos hermafroditas que realizam fecundação cruzada estão agindo como:",
-            options: ["Macho e fêmea ao mesmo tempo", "Apenas como machos", "Apenas como fêmeas", "Organismos assexuados"],
-            answer: "Macho e fêmea ao mesmo tempo",
-            solution: "Durante a fecundação cruzada, cada indivíduo doa espermatozoides (agindo como macho) e recebe espermatozoides para fecundar seus óvulos (agindo como fêmea)."
+            question: "'El problema ___ me preocupa es la falta de tiempo.'",
+            options: ["que", "quien", "el cual", "cuyo"],
+            answer: "que",
+            solution: "'Que' es el pronombre relativo más adecuado y común para referirse a 'el problema'."
         },
-        // --- CIÊNCIAS - Capítulo 8: Sistemas Genitais (35 Questões) ---
+
+        // --- Espanhol: Pronomes Interrogativos (15 Questões) ---
         {
-            question: "Qual é o principal órgão produtor de espermatozoides no sistema genital masculino?",
-            options: ["Próstata", "Pênis", "Testículos", "Uretra"],
-            answer: "Testículos",
-            solution: "Os testículos são as gônadas masculinas responsáveis pela produção dos espermatozoides (espermatogênese) e do hormônio testosterona."
+            question: "Completa la pregunta: '¿___ hora es?'",
+            options: ["Que", "Qué", "Cuál", "Cómo"],
+            answer: "Qué",
+            solution: "Para preguntar por una definición o una explicación, como en '¿Qué es esto?' o '¿Qué hora es?', se usa 'Qué' con tilde."
         },
         {
-            question: "Após serem produzidos, onde os espermatozoides amadurecem e ficam armazenados?",
-            options: ["Ducto deferente", "Epidídimo", "Vesícula seminal", "Próstata"],
-            answer: "Epidídimo",
-            solution: "O epidídimo é um tubo enovelado localizado sobre os testículos, onde os espermatozoides recém-produzidos terminam seu amadurecimento e adquirem mobilidade, ficando armazenados até a ejaculação."
+            question: "Elige el pronombre correcto: '¿___ es tu color favorito?'",
+            options: ["Qué", "Cuál", "Quién", "Dónde"],
+            answer: "Cuál",
+            solution: "Se usa 'Cuál' o 'Cuáles' para preguntar por una elección o selección dentro de un grupo (de todos los colores, cuál es tu favorito)."
         },
         {
-            question: "Qual é o hormônio sexual masculino, responsável pelo desenvolvimento das características sexuais secundárias como pelos e voz grossa?",
-            options: ["Estrogênio", "Progesterona", "Testosterona", "Insulina"],
-            answer: "Testosterona",
-            solution: "A testosterona, produzida principalmente nos testículos, é o principal andrógeno, responsável tanto pela produção de espermatozoides quanto pelas características masculinas."
+            question: "'¿___ vives?' - 'Vivo en Madrid.'",
+            options: ["Cuándo", "Cómo", "Dónde", "Por qué"],
+            answer: "Dónde",
+            solution: "'Dónde' con tilde se utiliza para preguntar por un lugar o ubicación."
         },
         {
-            question: "Qual estrutura do sistema genital masculino conduz tanto a urina quanto o sêmen para fora do corpo?",
-            options: ["Ducto deferente", "Epidídimo", "Ureter", "Uretra"],
-            answer: "Uretra",
-            solution: "A uretra é o canal que percorre o interior do pênis. Ela serve como via final tanto para o sistema urinário (eliminando a urina) quanto para o sistema reprodutor (eliminando o sêmen)."
+            question: "Completa la pregunta: '¿___ no viniste a la clase?'",
+            options: ["Por que", "Porque", "Por qué", "Porqué"],
+            answer: "Por qué",
+            solution: "'Por qué' (separado y con tilde) es la forma interrogativa que se usa para preguntar por la causa o el motivo de algo."
         },
         {
-            question: "Quais são as gônadas femininas, responsáveis pela produção dos óvulos e hormônios?",
-            options: ["Útero", "Vagina", "Ovários", "Tubas uterinas"],
-            answer: "Ovários",
-            solution: "Os ovários são os órgãos correspondentes aos testículos no homem. Eles produzem e armazenam os ovócitos (que se tornarão óvulos) e secretam os hormônios sexuais femininos, estrogênio e progesterona."
+            question: "Para preguntar por una persona, usamos:",
+            options: ["¿Qué?", "¿Quién/Quiénes?", "¿Cuál?", "¿Cuándo?"],
+            answer: "¿Quién/Quiénes?",
+            solution: "'Quién' (singular) y 'Quiénes' (plural) son los pronombres interrogativos que se usan exclusivamente para preguntar por personas."
         },
         {
-            question: "Local onde normalmente ocorre a fecundação (encontro do espermatozoide com o óvulo):",
-            options: ["Útero", "Vagina", "Ovário", "Tuba uterina (ou Trompa de Falópio)"],
-            answer: "Tuba uterina (ou Trompa de Falópio)",
-            solution: "Após a ovulação, o óvulo é captado pela tuba uterina. É nesse local que os espermatozoides, que subiram pelo útero, o encontram e realizam a fecundação."
+            question: "'¿___ te llamas?'",
+            options: ["Qué", "Cuál", "Cómo", "Quién"],
+            answer: "Cómo",
+            solution: "La pregunta estándar para el nombre de alguien en español es '¿Cómo te llamas?', usando el interrogativo 'Cómo'."
         },
         {
-            question: "Qual órgão muscular e oco do sistema genital feminino é responsável por abrigar e nutrir o embrião durante a gestação?",
-            options: ["Ovário", "Útero", "Vagina", "Bexiga"],
-            answer: "Útero",
-            solution: "O útero é um órgão com uma parede muscular espessa (miométrio) e um revestimento interno (endométrio) preparado para receber o embrião e permitir seu desenvolvimento ao longo dos nove meses de gestação."
+            question: "Elige la opción correcta: '¿___ de estos libros prefieres leer?'",
+            options: ["Qué", "Cuál", "Quién", "Cuánto"],
+            answer: "Cuál",
+            solution: "Cuando se pregunta para elegir entre varias opciones presentadas ('de estos libros'), se usa 'Cuál'."
         },
         {
-            question: "O que é a ovulação?",
-            options: ["A produção de espermatozoides", "A liberação de um ovócito maduro pelo ovário", "A descamação do endométrio", "A fecundação do óvulo"],
-            answer: "A liberação de um ovócito maduro pelo ovário",
-            solution: "A ovulação é o evento do ciclo menstrual em que o folículo ovariano se rompe e libera um ovócito secundário, que então segue para a tuba uterina para uma possível fecundação."
+            question: "'¿___ empieza la película?' - 'Empieza a las ocho.'",
+            options: ["Qué", "Dónde", "Cuándo", "Cómo"],
+            answer: "Cuándo",
+            solution: "'Cuándo' con tilde es el pronombre interrogativo que se utiliza para preguntar por el tiempo o un momento."
         },
         {
-            question: "O que é a menstruação?",
-            options: ["O período fértil da mulher", "A fusão do óvulo com o espermatozoide", "A descamação da parede interna do útero (endométrio) quando não há fecundação", "A produção de hormônios pelo ovário"],
-            answer: "A descamação da parede interna do útero (endométrio) quando não há fecundação",
-            solution: "Se não ocorrer a fecundação, os níveis hormonais caem, e o endométrio, que havia se espessado para receber um embrião, se desfaz e é eliminado junto com sangue, caracterizando a menstruação."
+            question: "Completa: 'No sé ___ hacer.'",
+            options: ["que", "qué", "por que", "porque"],
+            answer: "qué",
+            solution: "En una interrogativa indirecta, como en 'No sé...', se usa el pronombre interrogativo con tilde. 'No sé qué hacer'."
         },
         {
-            question: "Quais são os dois principais hormônios que regulam o ciclo menstrual feminino, produzidos pelos ovários?",
-            options: ["Testosterona e Insulina", "Estrogênio e Progesterona", "FSH e LH", "Adrenalina e Cortisol"],
-            answer: "Estrogênio e Progesterona",
-            solution: "O estrogênio promove o espessamento do endométrio na primeira metade do ciclo, enquanto a progesterona o mantém preparado para a gravidez na segunda metade."
+            question: "Para preguntar por la cantidad, usamos:",
+            options: ["¿Cómo?", "¿Cuál?", "¿Cuánto/a/os/as?", "¿Qué?"],
+            answer: "¿Cuánto/a/os/as?",
+            solution: "'Cuánto' y sus variaciones (cuánta, cuántos, cuántas) se usan para preguntar por una cantidad."
         },
         {
-            question: "Após a fecundação na tuba uterina, o zigoto começa a se dividir e se desloca em direção ao útero, onde se fixa na parede. Esse processo de fixação é chamado de:",
-            options: ["Ovulação", "Nidação", "Menstruação", "Parto"],
-            answer: "Nidação",
-            solution: "Nidação é a implantação do embrião (no estágio de blastocisto) no endométrio uterino, o que marca o início da gravidez."
+            question: "'¿___ es el presidente de Francia?'",
+            options: ["Qué", "Cuál", "Quién", "Cómo"],
+            answer: "Quién",
+            solution: "Se usa 'Quién' para preguntar por la identidad de una persona."
         },
         {
-            question: "A estrutura que permite as trocas de nutrientes, gases e excretas entre o sangue da mãe e do feto, sem que os sangues se misturem, é a:",
-            options: ["Placenta", "Bolsa amniótica", "Cordão umbilical", "Endométrio"],
-            answer: "Placenta",
-            solution: "A placenta é um órgão temporário que se desenvolve durante a gestação, fundamental para a nutrição, respiração e excreção do feto, além de produzir hormônios que mantêm a gravidez."
+            question: "Completa la pregunta: '¿___ está tu hermano? ¿Está mejor?'",
+            options: ["Qué", "Cómo", "Cuál", "Dónde"],
+            answer: "Cómo",
+            solution: "'Cómo' se usa para preguntar por el estado o la condición de algo o alguien (en este caso, la salud)."
         },
         {
-            question: "A produção de espermatozoides é um processo contínuo a partir da puberdade. Verdadeiro ou Falso?",
-            options: ["Falso, ocorre apenas uma vez na vida", "Verdadeiro, milhões são produzidos diariamente", "Falso, ocorre apenas durante a ovulação", "Verdadeiro, mas apenas durante a noite"],
-            answer: "Verdadeiro, milhões são produzidos diariamente",
-            solution: "Diferente das mulheres, que já nascem com todos os seus ovócitos, os homens produzem espermatozoides de forma contínua nos testículos a partir da puberdade ao longo de quase toda a vida."
+            question: "Diferencia entre 'adonde' y 'a dónde':",
+            options: ["No hay diferencia", "'a dónde' es interrogativo, 'adonde' es relativo", "'adonde' es interrogativo, 'a dónde' es relativo", "Ambos son interrogativos"],
+            answer: "'a dónde' es interrogativo, 'adonde' es relativo",
+            solution: "La forma separada y con tilde, 'a dónde', se usa en preguntas directas e indirectas sobre el destino. 'Adonde' (junto y sin tilde) es un relativo de lugar."
         },
         {
-            question: "Onde o sêmen (ou esperma) é formado?",
-            options: ["Apenas nos testículos", "É a mistura de espermatozoides com líquidos produzidos pelas vesículas seminais e pela próstata", "Apenas na próstata", "No pênis"],
-            answer: "É a mistura de espermatozoides com líquidos produzidos pelas vesículas seminais e pela próstata",
-            solution: "O sêmen é composto pelos espermatozoides (dos testículos) e pelos fluidos das glândulas acessórias (vesículas seminais, próstata e glândulas bulbouretrais), que nutrem e facilitam o transporte dos gametas."
+            question: "Elige la opción correcta: '¿___ significa esa palabra?'",
+            options: ["Qué", "Cuál", "Cómo", "Por qué"],
+            answer: "Qué",
+            solution: "Para pedir una definición o el significado de algo, se utiliza el pronombre interrogativo 'Qué'."
         },
         {
-            question: "O canal que liga o útero ao exterior do corpo feminino é a:",
-            options: ["Tuba uterina", "Uretra", "Vagina", "Cérvix"],
-            answer: "Vagina",
-            solution: "A vagina é o canal que recebe o pênis durante a relação sexual e serve como canal de passagem para o bebê durante o parto normal."
+            question: "'¿___ son tus padres?' - 'Son las personas que están allí.'",
+            options: ["Qué", "Cuáles", "Quiénes", "Cuántos"],
+            answer: "Quiénes",
+            solution: "Se usa 'Quiénes' (plural) para preguntar por la identidad de dos o más personas."
         },
+
+        // --- Inglês: Countable and Uncountable Nouns (10 Questões) ---
         {
-            question: "O que é o parto?",
-            options: ["O momento da fecundação", "O primeiro mês de gestação", "O processo de expulsão do feto e da placenta do útero", "O início do ciclo menstrual"],
-            answer: "O processo de expulsão do feto e da placenta do útero",
-            solution: "O parto marca o final da gestação e é desencadeado por contrações rítmicas do útero, que levam à saída do bebê e, em seguida, da placenta."
+            question: "Which of the following nouns is uncountable?",
+            options: ["chair", "book", "information", "car"],
+            answer: "information",
+            solution: "'Information' is an uncountable noun. It does not have a plural form. We say 'a piece of information'."
         },
         {
-            question: "Uma gravidez dura, em média, quantas semanas?",
-            options: ["20 semanas", "30 semanas", "40 semanas", "50 semanas"],
-            answer: "40 semanas",
-            solution: "A gestação humana tem uma duração média de 40 semanas, ou aproximadamente 9 meses, contadas a partir do primeiro dia da última menstruação."
+            question: "Which of the following nouns is countable?",
+            options: ["water", "money", "advice", "apple"],
+            answer: "apple",
+            solution: "'Apple' is a countable noun because you can have 'one apple', 'two apples', etc."
         },
         {
-            question: "Qual a função do líquido amniótico, que envolve o feto dentro da bolsa amniótica?",
-            options: ["Nutrir o feto", "Realizar trocas gasosas", "Proteger o feto contra choques mecânicos e manter a temperatura", "Produzir hormônios"],
-            answer: "Proteger o feto contra choques mecânicos e manter a temperatura",
-            solution: "O líquido amniótico amortece impactos, protege contra infecções, permite a movimentação do feto e ajuda a manter uma temperatura corporal estável."
+            question: "Is the word 'furniture' countable or uncountable?",
+            options: ["Countable", "Uncountable", "Both", "Neither"],
+            answer: "Uncountable",
+            solution: "'Furniture' is uncountable. It refers to a group of items, but we don't say 'furnitures'. We count the individual items (chairs, tables)."
         },
         {
-            question: "A vasectomia é um procedimento cirúrgico contraceptivo masculino que consiste em:",
-            options: ["Remover os testículos", "Cortar os ductos deferentes", "Bloquear a uretra", "Remover a próstata"],
-            answer: "Cortar os ductos deferentes",
-            solution: "A vasectomia impede a passagem dos espermatozoides dos epidídimos para a uretra, cortando os canais deferentes. O homem continua a ejacular o líquido seminal, mas sem os gametas."
+            question: "Choose the correct sentence:",
+            options: ["I need an advice.", "I need some advices.", "I need some advice.", "I need a advice."],
+            answer: "I need some advice.",
+            solution: "'Advice' is an uncountable noun, so it cannot be used with 'an' and does not have a plural form ('advices'). We use 'some' with it."
         },
         {
-            question: "A laqueadura (ou ligadura de trompas) é um procedimento contraceptivo feminino que consiste em:",
-            options: ["Remover os ovários", "Remover o útero", "Cortar ou amarrar as tubas uterinas", "Bloquear a vagina"],
-            answer: "Cortar ou amarrar as tubas uterinas",
-            solution: "A laqueadura impede o encontro do óvulo com o espermatozoide ao bloquear a passagem nas tubas uterinas. A mulher continua ovulando e menstruando normalmente."
+            question: "Is 'rice' countable or uncountable?",
+            options: ["Countable", "Uncountable", "It depends on the context", "Both"],
+            answer: "Uncountable",
+            solution: "'Rice' is considered a mass noun and is uncountable. We don't count individual grains."
         },
         {
-            question: "Por que as mulheres já nascem com um número definido de folículos ovarianos?",
-            options: ["Porque eles se regeneram mensalmente", "É um mito, elas produzem novos folículos", "Porque o processo de formação de ovócitos (ovogênese) começa na vida fetal e para", "Porque eles são muito grandes para serem produzidos depois"],
-            answer: "Porque o processo de formação de ovócitos (ovogênese) começa na vida fetal e para",
-            solution: "A ovogênese inicia quando a mulher ainda é um feto, e os ovócitos primários ficam estacionados em uma fase da meiose até a puberdade, quando são liberados um a cada ciclo."
+            question: "Which noun is uncountable?",
+            options: ["job", "work", "task", "position"],
+            answer: "work",
+            solution: "'Work' (in the sense of labor or employment) is uncountable. 'Job', 'task', and 'position' are all countable."
         },
         {
-            question: "O clitóris, no sistema genital feminino, é análogo a qual estrutura masculina?",
-            options: ["Testículo", "Próstata", "Pênis", "Saco escrotal"],
-            answer: "Pênis",
-            solution: "O clitóris e o pênis têm a mesma origem embrionária (são estruturas homólogas) e são ricos em terminações nervosas, sendo os principais pontos de prazer sexual."
+            question: "How do we make the uncountable noun 'bread' countable?",
+            options: ["a bread", "two breads", "a loaf of bread", "a lot of breads"],
+            answer: "a loaf of bread",
+            solution: "To count uncountable nouns, we use partitive expressions. For 'bread', we say 'a loaf of bread', 'a slice of bread', etc."
         },
         {
-            question: "O exame de Papanicolau é um procedimento preventivo importante para detectar precocemente alterações no colo do útero que podem levar ao:",
-            options: ["Câncer de ovário", "Câncer de colo de útero", "Endometriose", "Miomas"],
-            answer: "Câncer de colo de útero",
-            solution: "O Papanicolau coleta células do colo do útero para análise, permitindo a detecção de lesões causadas pelo HPV que, se não tratadas, podem evoluir para um câncer."
+            question: "The word 'money' is:",
+            options: ["Countable", "Uncountable", "Always plural", "Always singular"],
+            answer: "Uncountable",
+            solution: "'Money' is uncountable. We can count 'dollars', 'euros', 'coins', but not 'moneys'."
         },
         {
-            question: "Qual glândula masculina produz um líquido que neutraliza a acidez da uretra e da vagina, protegendo os espermatozoides?",
-            options: ["Testículo", "Epidídimo", "Glândula bulbouretral", "Próstata"],
-            answer: "Próstata",
-            solution: "A próstata produz um fluido leitoso e alcalino que compõe uma parte significativa do sêmen e ajuda a neutralizar a acidez do trato reprodutor feminino, aumentando a motilidade e a sobrevivência dos espermatozoides."
+            question: "Which sentence is correct?",
+            options: ["She has beautiful hairs.", "She has a beautiful hair.", "She has beautiful hair.", "She has a hair beautiful."],
+            answer: "She has beautiful hair.",
+            solution: "'Hair' (referring to all the hair on one's head) is an uncountable noun and is used in the singular form."
         },
         {
-            question: "Após a ejaculação, os espermatozoides sobrevivem por quanto tempo, em média, dentro do sistema reprodutor feminino?",
-            options: ["Alguns minutos", "Cerca de 1 hora", "De 2 a 5 dias", "Apenas durante a ovulação"],
-            answer: "De 2 a 5 dias",
-            solution: "Em condições favoráveis, os espermatozoides podem permanecer viáveis no útero e nas tubas uterinas por vários dias, o que significa que uma relação sexual dias antes da ovulação pode resultar em gravidez."
+            question: "Is 'news' a countable or uncountable noun?",
+            options: ["Countable", "Uncountable", "Both", "It's an adjective"],
+            answer: "Uncountable",
+            solution: "Despite ending in 's', 'news' is an uncountable noun and takes a singular verb (e.g., 'The news is good')."
         },
+
+        // --- Inglês: Much and Many (10 Questões) ---
         {
-            question: "O que é a menopausa?",
-            options: ["A primeira menstruação na puberdade", "O período de gestação", "A interrupção permanente da menstruação e da ovulação", "Uma doença do útero"],
-            answer: "A interrupção permanente da menstruação e da ovulação",
-            solution: "A menopausa marca o fim da vida reprodutiva da mulher, ocorrendo geralmente entre 45 e 55 anos, quando os ovários esgotam sua reserva de folículos e a produção de estrogênio diminui drasticamente."
+            question: "Complete the sentence: 'I don't have ___ time.'",
+            options: ["much", "many", "a lot", "some"],
+            answer: "much",
+            solution: "'Time' is an uncountable noun, so we use 'much' in negative sentences and questions."
         },
         {
-            question: "O hímen é:",
-            options: ["Um músculo que controla a saída da urina", "Uma fina membrana que pode recobrir parcialmente a entrada da vagina", "O órgão responsável pela ovulação", "Um osso da bacia"],
-            answer: "Uma fina membrana que pode recobrir parcialmente a entrada da vagina",
-            solution: "O hímen é uma membrana mucosa presente na entrada da vagina. Sua presença, formato e elasticidade variam muito entre as mulheres, e ele pode se romper em diversas situações, não apenas na primeira relação sexual."
+            question: "Choose the correct word: 'How ___ people were at the party?'",
+            options: ["much", "many", "little", "few"],
+            answer: "many",
+            solution: "'People' is a plural countable noun, so we must use 'many'."
         },
         {
-            question: "O cordão umbilical liga o feto à:",
-            options: ["Placenta", "Parede do útero", "Bolsa amniótica", "Coluna da mãe"],
-            answer: "Placenta",
-            solution: "O cordão umbilical é a estrutura que contém os vasos sanguíneos (duas artérias e uma veia) que transportam o sangue entre o feto e a placenta, permitindo as trocas de substâncias."
+            question: "Is this sentence correct? 'There is too much cars on the street.'",
+            options: ["Yes", "No, it should be 'many cars'", "No, it should be 'much car'", "Yes, it's informal"],
+            answer: "No, it should be 'many cars'",
+            solution: "The sentence is incorrect. 'Cars' is a countable noun, so the correct word to use is 'many', not 'much'."
         },
         {
-            question: "A ereção peniana ocorre devido ao:",
-            options: ["Aumento de um osso no pênis", "Contração dos músculos do pênis", "Preenchimento dos corpos cavernosos com sangue", "Liberação de espermatozoides"],
-            answer: "Preenchimento dos corpos cavernosos com sangue",
-            solution: "Sob estímulo sexual, as artérias do pênis se dilatam, enchendo de sangue os tecidos esponjosos chamados corpos cavernosos e corpo esponjoso. Isso causa o enrijecimento e aumento do pênis."
+            question: "We use 'many' with ___ nouns.",
+            options: ["uncountable", "countable", "singular", "abstract"],
+            answer: "countable",
+            solution: "The rule is to use 'many' with countable nouns, especially in their plural form."
         },
         {
-            question: "A fecundação in vitro (FIV) é uma técnica de reprodução assistida onde:",
-            options: ["A inseminação ocorre artificialmente no útero", "A fecundação do óvulo pelo espermatozoide ocorre em laboratório", "A mulher toma hormônios para ovular", "O homem recebe tratamento para produzir mais espermatozoides"],
-            answer: "A fecundação do óvulo pelo espermatozoide ocorre em laboratório",
-            solution: "Na FIV, os óvulos são coletados da mulher e fecundados pelos espermatozoides em uma placa de cultura ('in vitro' = 'no vidro'). Os embriões formados são então transferidos para o útero."
+            question: "Complete the question: 'How ___ does this book cost?'",
+            options: ["many", "much", "few", "a lot"],
+            answer: "much",
+            solution: "We use 'How much' to ask about the price or cost of something, as 'money' is uncountable."
         },
         {
-            question: "Qual o nome da extremidade inferior do útero que se projeta na vagina?",
-            options: ["Fundo do útero", "Colo do útero (ou cérvix)", "Endométrio", "Miométrio"],
-            answer: "Colo do útero (ou cérvix)",
-            solution: "O colo do útero é a parte mais estreita e inferior do útero, que se abre durante o parto para permitir a passagem do bebê."
+            question: "Which option is correct for the blank? 'She doesn't drink ___ coffee.'",
+            options: ["many", "a few", "much", "a lot of of"],
+            answer: "much",
+            solution: "'Coffee' is an uncountable noun. In negative sentences, we use 'much'."
         },
         {
-            question: "O saco escrotal (ou bolsa escrotal) tem como principal função:",
-            options: ["Produzir testosterona", "Armazenar urina", "Proteger o pênis", "Manter os testículos a uma temperatura ligeiramente inferior à do corpo"],
-            answer: "Manter os testículos a uma temperatura ligeiramente inferior à do corpo",
-            solution: "A produção de espermatozoides (espermatogênese) é mais eficiente a uma temperatura um pouco mais baixa que os 36,5-37°C do corpo. A posição externa do saco escrotal ajuda a regular essa temperatura."
+            question: "There aren't ___ students in the library today.",
+            options: ["much", "many", "little", "a lot"],
+            answer: "many",
+            solution: "'Students' is a plural countable noun, so 'many' is the correct choice."
         },
         {
-            question: "Durante a gestação, o ciclo menstrual e a ovulação são interrompidos. Por quê?",
-            options: ["O útero está ocupado", "Os altos níveis de hormônios da gravidez (como a progesterona) inibem a liberação de FSH e LH", "A mulher não tem mais óvulos", "É uma proteção contra gêmeos"],
-            answer: "Os altos níveis de hormônios da gravidez (como a progesterona) inibem a liberação de FSH e LH",
-            solution: "A progesterona, produzida inicialmente pelo corpo lúteo e depois pela placenta, mantém o endométrio e envia um feedback negativo para a hipófise, impedindo que ela libere FSH e LH, os hormônios que iniciariam um novo ciclo."
+            question: "We use 'much' with ___ nouns.",
+            options: ["countable", "plural", "uncountable", "concrete"],
+            answer: "uncountable",
+            solution: "The rule is to use 'much' with uncountable nouns like 'water', 'money', 'time', etc."
         },
         {
-            question: "As vesículas seminais são glândulas que produzem:",
-            options: ["Espermatozoides", "Um líquido nutritivo, rico em frutose, que compõe a maior parte do sêmen", "Testosterona", "O hormônio do crescimento"],
-            answer: "Um líquido nutritivo, rico em frutose, que compõe a maior parte do sêmen",
-            solution: "O fluido das vesículas seminais é alcalino e contém frutose, um açúcar que serve como principal fonte de energia para os espermatozoides em seu trajeto."
+            question: "How ___ sugar do you want in your tea?",
+            options: ["many", "much", "a few", "any"],
+            answer: "much",
+            solution: "'Sugar' is an uncountable noun, so we use 'How much' to ask about the quantity."
         },
         {
-            question: "O que acontece com o folículo ovariano após a ovulação?",
-            options: ["Ele é expelido junto com o óvulo", "Ele se desintegra imediatamente", "Ele se transforma no corpo lúteo, que produz progesterona", "Ele se torna um novo óvulo"],
-            answer: "Ele se transforma no corpo lúteo, que produz progesterona",
-            solution: "As células do folículo que permanecem no ovário após a liberação do ovócito se reorganizam para formar o corpo lúteo (ou corpo amarelo), uma glândula endócrina temporária que secreta progesterona para preparar o corpo para a gravidez."
+            question: "'I have seen that movie so ___ times.'",
+            options: ["much", "many", "a lot", "little"],
+            answer: "many",
+            solution: "'Times' (in the sense of occasions) is a countable noun, so the correct word is 'many'."
         },
-        // --- CIÊNCIAS - Capítulo 9: Métodos Contraceptivos (30 Questões) ---
+
+        // --- Inglês: Little, Few, A little, A few (10 Questões) ---
         {
-            question: "Qual o objetivo do planejamento familiar?",
-            options: ["Impedir que as pessoas tenham filhos", "Oferecer às pessoas a possibilidade de decidir se querem ter filhos, quando e quantos", "Promover apenas métodos contraceptivos definitivos", "Forçar as pessoas a usar contraceptivos"],
-            answer: "Oferecer às pessoas a possibilidade de decidir se querem ter filhos, quando e quantos",
-            solution: "Planejamento familiar é o conjunto de ações que ajudam pessoas e casais a decidirem de forma livre e consciente sobre a sua reprodução, garantindo o direito de escolha."
+            question: "Complete: 'There are ___ people here. The room is almost empty.'",
+            options: ["a little", "little", "a few", "few"],
+            answer: "few",
+            solution: "'People' is countable. 'Few' is used to indicate a small, almost insufficient number (negative meaning)."
         },
         {
-            question: "A camisinha (preservativo masculino) é classificada como um método contraceptivo de:",
-            options: ["Barreira", "Hormonal", "Natural", "Definitivo"],
-            answer: "Barreira",
-            solution: "Métodos de barreira são aqueles que criam um obstáculo físico, impedindo o encontro do espermatozoide com o óvulo. A camisinha é o exemplo mais comum."
+            question: "Choose the correct option: 'I have ___ money, just enough to buy a coffee.'",
+            options: ["a little", "little", "a few", "few"],
+            answer: "a little",
+            solution: "'Money' is uncountable. 'A little' is used to indicate a small but sufficient amount (positive meaning)."
         },
         {
-            question: "Além de prevenir a gravidez, qual é a outra grande vantagem do uso da camisinha (masculina e feminina)?",
-            options: ["Aumentar o prazer sexual", "Regular o ciclo menstrual", "Ser o método mais eficaz que existe", "Proteger contra a maioria das Infecções Sexualmente Transmissíveis (ISTs)"],
-            answer: "Proteger contra a maioria das Infecções Sexualmente Transmissíveis (ISTs)",
-            solution: "A camisinha é o único método que oferece dupla proteção: evita a gravidez e previne a transmissão da maioria das ISTs, como HIV, sífilis e gonorreia."
+            question: "What is the difference between 'few' and 'a few'?",
+            options: ["'Few' is for uncountable, 'a few' is for countable", "'Few' has a negative meaning, 'a few' has a positive one", "There is no difference", "'A few' means more than 'few'"],
+            answer: "'Few' has a negative meaning, 'a few' has a positive one",
+            solution: "Both are used with countable nouns. 'Few' means 'not many' (negative), while 'a few' means 'some' (positive)."
         },
         {
-            question: "As pílulas anticoncepcionais mais comuns contêm hormônios sintéticos que agem principalmente:",
-            options: ["Matando os espermatozoides", "Criando uma barreira no colo do útero", "Impedindo a ovulação", "Destruindo o óvulo após a fecundação"],
-            answer: "Impedindo a ovulação",
-            solution: "Os hormônios da pílula (geralmente estrogênio e progesterona sintéticos) inibem a liberação de FSH e LH pela hipófise, impedindo o amadurecimento do folículo e a ovulação."
+            question: "'He has very ___ patience for this kind of work.'",
+            options: ["little", "a little", "few", "a few"],
+            answer: "little",
+            solution: "'Patience' is uncountable. 'Little' is used to indicate an almost non-existent amount (negative meaning)."
         },
         {
-            question: "Qual dos seguintes é um método contraceptivo definitivo (cirúrgico)?",
-            options: ["DIU de cobre", "Pílula do dia seguinte", "Vasectomia", "Diafragma"],
-            answer: "Vasectomia",
-            solution: "A vasectomia (no homem) e a laqueadura (na mulher) são métodos cirúrgicos considerados permanentes ou de difícil reversão, por isso são chamados de definitivos."
+            question: "Which phrase is used with countable nouns?",
+            options: ["a little", "little", "much", "a few"],
+            answer: "a few",
+            solution: "'A few' and 'few' are used with countable nouns, while 'a little' and 'little' are used with uncountable nouns."
         },
         {
-            question: "O que é o DIU (Dispositivo Intrauterino)?",
-            options: ["Uma pílula tomada diariamente", "Um pequeno objeto inserido no útero para prevenir a gravidez", "Uma injeção hormonal mensal", "Um adesivo colado na pele"],
-            answer: "Um pequeno objeto inserido no útero para prevenir a gravidez",
-            solution: "O DIU é um pequeno dispositivo em formato de 'T' que é inserido no útero por um profissional de saúde. Existem dois tipos principais: o de cobre e o hormonal."
+            question: "Complete the sentence: 'She has ___ friends who can help her.'",
+            options: ["a little", "little", "a few", "few"],
+            answer: "a few",
+            solution: "'Friends' is countable. The context implies a positive meaning (she has some friends to help), so 'a few' is appropriate."
         },
         {
-            question: "O método da 'tabelinha' se baseia em:",
-            options: ["Medir a temperatura corporal todos os dias", "Evitar relações sexuais durante o período fértil calculado da mulher", "Observar o muco cervical", "Interromper o coito antes da ejaculação"],
-            answer: "Evitar relações sexuais durante o período fértil calculado da mulher",
-            solution: "A tabelinha é um método natural que envolve calcular os dias férteis do ciclo menstrual com base em ciclos anteriores. É considerado pouco eficaz devido à irregularidade dos ciclos."
+            question: "'There is ___ hope of success.' This implies that success is unlikely.",
+            options: ["a little", "little", "a few", "few"],
+            answer: "little",
+            solution: "'Hope' is uncountable. To express a negative, pessimistic view (success is unlikely), we use 'little'."
         },
         {
-            question: "Por que o coito interrompido é considerado um método contraceptivo de baixa eficácia?",
-            options: ["Porque o homem não consegue controlar", "Porque o líquido liberado antes da ejaculação pode conter espermatozoides", "Porque ele causa infecções", "Porque só funciona se a mulher estiver de pé"],
-            answer: "Porque o líquido liberado antes da ejaculação pode conter espermatozoides",
-            solution: "O líquido pré-ejaculatório (ou de lubrificação) pode conter espermatozoides, e a retirada pode não ocorrer a tempo, tornando o método muito sujeito a falhas."
+            question: "I need to buy ___ things at the supermarket.",
+            options: ["a little", "little", "a few", "few"],
+            answer: "a few",
+            solution: "'Things' is a plural countable noun. 'A few' means 'some' or 'a small number'."
         },
         {
-            question: "O diafragma é um método de barreira que consiste em:",
-            options: ["Uma capa de látex que cobre o pênis", "Um anel de silicone inserido na vagina", "Uma pequena cúpula de silicone inserida no fundo da vagina para cobrir o colo do útero", "Um dispositivo inserido no útero"],
-            answer: "Uma pequena cúpula de silicone inserida no fundo da vagina para cobrir o colo do útero",
-            solution: "O diafragma deve ser colocado antes da relação sexual e removido horas depois. Ele impede que os espermatozoides entrem no útero. Geralmente é usado com espermicida."
+            question: "Can I have ___ water, please?",
+            options: ["a little", "little", "a few", "few"],
+            answer: "a little",
+            solution: "'Water' is uncountable. 'A little' is used to request a small, positive amount of something."
         },
         {
-            question: "A pílula do dia seguinte é um método:",
-            options: ["De uso rotineiro, que substitui a pílula normal", "De emergência, que deve ser usado apenas em situações excepcionais", "100% eficaz para evitar a gravidez", "Que protege contra ISTs"],
-            answer: "De emergência, que deve ser usado apenas em situações excepcionais",
-            solution: "A contracepção de emergência possui uma alta dose hormonal e serve para situações como falha do método usual (camisinha estourou) ou relação desprotegida. Não deve ser usada como método regular."
+            question: "'___ students understood the lesson, so the teacher had to explain it again.'",
+            options: ["A little", "Little", "A few", "Few"],
+            answer: "Few",
+            solution: "'Students' is countable. The fact that the teacher had to explain again implies a negative meaning: 'not many students understood'."
         },
         {
-            question: "Qual método contraceptivo, além da laqueadura, é exclusivo para mulheres?",
-            options: ["Camisinha", "Vasectomia", "Coito interrompido", "Pílula anticoncepcional"],
-            answer: "Pílula anticoncepcional",
-            solution: "A pílula hormonal, injeções, adesivos, anel vaginal, diafragma e DIU são todos métodos de uso feminino. Vasectomia e coito interrompido dependem do homem."
+            "question": "Identifique a voz verbal na frase: “O aluno escreveu a redação.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz ativa",
+            "solution": "A frase “O aluno escreveu a redação.” está na voz ativa pela relação entre sujeito e ação."
         },
         {
-            question: "O DIU de cobre previne a gravidez principalmente porque:",
-            options: ["Libera hormônios que impedem a ovulação", "O cobre cria um ambiente hostil aos espermatozoides, dificultando sua movimentação e sobrevivência", "Bloqueia fisicamente a entrada do útero", "Mata o óvulo"],
-            answer: "O cobre cria um ambiente hostil aos espermatozoides, dificultando sua movimentação e sobrevivência",
-            solution: "O cobre tem uma ação espermicida e causa uma reação inflamatória no endométrio que impede a fecundação e a implantação, sem usar hormônios."
+            "question": "Identifique a voz verbal na frase: “A redação foi escrita pelo aluno.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz passiva analítica",
+            "solution": "A frase “A redação foi escrita pelo aluno.” está na voz passiva analítica pela relação entre sujeito e ação."
         },
         {
-            question: "Qual dos seguintes métodos é considerado o mais eficaz na prevenção da gravidez (menor taxa de falha)?",
-            options: ["Tabelinha", "Coito interrompido", "Implante hormonal subcutâneo", "Espermicida usado sozinho"],
-            answer: "Implante hormonal subcutâneo",
-            solution: "Métodos de longa duração e reversíveis, como o implante e o DIU hormonal, e os métodos definitivos (laqueadura/vasectomia) têm as maiores taxas de eficácia, pois não dependem da lembrança ou ação do usuário a cada dia ou a cada relação."
+            "question": "Identifique a voz verbal na frase: “Escreveu-se a redação.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz passiva sintética",
+            "solution": "A frase “Escreveu-se a redação.” está na voz passiva sintética pela relação entre sujeito e ação."
         },
         {
-            question: "A laqueadura impede a mulher de menstruar?",
-            options: ["Sim, a menstruação cessa imediatamente", "Não, a mulher continua ovulando e menstruando normalmente", "Sim, mas apenas após alguns anos", "Depende da idade da mulher"],
-            answer: "Não, a mulher continua ovulando e menstruando normalmente",
-            solution: "A laqueadura apenas bloqueia as tubas uterinas. Os ovários continuam produzindo hormônios e liberando óvulos, e o útero continua preparando e descamando o endométrio. O ciclo hormonal e a menstruação não são afetados."
+            "question": "Identifique a voz verbal na frase: “O atleta se machucou.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz reflexiva",
+            "solution": "A frase “O atleta se machucou.” está na voz reflexiva pela relação entre sujeito e ação."
         },
         {
-            question: "Um homem que fez vasectomia continua a ejacular?",
-            options: ["Não, a ejaculação cessa", "Sim, mas o volume diminui muito", "Sim, ele ejacula o líquido seminal, mas sem espermatozoides", "Apenas em algumas ocasiões"],
-            answer: "Sim, ele ejacula o líquido seminal, mas sem espermatozoides",
-            solution: "Os espermatozoides representam uma parte mínima do volume do sêmen. As vesículas seminais e a próstata continuam produzindo os fluidos normalmente, então a ejaculação, o orgasmo e o volume do sêmen permanecem praticamente inalterados."
+            "question": "Identifique a voz verbal na frase: “Alugam-se casas na praia.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz passiva sintética",
+            "solution": "A frase “Alugam-se casas na praia.” está na voz passiva sintética pela relação entre sujeito e ação."
         },
         {
-            question: "Qual método consiste em um pequeno bastão inserido sob a pele do braço que libera hormônios continuamente?",
-            options: ["DIU", "Adesivo contraceptivo", "Implante contraceptivo", "Anel vaginal"],
-            answer: "Implante contraceptivo",
-            solution: "O implante é um método hormonal de longa duração (até 3 anos) que libera progesterona continuamente, inibindo a ovulação e espessando o muco cervical."
+            "question": "Identifique a voz verbal na frase: “Vendem-se livros usados.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz passiva sintética",
+            "solution": "A frase “Vendem-se livros usados.” está na voz passiva sintética pela relação entre sujeito e ação."
         },
         {
-            question: "A 'tabelinha' e o 'coito interrompido' são classificados como métodos:",
-            options: ["De barreira", "Hormonais", "Cirúrgicos", "Naturais (ou comportamentais)"],
-            answer: "Naturais (ou comportamentais)",
-            solution: "São chamados de naturais ou comportamentais porque não envolvem o uso de dispositivos, hormônios ou cirurgias, dependendo apenas da observação do corpo e de mudanças de comportamento."
+            "question": "Identifique a voz verbal na frase: “A porta foi aberta pela professora.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz passiva analítica",
+            "solution": "A frase “A porta foi aberta pela professora.” está na voz passiva analítica pela relação entre sujeito e ação."
         },
         {
-            question: "A eficácia da pílula anticoncepcional pode ser reduzida por:",
-            options: ["Consumo de frutas cítricas", "Prática de exercícios físicos", "Vômitos, diarreia ou uso de certos medicamentos (como alguns antibióticos)", "Dormir poucas horas"],
-            answer: "Vômitos, diarreia ou uso de certos medicamentos (como alguns antibióticos)",
-            solution: "Vômitos ou diarreia intensa podem impedir a correta absorção do hormônio pelo corpo. Além disso, alguns medicamentos podem interferir no metabolismo da pílula, diminuindo sua eficácia. É essencial consultar a bula e o médico."
+            "question": "Identifique a voz verbal na frase: “A professora abriu a porta.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz ativa",
+            "solution": "A frase “A professora abriu a porta.” está na voz ativa pela relação entre sujeito e ação."
         },
         {
-            question: "O DIU hormonal (Mirena®, Kyleena®) atua principalmente:",
-            options: ["Pela ação do cobre", "Liberando progesterona, que espessa o muco cervical e afina o endométrio", "Bloqueando a tuba uterina", "Causando a menopausa precoce"],
-            answer: "Liberando progesterona, que espessa o muco cervical e afina o endométrio",
-            solution: "A progesterona liberada localmente no útero dificulta a passagem dos espermatozoides (muco espesso) e torna o endométrio inadequado para a implantação, podendo também inibir a ovulação em algumas mulheres."
+            "question": "Identifique a voz verbal na frase: “Lavou-se o carro pela manhã.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz passiva sintética",
+            "solution": "A frase “Lavou-se o carro pela manhã.” está na voz passiva sintética pela relação entre sujeito e ação."
         },
         {
-            question: "Qual método contraceptivo deve ser colocado corretamente antes de qualquer penetração?",
-            options: ["DIU", "Pílula", "Preservativo (camisinha)", "Adesivo"],
-            answer: "Preservativo (camisinha)",
-            solution: "A camisinha deve ser colocada no pênis ereto antes do início da penetração, pois o líquido pré-ejaculatório pode conter espermatozoides e transmitir ISTs."
+            "question": "Identifique a voz verbal na frase: “O carro lavou-se sozinho? (sentido estilístico)”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz reflexiva",
+            "solution": "A frase “O carro lavou-se sozinho? (sentido estilístico)” está na voz reflexiva pela relação entre sujeito e ação."
         },
         {
-            question: "O anel vaginal é um método hormonal que:",
-            options: ["É inserido no útero pelo médico", "É um anel flexível inserido na vagina pela própria mulher, onde permanece por 3 semanas", "É colocado no colo do útero antes de cada relação", "É um método definitivo"],
-            answer: "É um anel flexível inserido na vagina pela própria mulher, onde permanece por 3 semanas",
-            solution: "O anel libera hormônios (estrogênio e progesterona) que são absorvidos pela mucosa vaginal. A mulher usa o anel por 3 semanas e faz uma pausa de 1 semana, quando ocorre a menstruação."
+            "question": "Identifique a voz verbal na frase: “O aluno escreveu a redação.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz ativa",
+            "solution": "A frase “O aluno escreveu a redação.” está na voz ativa pela relação entre sujeito e ação."
         },
         {
-            question: "A principal razão pela qual os métodos naturais têm altas taxas de falha é:",
-            options: ["A irregularidade dos ciclos menstruais e a dificuldade de aplicação correta", "O alto custo desses métodos", "Os efeitos colaterais que causam", "A falta de hormônios"],
-            answer: "A irregularidade dos ciclos menstruais e a dificuldade de aplicação correta",
-            solution: "O ciclo menstrual pode variar por estresse, doenças e outros fatores, tornando os cálculos da tabelinha imprecisos. Outros métodos, como o coito interrompido, exigem um controle que pode falhar."
+            "question": "Identifique a voz verbal na frase: “A redação foi escrita pelo aluno.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz passiva analítica",
+            "solution": "A frase “A redação foi escrita pelo aluno.” está na voz passiva analítica pela relação entre sujeito e ação."
         },
         {
-            question: "O que é um espermicida?",
-            options: ["Um hormônio que impede a ovulação", "Uma substância química que destrói ou imobiliza os espermatozoides", "Um dispositivo de barreira", "Um método natural"],
-            answer: "Uma substância química que destrói ou imobiliza os espermatozoides",
-            solution: "Espermicidas são géis, cremes ou espumas aplicados na vagina antes da relação. Usados sozinhos, têm baixa eficácia, mas podem ser combinados com métodos de barreira como o diafragma."
+            "question": "Identifique a voz verbal na frase: “Escreveu-se a redação.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz passiva sintética",
+            "solution": "A frase “Escreveu-se a redação.” está na voz passiva sintética pela relação entre sujeito e ação."
         },
         {
-            question: "Para uma adolescente que está iniciando a vida sexual, qual método é frequentemente recomendado por oferecer dupla proteção?",
-            options: ["Tabelinha", "DIU de Cobre", "Pílula anticoncepcional", "Preservativo (camisinha)"],
-            answer: "Preservativo (camisinha)",
-            solution: "A camisinha é crucial para jovens e pessoas com múltiplos parceiros por ser o único método que protege tanto da gravidez quanto da transmissão de ISTs. Pode ser combinada com outro método para maior eficácia contraceptiva."
+            "question": "Identifique a voz verbal na frase: “O atleta se machucou.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz reflexiva",
+            "solution": "A frase “O atleta se machucou.” está na voz reflexiva pela relação entre sujeito e ação."
         },
         {
-            question: "O adesivo contraceptivo funciona de forma semelhante à pílula, mas a via de administração é:",
-            options: ["Oral", "Intrauterina", "Transdérmica (através da pele)", "Injetável"],
-            answer: "Transdérmica (através da pele)",
-            solution: "O adesivo é colado na pele (nádegas, braço, abdômen) e libera os mesmos hormônios da pílula combinada, que são absorvidos pela pele e caem na corrente sanguínea. Troca-se o adesivo uma vez por semana, por 3 semanas, com uma de pausa."
+            "question": "Identifique a voz verbal na frase: “Alugam-se casas na praia.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz passiva sintética",
+            "solution": "A frase “Alugam-se casas na praia.” está na voz passiva sintética pela relação entre sujeito e ação."
         },
         {
-            question: "Qual método de barreira é de uso interno feminino?",
-            options: ["Preservativo masculino", "Diafragma", "Coito interrompido", "Vasectomia"],
-            answer: "Diafragma",
-            solution: "O diafragma, assim como a camisinha feminina e o anel vaginal, são métodos inseridos no canal vaginal. O preservativo masculino é externo."
+            "question": "Identifique a voz verbal na frase: “Vendem-se livros usados.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz passiva sintética",
+            "solution": "A frase “Vendem-se livros usados.” está na voz passiva sintética pela relação entre sujeito e ação."
         },
         {
-            question: "As injeções contraceptivas podem ser de aplicação:",
-            options: ["Diária ou semanal", "Apenas anual", "Mensal ou trimestral", "Apenas na emergência"],
-            answer: "Mensal ou trimestral",
-            solution: "Existem injeções hormonais mensais (que contêm estrogênio e progesterona) e trimestrais (que contêm apenas progesterona), ambas com alta eficácia."
+            "question": "Identifique a voz verbal na frase: “A porta foi aberta pela professora.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz passiva analítica",
+            "solution": "A frase “A porta foi aberta pela professora.” está na voz passiva analítica pela relação entre sujeito e ação."
         },
         {
-            question: "A escolha do método contraceptivo deve ser feita:",
-            options: ["Com base na opinião de amigos", "Sempre optando pelo mais barato", "Após uma consulta médica ou de enfermagem, considerando a saúde e o estilo de vida da pessoa", "Apenas uma vez na vida"],
-            answer: "Após uma consulta médica ou de enfermagem, considerando a saúde e o estilo de vida da pessoa",
-            solution: "Cada método tem indicações, contraindicações e modo de uso específicos. A melhor escolha é individual e deve ser orientada por um profissional de saúde."
+            "question": "Identifique a voz verbal na frase: “A professora abriu a porta.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz ativa",
+            "solution": "A frase “A professora abriu a porta.” está na voz ativa pela relação entre sujeito e ação."
         },
         {
-            question: "Uma mulher com histórico de trombose não deve usar qual tipo de contraceptivo?",
-            options: ["DIU de Cobre", "Preservativo", "Contraceptivos hormonais combinados (com estrogênio)", "Tabelinha"],
-            answer: "Contraceptivos hormonais combinados (com estrogênio)",
-            solution: "O estrogênio presente nas pílulas combinadas, adesivo e anel vaginal pode aumentar o risco de eventos trombóticos em mulheres com predisposição. Nesses casos, métodos sem estrogênio são mais seguros."
+            "question": "Identifique a voz verbal na frase: “Lavou-se o carro pela manhã.”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz passiva sintética",
+            "solution": "A frase “Lavou-se o carro pela manhã.” está na voz passiva sintética pela relação entre sujeito e ação."
         },
         {
-            question: "Qual é a principal função do planejamento familiar no contexto da saúde pública?",
-            options: ["Controlar o crescimento populacional", "Reduzir a mortalidade materna e infantil e promover a saúde sexual e reprodutiva", "Apenas distribuir preservativos", "Obrigar o uso de DIU"],
-            answer: "Reduzir a mortalidade materna e infantil e promover a saúde sexual e reprodutiva",
-            solution: "Ao permitir que as mulheres evitem gestações de alto risco ou muito próximas, o planejamento familiar contribui diretamente para a redução da mortalidade materna e infantil, além de promover a autonomia e o bem-estar."
+            "question": "Identifique a voz verbal na frase: “O carro lavou-se sozinho? (sentido estilístico)”",
+            "options": [
+                "Voz ativa",
+                "Voz passiva analítica",
+                "Voz passiva sintética",
+                "Voz reflexiva"
+            ],
+            "answer": "Voz reflexiva",
+            "solution": "A frase “O carro lavou-se sozinho? (sentido estilístico)” está na voz reflexiva pela relação entre sujeito e ação."
         },
-        // --- CIÊNCIAS - Capítulo 10: Infecções Sexualmente Transmissíveis (ISTs) (30 Questões) ---
         {
-            question: "O que são ISTs?",
-            options: ["Doenças transmitidas apenas pelo ar", "Infecções transmitidas principalmente por contato sexual sem proteção", "Doenças que afetam apenas os órgãos genitais", "Infecções causadas apenas por vírus"],
-            answer: "Infecções transmitidas principalmente por contato sexual sem proteção",
-            solution: "IST é a sigla para Infecções Sexualmente Transmissíveis. O termo substituiu DST (Doenças) para destacar que uma pessoa pode estar infectada e transmitir a infecção mesmo sem apresentar sintomas."
+            "question": "Classifique a transitividade do verbo na frase: “O bebê dorme.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo intransitivo",
+            "solution": "Na frase “O bebê dorme.”, o verbo é classificado como verbo intransitivo pela presença/ausência e tipo de complemento."
         },
         {
-            question: "Qual é o método mais eficaz para prevenir a transmissão da maioria das ISTs?",
-            options: ["Pílula anticoncepcional", "Lavagem dos genitais após a relação", "Uso correto e consistente do preservativo (camisinha)", "DIU"],
-            answer: "Uso correto e consistente do preservativo (camisinha)",
-            solution: "O preservativo (masculino ou feminino) cria uma barreira física que impede o contato com secreções e lesões, sendo a forma mais eficaz de prevenção para a maioria das ISTs, incluindo o HIV."
+            "question": "Classifique a transitividade do verbo na frase: “Ele comprou um carro.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo transitivo direto",
+            "solution": "Na frase “Ele comprou um carro.”, o verbo é classificado como verbo transitivo direto pela presença/ausência e tipo de complemento."
         },
         {
-            question: "A sífilis é uma IST causada por qual tipo de microrganismo?",
-            options: ["Vírus", "Fungo", "Bactéria", "Protozoário"],
-            answer: "Bactéria",
-            solution: "A sífilis é causada pela bactéria Treponema pallidum. Ela tem tratamento e cura com antibióticos, mas se não tratada, pode levar a complicações graves."
+            "question": "Classifique a transitividade do verbo na frase: “Ela gosta de música.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo transitivo indireto",
+            "solution": "Na frase “Ela gosta de música.”, o verbo é classificado como verbo transitivo indireto pela presença/ausência e tipo de complemento."
         },
         {
-            question: "Qual IST, causada por bactéria, é caracterizada inicialmente por uma ferida indolor (cancro duro) nos órgãos genitais?",
-            options: ["Gonorreia", "Clamídia", "Sífilis", "Herpes genital"],
-            answer: "Sífilis",
-            solution: "A primeira fase da sífilis (sífilis primária) geralmente se manifesta como uma única úlcera ou ferida, chamada de cancro duro, que não dói e desaparece sozinha, podendo enganar a pessoa infectada."
+            "question": "Classifique a transitividade do verbo na frase: “Ele entregou o presente ao amigo.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo bitransitivo",
+            "solution": "Na frase “Ele entregou o presente ao amigo.”, o verbo é classificado como verbo bitransitivo pela presença/ausência e tipo de complemento."
         },
         {
-            question: "O HIV é o vírus que causa qual doença?",
-            options: ["Hepatite B", "HPV", "Aids", "Herpes"],
-            answer: "Aids",
-            solution: "HIV é a sigla para Vírus da Imunodeficiência Humana. Ele ataca o sistema imunológico, e quando este se torna muito debilitado, a pessoa desenvolve a Síndrome da Imunodeficiência Adquirida (Aids), ficando vulnerável a doenças oportunistas."
+            "question": "Classifique a transitividade do verbo na frase: “Precisamos de ajuda.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo transitivo indireto",
+            "solution": "Na frase “Precisamos de ajuda.”, o verbo é classificado como verbo transitivo indireto pela presença/ausência e tipo de complemento."
         },
         {
-            question: "Qual é a principal forma de transmissão do HIV?",
-            options: ["Picada de mosquito", "Abraço ou aperto de mão", "Relação sexual desprotegida", "Uso de talheres ou copos compartilhados"],
-            answer: "Relação sexual desprotegida",
-            solution: "O HIV é transmitido através do contato com fluidos corporais infectados, como sangue, sêmen, secreções vaginais e leite materno. A via sexual é a mais comum."
+            "question": "Classifique a transitividade do verbo na frase: “Assisti ao filme ontem.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo transitivo indireto",
+            "solution": "Na frase “Assisti ao filme ontem.”, o verbo é classificado como verbo transitivo indireto pela presença/ausência e tipo de complemento."
         },
         {
-            question: "O HPV (Papilomavírus Humano) é um vírus associado principalmente ao risco de desenvolver qual tipo de câncer?",
-            options: ["Câncer de pele", "Câncer de pulmão", "Câncer de colo de útero", "Leucemia"],
-            answer: "Câncer de colo de útero",
-            solution: "Certos tipos de HPV, chamados de oncogênicos, são a principal causa do câncer de colo de útero. A infecção por HPV também está associada a outros cânceres (ânus, pênis, orofaringe)."
+            "question": "Classifique a transitividade do verbo na frase: “Paguei a conta.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo transitivo direto",
+            "solution": "Na frase “Paguei a conta.”, o verbo é classificado como verbo transitivo direto pela presença/ausência e tipo de complemento."
         },
         {
-            question: "Existe vacina para prevenir a infecção por alguns dos tipos mais comuns de HPV?",
-            options: ["Não, ainda está em estudo", "Sim, está disponível no SUS para meninas e meninos em idade escolar", "Sim, mas apenas para idosos", "Não, a prevenção é apenas com camisinha"],
-            answer: "Sim, está disponível no SUS para meninas e meninos em idade escolar",
-            solution: "A vacina contra o HPV é uma importante forma de prevenção primária. Ela é altamente eficaz na prevenção da infecção pelos principais tipos de HPV que causam câncer e verrugas genitais."
+            "question": "Classifique a transitividade do verbo na frase: “Obedecemos às regras.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo transitivo indireto",
+            "solution": "Na frase “Obedecemos às regras.”, o verbo é classificado como verbo transitivo indireto pela presença/ausência e tipo de complemento."
         },
         {
-            question: "A herpes genital, causada por um vírus, é caracterizada por:",
-            options: ["Corrimento amarelado", "Pequenas bolhas e feridas dolorosas que surgem em surtos", "Uma única ferida que não dói", "Febre alta e dor de garganta"],
-            answer: "Pequenas bolhas e feridas dolorosas que surgem em surtos",
-            solution: "A herpes genital não tem cura, e o vírus permanece no corpo. A pessoa pode ter crises recorrentes (surtos) de lesões vesiculares (bolhas) dolorosas na região genital."
+            "question": "Classifique a transitividade do verbo na frase: “Informei o resultado aos alunos.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo bitransitivo",
+            "solution": "Na frase “Informei o resultado aos alunos.”, o verbo é classificado como verbo bitransitivo pela presença/ausência e tipo de complemento."
         },
         {
-            question: "A candidíase é uma infecção causada por um fungo que pode afetar a região genital, causando coceira e corrimento esbranquiçado. Ela é considerada uma IST?",
-            options: ["Sim, sempre é transmitida sexualmente", "Não, é apenas uma alergia", "Pode ser transmitida sexualmente, mas geralmente ocorre por um desequilíbrio da flora local", "Sim, e é a mais perigosa de todas"],
-            answer: "Pode ser transmitida sexualmente, mas geralmente ocorre por um desequilíbrio da flora local",
-            solution: "O fungo Candida já faz parte da flora normal do corpo. A infecção (candidíase) acontece quando há um desequilíbrio (por estresse, baixa imunidade, uso de antibióticos). Embora possa ser transmitida ao parceiro(a), nem sempre tem origem sexual."
+            "question": "Classifique a transitividade do verbo na frase: “Choveu muito.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo intransitivo",
+            "solution": "Na frase “Choveu muito.”, o verbo é classificado como verbo intransitivo pela presença/ausência e tipo de complemento."
         },
         {
-            question: "Gonorreia e Clamídia são ISTs bacterianas que, se não tratadas, podem causar sérias complicações, como:",
-            options: ["Câncer de fígado", "Doença inflamatória pélvica (DIP) e infertilidade", "Perda de memória", "Insuficiência cardíaca"],
-            answer: "Doença inflamatória pélvica (DIP) e infertilidade",
-            solution: "Em mulheres, essas bactérias podem ascender pelo trato reprodutor e causar a DIP, uma inflamação grave que pode levar a dores crônicas e obstrução das trompas, resultando em infertilidade."
+            "question": "Classifique a transitividade do verbo na frase: “O bebê dorme.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo intransitivo",
+            "solution": "Na frase “O bebê dorme.”, o verbo é classificado como verbo intransitivo pela presença/ausência e tipo de complemento."
         },
         {
-            question: "Qual IST viral também pode ser prevenida por vacina, que geralmente é administrada nos primeiros meses de vida?",
-            options: ["HIV", "Herpes", "Hepatite B", "Sífilis"],
-            answer: "Hepatite B",
-            solution: "A hepatite B é uma infecção grave do fígado que pode ser transmitida sexualmente, por sangue contaminado ou de mãe para filho. A vacinação é a principal forma de prevenção."
+            "question": "Classifique a transitividade do verbo na frase: “Ele comprou um carro.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo transitivo direto",
+            "solution": "Na frase “Ele comprou um carro.”, o verbo é classificado como verbo transitivo direto pela presença/ausência e tipo de complemento."
         },
         {
-            question: "O tratamento para ISTs causadas por BACTÉRIAS, como sífilis, gonorreia e clamídia, é feito com:",
-            options: ["Vacinas", "Antivirais", "Antibióticos", "Analgésicos"],
-            answer: "Antibióticos",
-            solution: "As infecções bacterianas são tratadas e curadas com o uso de antibióticos específicos, que devem ser prescritos por um médico. É fundamental que o(s) parceiro(s) também seja(m) tratado(s)."
+            "question": "Classifique a transitividade do verbo na frase: “Ela gosta de música.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo transitivo indireto",
+            "solution": "Na frase “Ela gosta de música.”, o verbo é classificado como verbo transitivo indireto pela presença/ausência e tipo de complemento."
         },
         {
-            question: "O tratamento para o HIV/Aids atualmente:",
-            options: ["Não existe", "Cura a infecção em poucas semanas", "Consiste em medicamentos antirretrovirais que controlam o vírus, permitindo que a pessoa viva com qualidade", "É feito apenas com repouso e boa alimentação"],
-            answer: "Consiste em medicamentos antirretrovirais que controlam o vírus, permitindo que a pessoa viva com qualidade",
-            solution: "A terapia antirretroviral (TARV) não elimina o HIV do corpo, mas impede sua multiplicação. Isso mantém a carga viral indetectável e o sistema imune forte, permitindo uma vida longa e saudável, e tornando a pessoa intransmissível por via sexual."
+            "question": "Classifique a transitividade do verbo na frase: “Ele entregou o presente ao amigo.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo bitransitivo",
+            "solution": "Na frase “Ele entregou o presente ao amigo.”, o verbo é classificado como verbo bitransitivo pela presença/ausência e tipo de complemento."
         },
         {
-            question: "É possível uma pessoa ter uma IST e não apresentar nenhum sintoma?",
-            options: ["Não, todas as ISTs causam sintomas imediatos", "Sim, muitas ISTs podem ser assintomáticas, mas a pessoa ainda pode transmiti-las", "Apenas homens podem ser assintomáticos", "Apenas se a pessoa tiver uma imunidade muito alta"],
-            answer: "Sim, muitas ISTs podem ser assintomáticas, mas a pessoa ainda pode transmiti-las",
-            solution: "Infecções como clamídia, HPV e até mesmo HIV podem passar longos períodos sem manifestar sintomas evidentes. Por isso, a testagem regular e o uso de preservativo são tão importantes."
+            "question": "Classifique a transitividade do verbo na frase: “Precisamos de ajuda.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo transitivo indireto",
+            "solution": "Na frase “Precisamos de ajuda.”, o verbo é classificado como verbo transitivo indireto pela presença/ausência e tipo de complemento."
         },
         {
-            question: "Qual a importância de comunicar ao(s) parceiro(s) sobre um diagnóstico de IST?",
-            options: ["Não tem importância, é um assunto pessoal", "É fundamental para que eles também possam se testar e tratar, quebrando a cadeia de transmissão", "Serve apenas para constranger a outra pessoa", "Apenas se a IST for muito grave"],
-            answer: "É fundamental para que eles também possam se testar e tratar, quebrando a cadeia de transmissão",
-            solution: "Avisar as parcerias sexuais é um ato de responsabilidade e saúde pública. Permite que outras pessoas recebam o tratamento adequado, evitando complicações para elas e a reinfecção de quem já se tratou."
+            "question": "Classifique a transitividade do verbo na frase: “Assisti ao filme ontem.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo transitivo indireto",
+            "solution": "Na frase “Assisti ao filme ontem.”, o verbo é classificado como verbo transitivo indireto pela presença/ausência e tipo de complemento."
         },
         {
-            question: "As verrugas genitais, também conhecidas como 'crista de galo', são uma manifestação comum de qual IST?",
-            options: ["Sífilis", "Herpes", "HPV", "Gonorreia"],
-            answer: "HPV",
-            solution: "As verrugas genitais (condilomas) são causadas por tipos de HPV de baixo risco oncogênico. Embora não evoluam para câncer, são contagiosas e requerem tratamento."
+            "question": "Classifique a transitividade do verbo na frase: “Paguei a conta.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo transitivo direto",
+            "solution": "Na frase “Paguei a conta.”, o verbo é classificado como verbo transitivo direto pela presença/ausência e tipo de complemento."
         },
         {
-            question: "O que significa ter uma carga viral de HIV 'indetectável'?",
-            options: ["Que a pessoa está curada do HIV", "Que a quantidade de vírus no sangue é tão baixa que os exames não conseguem detectar, e o risco de transmissão sexual é zero", "Que o vírus está dormente e pode voltar a qualquer momento", "Que o teste de HIV deu negativo"],
-            answer: "Que a quantidade de vírus no sangue é tão baixa que os exames não conseguem detectar, e o risco de transmissão sexual é zero",
-            solution: "Alcançar e manter a carga viral indetectável através do tratamento antirretroviral é o objetivo principal. O conceito I=I (Indetectável = Intransmissível) confirma que pessoas vivendo com HIV e com carga viral indetectável não transmitem o vírus por via sexual."
+            "question": "Classifique a transitividade do verbo na frase: “Obedecemos às regras.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo transitivo indireto",
+            "solution": "Na frase “Obedecemos às regras.”, o verbo é classificado como verbo transitivo indireto pela presença/ausência e tipo de complemento."
         },
         {
-            question: "A transmissão vertical de uma IST refere-se à transmissão:",
-            options: ["Entre pessoas do mesmo sexo", "Da mãe para o bebê durante a gestação, parto ou amamentação", "Através de transfusão de sangue", "Em ambientes hospitalares"],
-            answer: "Da mãe para o bebê durante a gestação, parto ou amamentação",
-            solution: "A transmissão vertical é a passagem de uma infecção (como HIV, sífilis, hepatite B) da mãe para o feto ou recém-nascido. O pré-natal adequado, com testagem e tratamento, é essencial para preveni-la."
+            "question": "Classifique a transitividade do verbo na frase: “Informei o resultado aos alunos.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo bitransitivo",
+            "solution": "Na frase “Informei o resultado aos alunos.”, o verbo é classificado como verbo bitransitivo pela presença/ausência e tipo de complemento."
         },
         {
-            question: "O diagnóstico de ISTs é feito através de:",
-            options: ["Apenas observação dos sintomas", "Exames de sangue, urina, análise de secreções ou exame clínico", "Adivinhação", "Apenas por biópsia"],
-            answer: "Exames de sangue, urina, análise de secreções ou exame clínico",
-            solution: "Cada IST tem um método diagnóstico. Pode ser um exame de sangue (sífilis, HIV, hepatites), análise de corrimento (gonorreia, clamídia) ou avaliação clínica das lesões (herpes, HPV). Apenas um profissional de saúde pode diagnosticar corretamente."
+            "question": "Classifique a transitividade do verbo na frase: “Choveu muito.”",
+            "options": [
+                "Verbo intransitivo",
+                "Verbo transitivo direto",
+                "Verbo transitivo indireto",
+                "Verbo bitransitivo"
+            ],
+            "answer": "Verbo intransitivo",
+            "solution": "Na frase “Choveu muito.”, o verbo é classificado como verbo intransitivo pela presença/ausência e tipo de complemento."
         },
         {
-            question: "Corrimento amarelado ou esverdeado e dor ao urinar são sintomas clássicos em homens de qual IST bacteriana?",
-            options: ["Sífilis", "Gonorreia", "HPV", "Herpes"],
-            answer: "Gonorreia",
-            solution: "A gonorreia, causada pela bactéria Neisseria gonorrhoeae, frequentemente causa uretrite (inflamação da uretra) em homens, com sintomas de corrimento purulento e ardência. Em mulheres, pode ser assintomática."
+            "question": "No sintagma nominal “o belo carro vermelho”, qual é o núcleo?",
+            "options": [
+                "carro",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "carro",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “o belo carro vermelho”, o núcleo é “carro”."
         },
         {
-            question: "Por que não se deve fazer autotratamento ou usar medicamentos indicados por amigos para tratar uma suspeita de IST?",
-            options: ["Porque os medicamentos são muito caros", "Porque o tratamento errado pode mascarar sintomas, criar resistência bacteriana e não curar a infecção", "Porque os farmacêuticos não sabem indicar", "Porque é mais divertido ir ao médico"],
-            answer: "Porque o tratamento errado pode mascarar sintomas, criar resistência bacteriana e não curar a infecção",
-            solution: "Apenas um profissional de saúde pode diagnosticar a IST correta e prescrever o medicamento (e a dose) adequado. O uso incorreto de antibióticos, por exemplo, é um grave problema de saúde pública."
+            "question": "No sintagma nominal “essas duas casas antigas”, qual é o núcleo?",
+            "options": [
+                "casas",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "casas",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “essas duas casas antigas”, o núcleo é “casas”."
         },
         {
-            question: "A hepatite B, se não tratada, pode evoluir para formas crônicas, causando graves danos a qual órgão?",
-            options: ["Coração", "Cérebro", "Rins", "Fígado"],
-            answer: "Fígado",
-            solution: "As hepatites virais (A, B, C) são infecções que atacam primariamente o fígado, podendo levar a cirrose e câncer hepático se a infecção se tornar crônica, como pode ocorrer com a hepatite B e C."
+            "question": "No sintagma nominal “meus melhores amigos”, qual é o núcleo?",
+            "options": [
+                "amigos",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "amigos",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “meus melhores amigos”, o núcleo é “amigos”."
         },
         {
-            question: "Qual das seguintes afirmações sobre o HIV é VERDADEIRA?",
-            options: ["Abraços, beijos e compartilhamento de objetos transmitem o vírus", "Pessoas com HIV não podem ter filhos", "Existe tratamento eficaz que permite uma vida longa e saudável", "A camisinha não protege contra o HIV"],
-            answer: "Existe tratamento eficaz que permite uma vida longa e saudável",
-            solution: "Com a terapia antirretroviral, a infecção pelo HIV tornou-se uma condição crônica controlável. As outras opções são mitos: o vírus não é transmitido por contato casual, pessoas com HIV podem ter filhos saudáveis com acompanhamento médico, e a camisinha é altamente eficaz na prevenção."
+            "question": "No sintagma nominal “aquela ideia inovadora”, qual é o núcleo?",
+            "options": [
+                "ideia",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "ideia",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “aquela ideia inovadora”, o núcleo é “ideia”."
         },
         {
-            question: "O cancro mole, outra IST bacteriana, difere do cancro duro da sífilis porque:",
-            options: ["A ferida do cancro mole é dolorosa", "O cancro mole é causado por vírus", "O cancro mole não tem cura", "O cancro mole aparece no corpo todo"],
-            answer: "A ferida do cancro mole é dolorosa",
-            solution: "Enquanto a lesão inicial da sífilis (cancro duro) é tipicamente única e indolor, o cancro mole é caracterizado por múltiplas feridas dolorosas e com pus na região genital."
+            "question": "No sintagma nominal “todo aquele barulho”, qual é o núcleo?",
+            "options": [
+                "barulho",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "barulho",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “todo aquele barulho”, o núcleo é “barulho”."
         },
         {
-            question: "A PEP (Profilaxia Pós-Exposição) é uma medida de urgência que consiste em:",
-            options: ["Tomar uma vacina após a relação de risco", "Usar medicamentos antirretrovirais por 28 dias para reduzir o risco de infecção pelo HIV após uma exposição", "Fazer um teste rápido de HIV imediatamente", "Tomar um antibiótico potente"],
-            answer: "Usar medicamentos antirretrovirais por 28 dias para reduzir o risco de infecção pelo HIV após uma exposição",
-            solution: "A PEP é indicada para situações de risco (como sexo desprotegido ou rompimento da camisinha) e deve ser iniciada o mais rápido possível, idealmente nas primeiras 2 horas e no máximo em 72 horas após a exposição."
+            "question": "No sintagma nominal “um livro interessante”, qual é o núcleo?",
+            "options": [
+                "livro",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "livro",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “um livro interessante”, o núcleo é “livro”."
         },
         {
-            question: "A clamídia é conhecida como uma 'infecção silenciosa' porque:",
-            options: ["Não pode ser detectada por exames", "É frequentemente assintomática, especialmente em mulheres", "O som da bactéria é muito baixo", "Não é considerada uma IST"],
-            answer: "É frequentemente assintomática, especialmente em mulheres",
-            solution: "Cerca de 70-80% das mulheres e uma parcela significativa dos homens com clamídia não apresentam sintomas, o que dificulta o diagnóstico e facilita a transmissão."
+            "question": "No sintagma nominal “os nossos projetos”, qual é o núcleo?",
+            "options": [
+                "projetos",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "projetos",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “os nossos projetos”, o núcleo é “projetos”."
         },
         {
-            question: "A melhor forma de saber se você tem uma IST como HIV ou sífilis é:",
-            options: ["Esperar os sintomas aparecerem", "Perguntar ao seu parceiro(a)", "Fazer o teste", "Pesquisar os sintomas na internet"],
-            answer: "Fazer o teste",
-            solution: "A única maneira de ter certeza é realizando a testagem. Os testes para HIV, sífilis e hepatites B e C são rápidos, seguros, sigilosos e gratuitos no SUS."
+            "question": "No sintagma nominal “certa dúvida antiga”, qual é o núcleo?",
+            "options": [
+                "dúvida",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "dúvida",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “certa dúvida antiga”, o núcleo é “dúvida”."
         },
         {
-            question: "A sífilis congênita ocorre quando:",
-            options: ["A bactéria é transmitida pelo ar", "A mãe transmite a bactéria para o feto durante a gravidez", "A pessoa se infecta em um hospital", "A sífilis afeta o cérebro"],
-            answer: "A mãe transmite a bactéria para o feto durante a gravidez",
-            solution: "A sífilis congênita é uma forma grave da doença, transmitida da mãe para o bebê. Pode causar malformações, aborto ou morte do bebê. É totalmente prevenível com o diagnóstico e tratamento da gestante durante o pré-natal."
+            "question": "No sintagma nominal “o belo carro vermelho”, qual é o núcleo?",
+            "options": [
+                "carro",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "carro",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “o belo carro vermelho”, o núcleo é “carro”."
         },
         {
-            question: "O uso de pílula anticoncepcional protege contra ISTs?",
-            options: ["Sim, protege contra todas", "Não, a pílula não oferece proteção contra ISTs", "Sim, mas apenas contra as bacterianas", "Apenas se tomada corretamente"],
-            answer: "Não, a pílula não oferece proteção contra ISTs",
-            solution: "Métodos hormonais (pílula, injeção, adesivo, implante) e o DIU são eficazes para prevenir a gravidez, mas não impedem a transmissão de infecções. Para isso, o uso do preservativo é indispensável."
+            "question": "No sintagma nominal “essas duas casas antigas”, qual é o núcleo?",
+            "options": [
+                "casas",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "casas",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “essas duas casas antigas”, o núcleo é “casas”."
+        },
+        {
+            "question": "No sintagma nominal “meus melhores amigos”, qual é o núcleo?",
+            "options": [
+                "amigos",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "amigos",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “meus melhores amigos”, o núcleo é “amigos”."
+        },
+        {
+            "question": "No sintagma nominal “aquela ideia inovadora”, qual é o núcleo?",
+            "options": [
+                "ideia",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "ideia",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “aquela ideia inovadora”, o núcleo é “ideia”."
+        },
+        {
+            "question": "No sintagma nominal “todo aquele barulho”, qual é o núcleo?",
+            "options": [
+                "barulho",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "barulho",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “todo aquele barulho”, o núcleo é “barulho”."
+        },
+        {
+            "question": "No sintagma nominal “um livro interessante”, qual é o núcleo?",
+            "options": [
+                "livro",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "livro",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “um livro interessante”, o núcleo é “livro”."
+        },
+        {
+            "question": "No sintagma nominal “os nossos projetos”, qual é o núcleo?",
+            "options": [
+                "projetos",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "projetos",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “os nossos projetos”, o núcleo é “projetos”."
+        },
+        {
+            "question": "No sintagma nominal “certa dúvida antiga”, qual é o núcleo?",
+            "options": [
+                "dúvida",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "dúvida",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “certa dúvida antiga”, o núcleo é “dúvida”."
+        },
+        {
+            "question": "No sintagma nominal “o belo carro vermelho”, qual é o núcleo?",
+            "options": [
+                "carro",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "carro",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “o belo carro vermelho”, o núcleo é “carro”."
+        },
+        {
+            "question": "No sintagma nominal “essas duas casas antigas”, qual é o núcleo?",
+            "options": [
+                "casas",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "casas",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “essas duas casas antigas”, o núcleo é “casas”."
+        },
+        {
+            "question": "No sintagma nominal “meus melhores amigos”, qual é o núcleo?",
+            "options": [
+                "amigos",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "amigos",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “meus melhores amigos”, o núcleo é “amigos”."
+        },
+        {
+            "question": "No sintagma nominal “aquela ideia inovadora”, qual é o núcleo?",
+            "options": [
+                "ideia",
+                "o",
+                "meus/essas",
+                "belo/melhores"
+            ],
+            "answer": "ideia",
+            "solution": "No sintagma nominal, o núcleo é o nome (substantivo). Em “aquela ideia inovadora”, o núcleo é “ideia”."
+        },
+        {
+            "question": "Na frase “Ele chegou ontem.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "tempo",
+            "solution": "O termo adverbial em “Ele chegou ontem.” indica tempo."
+        },
+        {
+            "question": "Na frase “Eles moram aqui.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "lugar",
+            "solution": "O termo adverbial em “Eles moram aqui.” indica lugar."
+        },
+        {
+            "question": "Na frase “Falou calmamente.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "modo",
+            "solution": "O termo adverbial em “Falou calmamente.” indica modo."
+        },
+        {
+            "question": "Na frase “Estudou muito.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "intensidade",
+            "solution": "O termo adverbial em “Estudou muito.” indica intensidade."
+        },
+        {
+            "question": "Na frase “Voltaremos amanhã.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "tempo",
+            "solution": "O termo adverbial em “Voltaremos amanhã.” indica tempo."
+        },
+        {
+            "question": "Na frase “Caminhou devagar.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "modo",
+            "solution": "O termo adverbial em “Caminhou devagar.” indica modo."
+        },
+        {
+            "question": "Na frase “Trabalha longe.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "lugar",
+            "solution": "O termo adverbial em “Trabalha longe.” indica lugar."
+        },
+        {
+            "question": "Na frase “Choveu bastante.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "intensidade",
+            "solution": "O termo adverbial em “Choveu bastante.” indica intensidade."
+        },
+        {
+            "question": "Na frase “Ele chegou ontem.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "tempo",
+            "solution": "O termo adverbial em “Ele chegou ontem.” indica tempo."
+        },
+        {
+            "question": "Na frase “Eles moram aqui.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "lugar",
+            "solution": "O termo adverbial em “Eles moram aqui.” indica lugar."
+        },
+        {
+            "question": "Na frase “Falou calmamente.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "modo",
+            "solution": "O termo adverbial em “Falou calmamente.” indica modo."
+        },
+        {
+            "question": "Na frase “Estudou muito.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "intensidade",
+            "solution": "O termo adverbial em “Estudou muito.” indica intensidade."
+        },
+        {
+            "question": "Na frase “Voltaremos amanhã.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "tempo",
+            "solution": "O termo adverbial em “Voltaremos amanhã.” indica tempo."
+        },
+        {
+            "question": "Na frase “Caminhou devagar.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "modo",
+            "solution": "O termo adverbial em “Caminhou devagar.” indica modo."
+        },
+        {
+            "question": "Na frase “Trabalha longe.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "lugar",
+            "solution": "O termo adverbial em “Trabalha longe.” indica lugar."
+        },
+        {
+            "question": "Na frase “Choveu bastante.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "intensidade",
+            "solution": "O termo adverbial em “Choveu bastante.” indica intensidade."
+        },
+        {
+            "question": "Na frase “Ele chegou ontem.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "tempo",
+            "solution": "O termo adverbial em “Ele chegou ontem.” indica tempo."
+        },
+        {
+            "question": "Na frase “Eles moram aqui.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "lugar",
+            "solution": "O termo adverbial em “Eles moram aqui.” indica lugar."
+        },
+        {
+            "question": "Na frase “Falou calmamente.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "modo",
+            "solution": "O termo adverbial em “Falou calmamente.” indica modo."
+        },
+        {
+            "question": "Na frase “Estudou muito.”, o adjunto adverbial expressa:",
+            "options": [
+                "tempo",
+                "lugar",
+                "modo",
+                "intensidade"
+            ],
+            "answer": "intensidade",
+            "solution": "O termo adverbial em “Estudou muito.” indica intensidade."
+        },
+        {
+            "question": "Classifique a oração coordenada em: “Estudou e passou.”",
+            "options": [
+                "Aditiva",
+                "Adversativa",
+                "Alternativa",
+                "Conclusiva"
+            ],
+            "answer": "Aditiva",
+            "solution": "A conjunção em “Estudou e passou.” indica relação aditiva."
+        },
+        {
+            "question": "Classifique a oração coordenada em: “Estudou, mas não passou.”",
+            "options": [
+                "Aditiva",
+                "Adversativa",
+                "Alternativa",
+                "Conclusiva"
+            ],
+            "answer": "Adversativa",
+            "solution": "A conjunção em “Estudou, mas não passou.” indica relação adversativa."
+        },
+        {
+            "question": "Classifique a oração coordenada em: “Ou estuda, ou reprova.”",
+            "options": [
+                "Aditiva",
+                "Adversativa",
+                "Alternativa",
+                "Conclusiva"
+            ],
+            "answer": "Alternativa",
+            "solution": "A conjunção em “Ou estuda, ou reprova.” indica relação alternativa."
+        },
+        {
+            "question": "Classifique a oração coordenada em: “Estudou, portanto passou.”",
+            "options": [
+                "Aditiva",
+                "Adversativa",
+                "Alternativa",
+                "Conclusiva"
+            ],
+            "answer": "Conclusiva",
+            "solution": "A conjunção em “Estudou, portanto passou.” indica relação conclusiva."
+        },
+        {
+            "question": "Classifique a oração coordenada em: “Não saiu, porque chovia.”",
+            "options": [
+                "Aditiva",
+                "Adversativa",
+                "Alternativa",
+                "Conclusiva"
+            ],
+            "answer": "Explicativa",
+            "solution": "A conjunção em “Não saiu, porque chovia.” indica relação explicativa."
+        },
+        {
+            "question": "Classifique a oração coordenada em: “Estudou e passou.”",
+            "options": [
+                "Aditiva",
+                "Adversativa",
+                "Alternativa",
+                "Conclusiva"
+            ],
+            "answer": "Aditiva",
+            "solution": "A conjunção em “Estudou e passou.” indica relação aditiva."
+        },
+        {
+            "question": "Classifique a oração coordenada em: “Estudou, mas não passou.”",
+            "options": [
+                "Aditiva",
+                "Adversativa",
+                "Alternativa",
+                "Conclusiva"
+            ],
+            "answer": "Adversativa",
+            "solution": "A conjunção em “Estudou, mas não passou.” indica relação adversativa."
+        },
+        {
+            "question": "Classifique a oração coordenada em: “Ou estuda, ou reprova.”",
+            "options": [
+                "Aditiva",
+                "Adversativa",
+                "Alternativa",
+                "Conclusiva"
+            ],
+            "answer": "Alternativa",
+            "solution": "A conjunção em “Ou estuda, ou reprova.” indica relação alternativa."
+        },
+        {
+            "question": "Classifique a oração coordenada em: “Estudou, portanto passou.”",
+            "options": [
+                "Aditiva",
+                "Adversativa",
+                "Alternativa",
+                "Conclusiva"
+            ],
+            "answer": "Conclusiva",
+            "solution": "A conjunção em “Estudou, portanto passou.” indica relação conclusiva."
+        },
+        {
+            "question": "Classifique a oração coordenada em: “Não saiu, porque chovia.”",
+            "options": [
+                "Aditiva",
+                "Adversativa",
+                "Alternativa",
+                "Conclusiva"
+            ],
+            "answer": "Explicativa",
+            "solution": "A conjunção em “Não saiu, porque chovia.” indica relação explicativa."
+        },
+        {
+            "question": "Classifique a oração subordinada substantiva em: “É importante que você estude.”",
+            "options": [
+                "Subjetiva",
+                "Objetiva direta",
+                "Objetiva indireta",
+                "Completiva nominal"
+            ],
+            "answer": "Subjetiva",
+            "solution": "A oração destacada exerce função de subjetiva."
+        },
+        {
+            "question": "Classifique a oração subordinada substantiva em: “Desejo que você venha.”",
+            "options": [
+                "Subjetiva",
+                "Objetiva direta",
+                "Objetiva indireta",
+                "Completiva nominal"
+            ],
+            "answer": "Objetiva direta",
+            "solution": "A oração destacada exerce função de objetiva direta."
+        },
+        {
+            "question": "Classifique a oração subordinada substantiva em: “Preciso de que você venha.”",
+            "options": [
+                "Subjetiva",
+                "Objetiva direta",
+                "Objetiva indireta",
+                "Completiva nominal"
+            ],
+            "answer": "Objetiva indireta",
+            "solution": "A oração destacada exerce função de objetiva indireta."
+        },
+        {
+            "question": "Classifique a oração subordinada substantiva em: “Estou certo de que ele virá.”",
+            "options": [
+                "Subjetiva",
+                "Objetiva direta",
+                "Objetiva indireta",
+                "Completiva nominal"
+            ],
+            "answer": "Completiva nominal",
+            "solution": "A oração destacada exerce função de completiva nominal."
+        },
+        {
+            "question": "Classifique a oração subordinada substantiva em: “O desejo dele era que todos fossem felizes.”",
+            "options": [
+                "Subjetiva",
+                "Objetiva direta",
+                "Objetiva indireta",
+                "Completiva nominal"
+            ],
+            "answer": "Apositiva",
+            "solution": "A oração destacada exerce função de apositiva."
+        },
+        {
+            "question": "Classifique a oração subordinada substantiva em: “É importante que você estude.”",
+            "options": [
+                "Subjetiva",
+                "Objetiva direta",
+                "Objetiva indireta",
+                "Completiva nominal"
+            ],
+            "answer": "Subjetiva",
+            "solution": "A oração destacada exerce função de subjetiva."
+        },
+        {
+            "question": "Classifique a oração subordinada substantiva em: “Desejo que você venha.”",
+            "options": [
+                "Subjetiva",
+                "Objetiva direta",
+                "Objetiva indireta",
+                "Completiva nominal"
+            ],
+            "answer": "Objetiva direta",
+            "solution": "A oração destacada exerce função de objetiva direta."
+        },
+        {
+            "question": "Classifique a oração subordinada substantiva em: “Preciso de que você venha.”",
+            "options": [
+                "Subjetiva",
+                "Objetiva direta",
+                "Objetiva indireta",
+                "Completiva nominal"
+            ],
+            "answer": "Objetiva indireta",
+            "solution": "A oração destacada exerce função de objetiva indireta."
+        },
+        {
+            "question": "Classifique a oração subordinada substantiva em: “Estou certo de que ele virá.”",
+            "options": [
+                "Subjetiva",
+                "Objetiva direta",
+                "Objetiva indireta",
+                "Completiva nominal"
+            ],
+            "answer": "Completiva nominal",
+            "solution": "A oração destacada exerce função de completiva nominal."
+        },
+        {
+            "question": "Classifique a oração subordinada substantiva em: “O desejo dele era que todos fossem felizes.”",
+            "options": [
+                "Subjetiva",
+                "Objetiva direta",
+                "Objetiva indireta",
+                "Completiva nominal"
+            ],
+            "answer": "Apositiva",
+            "solution": "A oração destacada exerce função de apositiva."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El libro _____ leí es interesante.",
+            "options": [
+                "que",
+                "donde",
+                "cuyo",
+                "quienes"
+            ],
+            "answer": "que",
+            "solution": "El relativo adecuado es “que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La persona a _____ conocí ayer es mi vecina.",
+            "options": [
+                "quien",
+                "cuya",
+                "cuyo",
+                "quienes"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La ciudad en _____ nací es pequeña.",
+            "options": [
+                "donde",
+                "cuyos",
+                "quien",
+                "el que"
+            ],
+            "answer": "donde",
+            "solution": "El relativo adecuado es “donde” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El autor _____ obras admiro vive en Madrid.",
+            "options": [
+                "cuyas",
+                "la que",
+                "donde",
+                "quien"
+            ],
+            "answer": "cuyas",
+            "solution": "El relativo adecuado es “cuyas” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: Los amigos _____ vinieron viven lejos.",
+            "options": [
+                "que",
+                "quienes",
+                "cuyas",
+                "quien"
+            ],
+            "answer": "que",
+            "solution": "El relativo adecuado es “que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: No entiendo _____ dices.",
+            "options": [
+                "lo que",
+                "quienes",
+                "el que",
+                "donde"
+            ],
+            "answer": "lo que",
+            "solution": "El relativo adecuado es “lo que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La profesora, _____ llegó tarde, se disculpó.",
+            "options": [
+                "quien",
+                "que",
+                "donde",
+                "lo que"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: Este es el chico de _____ te hablé.",
+            "options": [
+                "quien",
+                "que",
+                "donde",
+                "la que"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La casa en _____ vivimos es antigua.",
+            "options": [
+                "la que",
+                "el que",
+                "quienes",
+                "donde"
+            ],
+            "answer": "la que",
+            "solution": "El relativo adecuado es “la que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El alumno _____ notas mejoraron estudió más.",
+            "options": [
+                "cuyas",
+                "que",
+                "quienes",
+                "la que"
+            ],
+            "answer": "cuyas",
+            "solution": "El relativo adecuado es “cuyas” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El libro _____ leí es interesante.",
+            "options": [
+                "que",
+                "quien",
+                "donde",
+                "lo que"
+            ],
+            "answer": "que",
+            "solution": "El relativo adecuado es “que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La persona a _____ conocí ayer es mi vecina.",
+            "options": [
+                "quien",
+                "la que",
+                "quienes",
+                "lo que"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La ciudad en _____ nací es pequeña.",
+            "options": [
+                "donde",
+                "que",
+                "el que",
+                "cuyos"
+            ],
+            "answer": "donde",
+            "solution": "El relativo adecuado es “donde” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El autor _____ obras admiro vive en Madrid.",
+            "options": [
+                "cuyas",
+                "cuyo",
+                "donde",
+                "la que"
+            ],
+            "answer": "cuyas",
+            "solution": "El relativo adecuado es “cuyas” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: Los amigos _____ vinieron viven lejos.",
+            "options": [
+                "que",
+                "cuyo",
+                "cuyos",
+                "la que"
+            ],
+            "answer": "que",
+            "solution": "El relativo adecuado es “que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: No entiendo _____ dices.",
+            "options": [
+                "lo que",
+                "el que",
+                "cuyos",
+                "cuyas"
+            ],
+            "answer": "lo que",
+            "solution": "El relativo adecuado es “lo que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La profesora, _____ llegó tarde, se disculpó.",
+            "options": [
+                "quien",
+                "cuya",
+                "la que",
+                "cuyo"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: Este es el chico de _____ te hablé.",
+            "options": [
+                "quien",
+                "que",
+                "el que",
+                "cuya"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La casa en _____ vivimos es antigua.",
+            "options": [
+                "la que",
+                "que",
+                "quien",
+                "donde"
+            ],
+            "answer": "la que",
+            "solution": "El relativo adecuado es “la que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El alumno _____ notas mejoraron estudió más.",
+            "options": [
+                "cuyas",
+                "lo que",
+                "cuyos",
+                "donde"
+            ],
+            "answer": "cuyas",
+            "solution": "El relativo adecuado es “cuyas” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El libro _____ leí es interesante.",
+            "options": [
+                "que",
+                "el que",
+                "donde",
+                "cuya"
+            ],
+            "answer": "que",
+            "solution": "El relativo adecuado es “que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La persona a _____ conocí ayer es mi vecina.",
+            "options": [
+                "quien",
+                "el que",
+                "que",
+                "lo que"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La ciudad en _____ nací es pequeña.",
+            "options": [
+                "donde",
+                "que",
+                "cuya",
+                "la que"
+            ],
+            "answer": "donde",
+            "solution": "El relativo adecuado es “donde” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El autor _____ obras admiro vive en Madrid.",
+            "options": [
+                "cuyas",
+                "cuyo",
+                "donde",
+                "cuya"
+            ],
+            "answer": "cuyas",
+            "solution": "El relativo adecuado es “cuyas” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: Los amigos _____ vinieron viven lejos.",
+            "options": [
+                "que",
+                "cuyos",
+                "cuya",
+                "el que"
+            ],
+            "answer": "que",
+            "solution": "El relativo adecuado es “que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: No entiendo _____ dices.",
+            "options": [
+                "lo que",
+                "cuyas",
+                "quienes",
+                "cuya"
+            ],
+            "answer": "lo que",
+            "solution": "El relativo adecuado es “lo que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La profesora, _____ llegó tarde, se disculpó.",
+            "options": [
+                "quien",
+                "cuyos",
+                "cuya",
+                "donde"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: Este es el chico de _____ te hablé.",
+            "options": [
+                "quien",
+                "cuya",
+                "cuyo",
+                "cuyos"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La casa en _____ vivimos es antigua.",
+            "options": [
+                "la que",
+                "cuyo",
+                "quienes",
+                "lo que"
+            ],
+            "answer": "la que",
+            "solution": "El relativo adecuado es “la que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El alumno _____ notas mejoraron estudió más.",
+            "options": [
+                "cuyas",
+                "cuyos",
+                "la que",
+                "lo que"
+            ],
+            "answer": "cuyas",
+            "solution": "El relativo adecuado es “cuyas” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El libro _____ leí es interesante.",
+            "options": [
+                "que",
+                "cuya",
+                "cuyo",
+                "donde"
+            ],
+            "answer": "que",
+            "solution": "El relativo adecuado es “que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La persona a _____ conocí ayer es mi vecina.",
+            "options": [
+                "quien",
+                "el que",
+                "la que",
+                "cuyo"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La ciudad en _____ nací es pequeña.",
+            "options": [
+                "donde",
+                "cuyos",
+                "el que",
+                "cuyas"
+            ],
+            "answer": "donde",
+            "solution": "El relativo adecuado es “donde” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El autor _____ obras admiro vive en Madrid.",
+            "options": [
+                "cuyas",
+                "cuyo",
+                "quien",
+                "la que"
+            ],
+            "answer": "cuyas",
+            "solution": "El relativo adecuado es “cuyas” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: Los amigos _____ vinieron viven lejos.",
+            "options": [
+                "que",
+                "cuyos",
+                "lo que",
+                "cuyo"
+            ],
+            "answer": "que",
+            "solution": "El relativo adecuado es “que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: No entiendo _____ dices.",
+            "options": [
+                "lo que",
+                "cuya",
+                "que",
+                "quien"
+            ],
+            "answer": "lo que",
+            "solution": "El relativo adecuado es “lo que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La profesora, _____ llegó tarde, se disculpó.",
+            "options": [
+                "quien",
+                "cuyo",
+                "lo que",
+                "el que"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: Este es el chico de _____ te hablé.",
+            "options": [
+                "quien",
+                "quienes",
+                "cuyo",
+                "cuya"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La casa en _____ vivimos es antigua.",
+            "options": [
+                "la que",
+                "cuyo",
+                "cuyos",
+                "donde"
+            ],
+            "answer": "la que",
+            "solution": "El relativo adecuado es “la que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El alumno _____ notas mejoraron estudió más.",
+            "options": [
+                "cuyas",
+                "cuyo",
+                "quienes",
+                "que"
+            ],
+            "answer": "cuyas",
+            "solution": "El relativo adecuado es “cuyas” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El libro _____ leí es interesante.",
+            "options": [
+                "que",
+                "cuya",
+                "donde",
+                "el que"
+            ],
+            "answer": "que",
+            "solution": "El relativo adecuado es “que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La persona a _____ conocí ayer es mi vecina.",
+            "options": [
+                "quien",
+                "la que",
+                "cuyos",
+                "el que"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La ciudad en _____ nací es pequeña.",
+            "options": [
+                "donde",
+                "quien",
+                "el que",
+                "cuya"
+            ],
+            "answer": "donde",
+            "solution": "El relativo adecuado es “donde” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El autor _____ obras admiro vive en Madrid.",
+            "options": [
+                "cuyas",
+                "cuya",
+                "cuyo",
+                "el que"
+            ],
+            "answer": "cuyas",
+            "solution": "El relativo adecuado es “cuyas” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: Los amigos _____ vinieron viven lejos.",
+            "options": [
+                "que",
+                "quienes",
+                "la que",
+                "quien"
+            ],
+            "answer": "que",
+            "solution": "El relativo adecuado es “que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: No entiendo _____ dices.",
+            "options": [
+                "lo que",
+                "cuyo",
+                "donde",
+                "cuyos"
+            ],
+            "answer": "lo que",
+            "solution": "El relativo adecuado es “lo que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La profesora, _____ llegó tarde, se disculpó.",
+            "options": [
+                "quien",
+                "que",
+                "donde",
+                "cuyo"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: Este es el chico de _____ te hablé.",
+            "options": [
+                "quien",
+                "que",
+                "lo que",
+                "donde"
+            ],
+            "answer": "quien",
+            "solution": "El relativo adecuado es “quien” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: La casa en _____ vivimos es antigua.",
+            "options": [
+                "la que",
+                "el que",
+                "donde",
+                "cuyos"
+            ],
+            "answer": "la que",
+            "solution": "El relativo adecuado es “la que” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Complete con el pronombre relativo correcto: El alumno _____ notas mejoraron estudió más.",
+            "options": [
+                "cuyas",
+                "el que",
+                "quienes",
+                "cuya"
+            ],
+            "answer": "cuyas",
+            "solution": "El relativo adecuado es “cuyas” por la función y el antecedente en la oración."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es tu nombre?",
+            "options": [
+                "¿Cuál",
+                "¿Quiénes",
+                "¿Cuánto",
+                "¿Cómo"
+            ],
+            "answer": "¿Cuál",
+            "solution": "Se emplea “¿Cuál” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ vives?",
+            "options": [
+                "¿Dónde",
+                "¿Qué",
+                "¿Quiénes",
+                "¿Cuáles"
+            ],
+            "answer": "¿Dónde",
+            "solution": "Se emplea “¿Dónde” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ llegas?",
+            "options": [
+                "¿Cuándo",
+                "¿Por qué",
+                "¿Cuánto",
+                "¿Dónde"
+            ],
+            "answer": "¿Cuándo",
+            "solution": "Se emplea “¿Cuándo” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ estás?",
+            "options": [
+                "¿Cómo",
+                "¿Qué",
+                "¿Quién",
+                "¿Quiénes"
+            ],
+            "answer": "¿Cómo",
+            "solution": "Se emplea “¿Cómo” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ cuesta?",
+            "options": [
+                "¿Cuánto",
+                "¿Quién",
+                "¿Qué",
+                "¿Por qué"
+            ],
+            "answer": "¿Cuánto",
+            "solution": "Se emplea “¿Cuánto” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ libros tienes?",
+            "options": [
+                "¿Cuántos",
+                "¿Dónde",
+                "¿Por qué",
+                "¿Qué"
+            ],
+            "answer": "¿Cuántos",
+            "solution": "Se emplea “¿Cuántos” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es esto?",
+            "options": [
+                "¿Qué",
+                "¿Dónde",
+                "¿Por qué",
+                "¿Cómo"
+            ],
+            "answer": "¿Qué",
+            "solution": "Se emplea “¿Qué” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ de los dos prefieres?",
+            "options": [
+                "¿Cuál",
+                "¿Dónde",
+                "¿Cómo",
+                "¿Quién"
+            ],
+            "answer": "¿Cuál",
+            "solution": "Se emplea “¿Cuál” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ no viniste ayer?",
+            "options": [
+                "¿Por qué",
+                "¿Dónde",
+                "¿Cuándo",
+                "¿Qué"
+            ],
+            "answer": "¿Por qué",
+            "solution": "Se emplea “¿Por qué” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es tu hermano?",
+            "options": [
+                "¿Quién",
+                "¿Por qué",
+                "¿Cuál",
+                "¿Cuánto"
+            ],
+            "answer": "¿Quién",
+            "solution": "Se emplea “¿Quién” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es tu nombre?",
+            "options": [
+                "¿Cuál",
+                "¿Cuáles",
+                "¿Cuántas",
+                "¿Cuánta"
+            ],
+            "answer": "¿Cuál",
+            "solution": "Se emplea “¿Cuál” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ vives?",
+            "options": [
+                "¿Dónde",
+                "¿Quién",
+                "¿Cómo",
+                "¿Quiénes"
+            ],
+            "answer": "¿Dónde",
+            "solution": "Se emplea “¿Dónde” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ llegas?",
+            "options": [
+                "¿Cuándo",
+                "¿Cuánta",
+                "¿Quiénes",
+                "¿Cuáles"
+            ],
+            "answer": "¿Cuándo",
+            "solution": "Se emplea “¿Cuándo” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ estás?",
+            "options": [
+                "¿Cómo",
+                "¿Por qué",
+                "¿Qué",
+                "¿Cuáles"
+            ],
+            "answer": "¿Cómo",
+            "solution": "Se emplea “¿Cómo” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ cuesta?",
+            "options": [
+                "¿Cuánto",
+                "¿Por qué",
+                "¿Cuánta",
+                "¿Cuándo"
+            ],
+            "answer": "¿Cuánto",
+            "solution": "Se emplea “¿Cuánto” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ libros tienes?",
+            "options": [
+                "¿Cuántos",
+                "¿Por qué",
+                "¿Cuánta",
+                "¿Quiénes"
+            ],
+            "answer": "¿Cuántos",
+            "solution": "Se emplea “¿Cuántos” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es esto?",
+            "options": [
+                "¿Qué",
+                "¿Cuáles",
+                "¿Quiénes",
+                "¿Cuánta"
+            ],
+            "answer": "¿Qué",
+            "solution": "Se emplea “¿Qué” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ de los dos prefieres?",
+            "options": [
+                "¿Cuál",
+                "¿Qué",
+                "¿Por qué",
+                "¿Quién"
+            ],
+            "answer": "¿Cuál",
+            "solution": "Se emplea “¿Cuál” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ no viniste ayer?",
+            "options": [
+                "¿Por qué",
+                "¿Quiénes",
+                "¿Qué",
+                "¿Cuántos"
+            ],
+            "answer": "¿Por qué",
+            "solution": "Se emplea “¿Por qué” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es tu hermano?",
+            "options": [
+                "¿Quién",
+                "¿Qué",
+                "¿Por qué",
+                "¿Cuáles"
+            ],
+            "answer": "¿Quién",
+            "solution": "Se emplea “¿Quién” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es tu nombre?",
+            "options": [
+                "¿Cuál",
+                "¿Cuánta",
+                "¿Cuáles",
+                "¿Quiénes"
+            ],
+            "answer": "¿Cuál",
+            "solution": "Se emplea “¿Cuál” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ vives?",
+            "options": [
+                "¿Dónde",
+                "¿Por qué",
+                "¿Cuándo",
+                "¿Cuáles"
+            ],
+            "answer": "¿Dónde",
+            "solution": "Se emplea “¿Dónde” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ llegas?",
+            "options": [
+                "¿Cuándo",
+                "¿Qué",
+                "¿Cuáles",
+                "¿Quién"
+            ],
+            "answer": "¿Cuándo",
+            "solution": "Se emplea “¿Cuándo” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ estás?",
+            "options": [
+                "¿Cómo",
+                "¿Qué",
+                "¿Cuánto",
+                "¿Cuáles"
+            ],
+            "answer": "¿Cómo",
+            "solution": "Se emplea “¿Cómo” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ cuesta?",
+            "options": [
+                "¿Cuánto",
+                "¿Cuándo",
+                "¿Por qué",
+                "¿Cuántas"
+            ],
+            "answer": "¿Cuánto",
+            "solution": "Se emplea “¿Cuánto” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ libros tienes?",
+            "options": [
+                "¿Cuántos",
+                "¿Dónde",
+                "¿Cuál",
+                "¿Cuánta"
+            ],
+            "answer": "¿Cuántos",
+            "solution": "Se emplea “¿Cuántos” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es esto?",
+            "options": [
+                "¿Qué",
+                "¿Quién",
+                "¿Cuántos",
+                "¿Cuánta"
+            ],
+            "answer": "¿Qué",
+            "solution": "Se emplea “¿Qué” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ de los dos prefieres?",
+            "options": [
+                "¿Cuál",
+                "¿Cuándo",
+                "¿Dónde",
+                "¿Cuánta"
+            ],
+            "answer": "¿Cuál",
+            "solution": "Se emplea “¿Cuál” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ no viniste ayer?",
+            "options": [
+                "¿Por qué",
+                "¿Quién",
+                "¿Quiénes",
+                "¿Cuál"
+            ],
+            "answer": "¿Por qué",
+            "solution": "Se emplea “¿Por qué” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es tu hermano?",
+            "options": [
+                "¿Quién",
+                "¿Por qué",
+                "¿Cómo",
+                "¿Cuándo"
+            ],
+            "answer": "¿Quién",
+            "solution": "Se emplea “¿Quién” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es tu nombre?",
+            "options": [
+                "¿Cuál",
+                "¿Quién",
+                "¿Cuántas",
+                "¿Por qué"
+            ],
+            "answer": "¿Cuál",
+            "solution": "Se emplea “¿Cuál” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ vives?",
+            "options": [
+                "¿Dónde",
+                "¿Por qué",
+                "¿Cuánta",
+                "¿Qué"
+            ],
+            "answer": "¿Dónde",
+            "solution": "Se emplea “¿Dónde” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ llegas?",
+            "options": [
+                "¿Cuándo",
+                "¿Por qué",
+                "¿Quién",
+                "¿Dónde"
+            ],
+            "answer": "¿Cuándo",
+            "solution": "Se emplea “¿Cuándo” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ estás?",
+            "options": [
+                "¿Cómo",
+                "¿Cuánta",
+                "¿Cuántas",
+                "¿Cuál"
+            ],
+            "answer": "¿Cómo",
+            "solution": "Se emplea “¿Cómo” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ cuesta?",
+            "options": [
+                "¿Cuánto",
+                "¿Dónde",
+                "¿Quién",
+                "¿Por qué"
+            ],
+            "answer": "¿Cuánto",
+            "solution": "Se emplea “¿Cuánto” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ libros tienes?",
+            "options": [
+                "¿Cuántos",
+                "¿Cuáles",
+                "¿Por qué",
+                "¿Cuál"
+            ],
+            "answer": "¿Cuántos",
+            "solution": "Se emplea “¿Cuántos” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es esto?",
+            "options": [
+                "¿Qué",
+                "¿Cuánto",
+                "¿Dónde",
+                "¿Quién"
+            ],
+            "answer": "¿Qué",
+            "solution": "Se emplea “¿Qué” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ de los dos prefieres?",
+            "options": [
+                "¿Cuál",
+                "¿Dónde",
+                "¿Cuáles",
+                "¿Cuánta"
+            ],
+            "answer": "¿Cuál",
+            "solution": "Se emplea “¿Cuál” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ no viniste ayer?",
+            "options": [
+                "¿Por qué",
+                "¿Quién",
+                "¿Cuándo",
+                "¿Cuántas"
+            ],
+            "answer": "¿Por qué",
+            "solution": "Se emplea “¿Por qué” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es tu hermano?",
+            "options": [
+                "¿Quién",
+                "¿Dónde",
+                "¿Cuántas",
+                "¿Cuántos"
+            ],
+            "answer": "¿Quién",
+            "solution": "Se emplea “¿Quién” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es tu nombre?",
+            "options": [
+                "¿Cuál",
+                "¿Quiénes",
+                "¿Qué",
+                "¿Cuánto"
+            ],
+            "answer": "¿Cuál",
+            "solution": "Se emplea “¿Cuál” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ vives?",
+            "options": [
+                "¿Dónde",
+                "¿Cómo",
+                "¿Qué",
+                "¿Cuáles"
+            ],
+            "answer": "¿Dónde",
+            "solution": "Se emplea “¿Dónde” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ llegas?",
+            "options": [
+                "¿Cuándo",
+                "¿Qué",
+                "¿Dónde",
+                "¿Quién"
+            ],
+            "answer": "¿Cuándo",
+            "solution": "Se emplea “¿Cuándo” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ estás?",
+            "options": [
+                "¿Cómo",
+                "¿Cuáles",
+                "¿Quién",
+                "¿Cuánta"
+            ],
+            "answer": "¿Cómo",
+            "solution": "Se emplea “¿Cómo” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ cuesta?",
+            "options": [
+                "¿Cuánto",
+                "¿Cuál",
+                "¿Cuántos",
+                "¿Por qué"
+            ],
+            "answer": "¿Cuánto",
+            "solution": "Se emplea “¿Cuánto” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ libros tienes?",
+            "options": [
+                "¿Cuántos",
+                "¿Cuál",
+                "¿Cuánta",
+                "¿Cuáles"
+            ],
+            "answer": "¿Cuántos",
+            "solution": "Se emplea “¿Cuántos” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es esto?",
+            "options": [
+                "¿Qué",
+                "¿Cuánta",
+                "¿Cuáles",
+                "¿Cómo"
+            ],
+            "answer": "¿Qué",
+            "solution": "Se emplea “¿Qué” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ de los dos prefieres?",
+            "options": [
+                "¿Cuál",
+                "¿Quiénes",
+                "¿Cómo",
+                "¿Cuánto"
+            ],
+            "answer": "¿Cuál",
+            "solution": "Se emplea “¿Cuál” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ no viniste ayer?",
+            "options": [
+                "¿Por qué",
+                "¿Cuánto",
+                "¿Cómo",
+                "¿Cuándo"
+            ],
+            "answer": "¿Por qué",
+            "solution": "Se emplea “¿Por qué” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Elige el pronombre interrogativo correcto: ___ es tu hermano?",
+            "options": [
+                "¿Quién",
+                "¿Por qué",
+                "¿Qué",
+                "¿Dónde"
+            ],
+            "answer": "¿Quién",
+            "solution": "Se emplea “¿Quién” por el tipo de información solicitada en la pregunta."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “books”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“books” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “apples”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“apples” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “chairs”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“chairs” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “ideas”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“ideas” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “milk”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“milk” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “water”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“water” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “sugar”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“sugar” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “information”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“information” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “advice”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“advice” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “news”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“news” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “books”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“books” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “apples”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“apples” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “chairs”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“chairs” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “ideas”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“ideas” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “milk”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“milk” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “water”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“water” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “sugar”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“sugar” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “information”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“information” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “advice”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“advice” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “news”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“news” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “books”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“books” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “apples”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“apples” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “chairs”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“chairs” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “ideas”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“ideas” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “milk”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“milk” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “water”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“water” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “sugar”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“sugar” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “information”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“information” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “advice”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“advice” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “news”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“news” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “books”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“books” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “apples”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“apples” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “chairs”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“chairs” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “ideas”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Countable",
+            "solution": "“ideas” is treated as countable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “milk”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“milk” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “water”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“water” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “sugar”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“sugar” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “information”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“information” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “advice”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“advice” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Classify the noun as Countable or Uncountable: “news”.",
+            "options": [
+                "Countable",
+                "Uncountable",
+                "Both",
+                "Neither"
+            ],
+            "answer": "Uncountable",
+            "solution": "“news” is treated as uncountable in standard English usage."
+        },
+        {
+            "question": "Complete with MUCH or MANY: There aren’t ___ chairs in the room.",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "many",
+            "solution": "Use “many” with countable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: I don’t have ___ time today.",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "much",
+            "solution": "Use “much” with uncountable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: How ___ apples do we need?",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "many",
+            "solution": "Use “many” with countable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: How ___ sugar do you take?",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "much",
+            "solution": "Use “much” with uncountable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: We saw ___ people at the concert.",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "many",
+            "solution": "Use “many” with countable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: She didn’t eat ___ rice.",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "much",
+            "solution": "Use “much” with uncountable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: Too ___ emails to answer!",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "many",
+            "solution": "Use “many” with countable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: Too ___ noise to focus.",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "much",
+            "solution": "Use “much” with uncountable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: There aren’t ___ chairs in the room.",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "many",
+            "solution": "Use “many” with countable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: I don’t have ___ time today.",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "much",
+            "solution": "Use “much” with uncountable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: How ___ apples do we need?",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "many",
+            "solution": "Use “many” with countable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: How ___ sugar do you take?",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "much",
+            "solution": "Use “much” with uncountable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: We saw ___ people at the concert.",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "many",
+            "solution": "Use “many” with countable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: She didn’t eat ___ rice.",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "much",
+            "solution": "Use “much” with uncountable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: Too ___ emails to answer!",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "many",
+            "solution": "Use “many” with countable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: Too ___ noise to focus.",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "much",
+            "solution": "Use “much” with uncountable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: There aren’t ___ chairs in the room.",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "many",
+            "solution": "Use “many” with countable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: I don’t have ___ time today.",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "much",
+            "solution": "Use “much” with uncountable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: How ___ apples do we need?",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "many",
+            "solution": "Use “many” with countable nouns."
+        },
+        {
+            "question": "Complete with MUCH or MANY: How ___ sugar do you take?",
+            "options": [
+                "much",
+                "many",
+                "a lot",
+                "few"
+            ],
+            "answer": "much",
+            "solution": "Use “much” with uncountable nouns."
+        },
+        {
+            "question": "Choose the best quantifier: There is ___ milk left, so make tea.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a little",
+            "solution": "“a little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: He has ___ friends; he feels lonely.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "few",
+            "solution": "“few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: We have ___ time, hurry up!",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "little",
+            "solution": "“little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: She made ___ mistakes; good job.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a few",
+            "solution": "“a few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: I drink ___ coffee in the evening.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "little",
+            "solution": "“little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: They brought ___ chairs, but enough.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a few",
+            "solution": "“a few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: We have ___ options; this is hard.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "few",
+            "solution": "“few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: Add ___ sugar to taste.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a little",
+            "solution": "“a little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: There is ___ milk left, so make tea.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a little",
+            "solution": "“a little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: He has ___ friends; he feels lonely.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "few",
+            "solution": "“few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: We have ___ time, hurry up!",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "little",
+            "solution": "“little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: She made ___ mistakes; good job.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a few",
+            "solution": "“a few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: I drink ___ coffee in the evening.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "little",
+            "solution": "“little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: They brought ___ chairs, but enough.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a few",
+            "solution": "“a few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: We have ___ options; this is hard.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "few",
+            "solution": "“few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: Add ___ sugar to taste.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a little",
+            "solution": "“a little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: There is ___ milk left, so make tea.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a little",
+            "solution": "“a little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: He has ___ friends; he feels lonely.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "few",
+            "solution": "“few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: We have ___ time, hurry up!",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "little",
+            "solution": "“little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: She made ___ mistakes; good job.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a few",
+            "solution": "“a few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: I drink ___ coffee in the evening.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "little",
+            "solution": "“little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: They brought ___ chairs, but enough.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a few",
+            "solution": "“a few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: We have ___ options; this is hard.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "few",
+            "solution": "“few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: Add ___ sugar to taste.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a little",
+            "solution": "“a little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: There is ___ milk left, so make tea.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a little",
+            "solution": "“a little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: He has ___ friends; he feels lonely.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "few",
+            "solution": "“few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: We have ___ time, hurry up!",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "little",
+            "solution": "“little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: She made ___ mistakes; good job.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a few",
+            "solution": "“a few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: I drink ___ coffee in the evening.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "little",
+            "solution": "“little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: They brought ___ chairs, but enough.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a few",
+            "solution": "“a few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: We have ___ options; this is hard.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "few",
+            "solution": "“few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: Add ___ sugar to taste.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a little",
+            "solution": "“a little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: There is ___ milk left, so make tea.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a little",
+            "solution": "“a little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: He has ___ friends; he feels lonely.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "few",
+            "solution": "“few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: We have ___ time, hurry up!",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "little",
+            "solution": "“little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: She made ___ mistakes; good job.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a few",
+            "solution": "“a few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: I drink ___ coffee in the evening.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "little",
+            "solution": "“little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: They brought ___ chairs, but enough.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a few",
+            "solution": "“a few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: We have ___ options; this is hard.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "few",
+            "solution": "“few” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+        {
+            "question": "Choose the best quantifier: Add ___ sugar to taste.",
+            "options": [
+                "little",
+                "few",
+                "a little",
+                "a few"
+            ],
+            "answer": "a little",
+            "solution": "“a little” fits the noun type and meaning (negative/small vs. small but sufficient)."
+        },
+
+        {
+            question: "A frase 'Precisa-se de funcionários' está na voz:",
+            options: ["Ativa", "Passiva sintética", "Reflexiva", "Passiva analítica"],
+            answer: "Passiva sintética",
+            solution: "A voz passiva sintética (ou pronominal) é formada por um verbo na 3ª pessoa, mais o pronome apassivador 'se'."
+        },
+        {
+            question: "Qual a forma ativa da frase 'As chaves haviam sido entregues pelo porteiro'?",
+            options: ["O porteiro entregou as chaves.", "As chaves se entregaram.", "O porteiro havia entregue as chaves.", "Entregaram as chaves."],
+            answer: "O porteiro havia entregue as chaves.",
+            solution: "A locução verbal da voz passiva ('haviam sido entregues') é convertida para a sua forma ativa correspondente ('havia entregue'), mantendo o tempo composto."
+        },
+        {
+            question: "Em 'O político se elegeu com muitos votos', a voz é:",
+            options: ["Ativa", "Passiva", "Reflexiva", "Recíproca"],
+            answer: "Reflexiva",
+            solution: "Embora a ação seja praticada por outros (os eleitores), a construção da frase indica que o sujeito pratica e recebe a ação (elegeu a si mesmo)."
+        },
+        {
+            question: "Se passarmos 'A ventania derrubava as árvores' para a voz passiva, teremos:",
+            options: ["As árvores foram derrubadas pela ventania.", "As árvores eram derrubadas pela ventania.", "As árvores serão derrubadas pela ventania.", "As árvores se derrubaram."],
+            answer: "As árvores eram derrubadas pela ventania.",
+            solution: "O tempo verbal da ativa (pretérito imperfeito 'derrubava') deve ser mantido na passiva, usando o auxiliar 'ser' no mesmo tempo ('eram')."
+        },
+        {
+            question: "A frase 'Ele feriu-se com a faca' está na voz:",
+            options: ["Ativa", "Passiva", "Reflexiva", "Passiva sintética"],
+            answer: "Reflexiva",
+            solution: "O sujeito 'Ele' pratica a ação de ferir e também a recebe, pois feriu a si mesmo."
+        },
+        {
+            question: "Qual frase NÃO está na voz passiva?",
+            options: ["A matéria foi explicada pelo professor.", "Sabe-se toda a verdade.", "Eles se queixaram do barulho.", "O carro é consertado pelo mecânico."],
+            answer: "Eles se queixaram do barulho.",
+            solution: "Nesta frase, o 'se' é parte do verbo pronominal 'queixar-se'. A voz é ativa, pois o sujeito 'Eles' pratica a ação de se queixar."
+        },
+        {
+            question: "A forma passiva de 'Os bombeiros apagarão o incêndio' é:",
+            options: ["O incêndio foi apagado pelos bombeiros.", "O incêndio era apagado pelos bombeiros.", "O incêndio será apagado pelos bombeiros.", "O incêndio se apagará."],
+            answer: "O incêndio será apagado pelos bombeiros.",
+            solution: "O verbo no futuro ('apagarão') exige que o auxiliar na voz passiva também esteja no futuro ('será apagado')."
+        },
+        {
+            question: "Em 'Penteou-se rapidamente', a voz é reflexiva e o sujeito é:",
+            options: ["Ele/Ela (Oculto)", "Rapidamente", "Indeterminado", "Inexistente"],
+            answer: "Ele/Ela (Oculto)",
+            solution: "A voz é reflexiva (penteou a si mesmo). Pela terminação do verbo, o sujeito é a 3ª pessoa do singular (Ele/Ela), que está oculto."
+        },
+        {
+            question: "Qual o sujeito da oração 'Vende-se uma casa antiga'?",
+            options: ["Indeterminado", "Uma casa antiga", "Oculto", "Inexistente"],
+            answer: "Uma casa antiga",
+            solution: "Na voz passiva sintética, o termo que não é preposicionado ('uma casa antiga') é o sujeito paciente. A frase equivale a 'Uma casa antiga é vendida'."
+        },
+        {
+            question: "Convertendo 'Eu estava escrevendo a carta' para a voz passiva, a forma correta é:",
+            options: ["A carta foi escrita por mim.", "A carta será escrita por mim.", "A carta estava sendo escrita por mim.", "A carta era escrita por mim."],
+            answer: "A carta estava sendo escrita por mim.",
+            solution: "A locução verbal da ativa ('estava escrevendo') deve ser mantida na passiva, transformando-se em 'estava sendo escrita'."
+        },
+        {
+            question: "Na frase 'Os pais amam os filhos', a voz é:",
+            options: ["Ativa", "Passiva", "Reflexiva", "Recíproca"],
+            answer: "Ativa",
+            solution: "O sujeito 'Os pais' é o agente que pratica a ação de amar."
+        },
+        {
+            question: "'Aluga-se este apartamento.' A voz desta oração é:",
+            options: ["Ativa", "Passiva sintética", "Reflexiva", "Passiva analítica"],
+            answer: "Passiva sintética",
+            solution: "A construção com verbo na 3ª pessoa + pronome 'se' + sujeito paciente ('este apartamento') caracteriza a voz passiva sintética."
+        },
+        {
+            question: "A frase 'Eles se olharam em silêncio' possui voz:",
+            options: ["Passiva", "Ativa", "Reflexiva", "Recíproca"],
+            answer: "Recíproca",
+            solution: "A ação de 'olhar' é mútua, trocada entre os elementos do sujeito 'Eles' (um olhou para o outro)."
+        },
+        {
+            question: "Qual a forma ativa de 'O mistério foi desvendado por ela'?",
+            options: ["Ela desvendou o mistério.", "O mistério se desvendou.", "Ela foi desvendada pelo mistério.", "Desvendaram o mistério."],
+            answer: "Ela desvendou o mistério.",
+            solution: "O agente da passiva 'por ela' vira o sujeito 'Ela', e o sujeito paciente 'O mistério' vira o objeto direto."
+        },
+        {
+            question: "A oração 'O muro foi pichado' está na voz passiva. Qual elemento falta para a estrutura completa da passiva?",
+            options: ["O sujeito", "O objeto direto", "O agente da passiva", "O verbo de ligação"],
+            answer: "O agente da passiva",
+            solution: "A frase tem sujeito paciente ('O muro') e a locução verbal passiva ('foi pichado'), mas omite quem praticou a ação (o agente da passiva)."
+        },
+
+        // --- Português: Transitividade Verbal (15 Questões) ---
+        {
+            question: "Em 'O tempo passa', o verbo 'passar' é:",
+            options: ["Transitivo direto", "Transitivo indireto", "Intransitivo", "De ligação"],
+            answer: "Intransitivo",
+            solution: "Neste contexto, o verbo 'passar' tem sentido completo, indicando o decorrer do tempo."
+        },
+        {
+            question: "Na frase 'Ele informou o ocorrido à polícia', o verbo 'informar' é:",
+            options: ["Transitivo direto", "Transitivo indireto", "Intransitivo", "Bitransitivo"],
+            answer: "Bitransitivo",
+            solution: "O verbo 'informar' exige dois complementos: 'o ocorrido' (objeto direto) e 'à polícia' (objeto indireto)."
+        },
+        {
+            question: "'Eu simpatizei com ela.' O verbo 'simpatizar' é classificado como:",
+            options: ["Transitivo direto", "Transitivo indireto", "Intransitivo", "De ligação"],
+            answer: "Transitivo indireto",
+            solution: "O verbo 'simpatizar' sempre exige um complemento regido pela preposição 'com'."
+        },
+        {
+            question: "Qual frase apresenta um verbo de ligação?",
+            options: ["Ele comprou um presente.", "O menino parecia feliz.", "Nós caminhamos no parque.", "Ela gosta de sorvete."],
+            answer: "O menino parecia feliz.",
+            solution: "O verbo 'parecia' é de ligação, pois apenas conecta o sujeito ('O menino') a uma característica sua ('feliz'), que é o predicativo do sujeito."
+        },
+        {
+            question: "Em 'Paguei o boleto', o verbo 'pagar' é transitivo direto. Em 'Paguei ao banco', ele é transitivo indireto. Em 'Paguei o boleto ao banco', ele é:",
+            options: ["Intransitivo", "Transitivo direto", "Transitivo indireto", "Bitransitivo"],
+            answer: "Bitransitivo",
+            solution: "Quando o verbo 'pagar' tem como complementos a coisa paga ('o boleto' - OD) e a quem se paga ('ao banco' - OI), ele é bitransitivo."
+        },
+        {
+            question: "Na frase 'O espetáculo agradou ao público', o verbo 'agradar' é:",
+            options: ["Transitivo direto", "Transitivo indireto", "Intransitivo", "De ligação"],
+            answer: "Transitivo indireto",
+            solution: "No sentido de 'satisfazer' ou 'causar agrado', o verbo 'agradar' é transitivo indireto e rege a preposição 'a'."
+        },
+        {
+            question: "Qual verbo é intransitivo na lista abaixo?",
+            options: ["Comprar", "Gostar", "Chegar", "Entregar"],
+            answer: "Chegar",
+            solution: "'Chegar' é um verbo que indica movimento e tem sentido completo. Os termos que o acompanham (ex: 'em casa', 'cedo') são adjuntos adverbiais, não objetos."
+        },
+        {
+            question: "A frase 'A cidade amanheceu fria' contém um verbo:",
+            options: ["Intransitivo com predicativo do sujeito", "De ligação", "Transitivo direto", "Transitivo indireto"],
+            answer: "Intransitivo com predicativo do sujeito",
+            solution: "O verbo 'amanhecer' é intransitivo, mas nesta frase ele vem acompanhado de uma característica do sujeito ('fria'), que é um predicativo."
+        },
+        {
+            question: "Na frase 'Esqueci o compromisso', o verbo 'esquecer' é VTD. Qual a forma correta para que ele seja VTI?",
+            options: ["Esqueci-me o compromisso.", "Esqueci ao compromisso.", "Esqueci-me do compromisso.", "Esqueci do compromisso."],
+            answer: "Esqueci-me do compromisso.",
+            solution: "Quando o verbo 'esquecer' é usado como pronominal ('esquecer-se'), ele se torna transitivo indireto, exigindo a preposição 'de'."
+        },
+        {
+            question: "Identifique a frase com um verbo transitivo direto e indireto (bitransitivo).",
+            options: ["Ele se referiu ao problema.", "O sol nasceu.", "O professor perdoou a todos.", "Comuniquei o fato à diretoria."],
+            answer: "Comuniquei o fato à diretoria.",
+            solution: "O verbo 'comunicar' possui dois objetos: 'o fato' (objeto direto) e 'à diretoria' (objeto indireto)."
+        },
+        {
+            question: "'Ele aspira ao cargo de gerente.' O verbo 'aspirar' neste contexto é:",
+            options: ["Transitivo direto", "Transitivo indireto", "Intransitivo", "De ligação"],
+            answer: "Transitivo indireto",
+            solution: "No sentido de 'desejar' ou 'almejar', o verbo 'aspirar' é transitivo indireto e rege a preposição 'a'."
+        },
+        {
+            question: "Em 'Todos vivem', o verbo 'viver' é intransitivo. Em qual frase ele é transitivo direto?",
+            options: ["Todos vivem bem.", "Ele viveu uma vida de aventuras.", "Ele vive em São Paulo.", "Viver é maravilhoso."],
+            answer: "Ele viveu uma vida de aventuras.",
+            solution: "Neste caso, 'viver' tem o sentido de 'experimentar', 'passar por', e 'uma vida de aventuras' é seu objeto direto."
+        },
+        {
+            question: "'Obedeça aos sinais de trânsito.' O verbo 'obedecer' é sempre:",
+            options: ["Transitivo direto", "Transitivo indireto", "Intransitivo", "Bitransitivo"],
+            answer: "Transitivo indireto",
+            solution: "O verbo 'obedecer' é um clássico transitivo indireto, sempre exigindo um complemento com a preposição 'a'."
+        },
+        {
+            question: "Na frase 'O rio corre para o mar', o verbo 'correr' é:",
+            options: ["Transitivo direto", "Transitivo indireto", "Intransitivo", "De ligação"],
+            answer: "Intransitivo",
+            solution: "O verbo 'correr' tem sentido completo. O termo 'para o mar' é um adjunto adverbial de lugar (direção), não um objeto."
+        },
+        {
+            question: "Qual a função do termo 'o presente' em 'Ele entregou o presente ao amigo'?",
+            options: ["Sujeito", "Objeto direto", "Objeto indireto", "Predicativo"],
+            answer: "Objeto direto",
+            solution: "É o complemento do verbo bitransitivo 'entregou' que não exige preposição. É 'aquilo que' foi entregue."
+        },
+
+        // --- Português: Sintagmas Nominais (15 Questões) ---
+        {
+            question: "Na frase 'O presidente do clube anunciou a novidade', qual é o núcleo do sujeito?",
+            options: ["presidente", "clube", "O", "do"],
+            answer: "presidente",
+            solution: "O sujeito é 'O presidente do clube'. A palavra central, que pratica a ação de anunciar, é 'presidente'."
+        },
+        {
+            question: "Qual o núcleo do sintagma 'uma surpreendente capacidade de memorização'?",
+            options: ["surpreendente", "capacidade", "memorização", "uma"],
+            answer: "capacidade",
+            solution: "O substantivo principal do grupo é 'capacidade'. Os outros termos ('surpreendente', 'de memorização') modificam este substantivo."
+        },
+        {
+            question: "Em 'Todos os meus antigos vizinhos se mudaram', o núcleo do sujeito é:",
+            options: ["Todos", "meus", "antigos", "vizinhos"],
+            answer: "vizinhos",
+            solution: "O substantivo central do sintagma nominal que funciona como sujeito é 'vizinhos'."
+        },
+        {
+            question: "O objeto da frase 'Ele leu um livro interessante de ficção científica' é um sintagma nominal. Qual seu núcleo?",
+            options: ["livro", "interessante", "ficção", "científica"],
+            answer: "livro",
+            solution: "O núcleo do sintagma 'um livro interessante de ficção científica' é o substantivo 'livro'."
+        },
+        {
+            question: "Na estrutura 'o carro do meu pai', o núcleo é 'carro'. O que é 'do meu pai'?",
+            options: ["Núcleo secundário", "Adjunto adnominal", "Adjunto adverbial", "Aposto"],
+            answer: "Adjunto adnominal",
+            solution: "'Do meu pai' é uma locução adjetiva que caracteriza o núcleo 'carro', funcionando como um adjunto adnominal."
+        },
+        {
+            question: "'Nós' pode ser considerado um sintagma nominal?",
+            options: ["Não, é muito pequeno.", "Apenas se for 'nós mesmos'.", "Sim, pois seu núcleo é um pronome.", "Não, pois não tem substantivo."],
+            answer: "Sim, pois seu núcleo é um pronome.",
+            solution: "Um sintagma nominal pode ser formado por apenas uma palavra, desde que esta seja um pronome ou substantivo. 'Nós' é um pronome que pode funcionar como sujeito ou objeto."
+        },
+        {
+            question: "Qual o núcleo do sintagma 'a pequena casa de madeira na colina'?",
+            options: ["pequena", "casa", "madeira", "colina"],
+            answer: "casa",
+            solution: "O substantivo principal, ao qual todas as outras características ('pequena', 'de madeira', 'na colina') se referem, é 'casa'."
+        },
+        {
+            question: "Em 'A crítica do especialista ao filme foi dura', o núcleo do sujeito é:",
+            options: ["crítica", "especialista", "filme", "dura"],
+            answer: "crítica",
+            solution: "O sujeito é 'A crítica do especialista ao filme'. O núcleo é 'crítica', pois é 'a crítica' que 'foi dura'."
+        },
+        {
+            question: "Qual palavra determina o gênero e o número de todo o sintagma nominal?",
+            options: ["O adjetivo", "O verbo", "O núcleo (substantivo)", "O artigo"],
+            answer: "O núcleo (substantivo)",
+            solution: "É o núcleo do sintagma nominal que impõe a concordância de gênero e número aos seus determinantes e modificadores (artigos, adjetivos, etc.)."
+        },
+        {
+            question: "No sintagma 'muitos problemas financeiros', qual é o núcleo?",
+            options: ["muitos", "problemas", "financeiros", "Não há núcleo"],
+            answer: "problemas",
+            solution: "O substantivo central é 'problemas'. 'Muitos' e 'financeiros' são modificadores deste núcleo."
+        },
+        {
+            question: "Em 'O professor de matemática faltou', o núcleo do sujeito é:",
+            options: ["professor", "matemática", "O", "de"],
+            answer: "professor",
+            solution: "O sujeito é 'O professor de matemática', e a palavra principal, que executa a ação, é 'professor'."
+        },
+        {
+            question: "Qual o núcleo do sintagma que funciona como objeto em 'Ela bebeu um copo de água'?",
+            options: ["copo", "água", "de", "um"],
+            answer: "copo",
+            solution: "O objeto direto é 'um copo de água'. O que ela bebeu? Um copo. Portanto, 'copo' é o núcleo. 'De água' especifica o conteúdo do copo."
+        },
+        {
+            question: "No grupo de palavras 'alguns importantes documentos oficiais', o núcleo é:",
+            options: ["alguns", "importantes", "documentos", "oficiais"],
+            answer: "documentos",
+            solution: "O substantivo que é o elemento principal do sintagma é 'documentos'."
+        },
+        {
+            question: "'Aquilo' pode ser o núcleo de um sintagma nominal?",
+            options: ["Não, é um advérbio", "Sim, pois é um pronome demonstrativo", "Não, precisa de um substantivo", "Sim, mas apenas em perguntas"],
+            answer: "Sim, pois é um pronome demonstrativo",
+            solution: "Pronomes (pessoais, possessivos, demonstrativos, etc.) podem funcionar como núcleo de um sintagma nominal."
+        },
+        {
+            question: "Em 'A luz forte do sol da manhã me acordou', o núcleo do sujeito é:",
+            options: ["luz", "forte", "sol", "manhã"],
+            answer: "luz",
+            solution: "O sujeito é todo o trecho antes do verbo. O elemento principal, 'aquilo que' me acordou, foi a 'luz'."
+        },
+
+        // --- Português: Adjuntos Adverbiais (15 Questões) ---
+        {
+            question: "Na frase 'Talvez ele venha à festa', o termo 'talvez' é um adjunto adverbial de:",
+            options: ["Afirmação", "Modo", "Dúvida", "Tempo"],
+            answer: "Dúvida",
+            solution: "O advérbio 'talvez' expressa uma incerteza, uma dúvida em relação à ação de vir."
+        },
+        {
+            question: "Em 'Passeamos pelo parque', o termo 'pelo parque' indica uma circunstância de:",
+            options: ["Meio", "Lugar", "Modo", "Tempo"],
+            answer: "Lugar",
+            solution: "A expressão 'pelo parque' indica o local por onde a ação de passear ocorreu."
+        },
+        {
+            question: "'Ele saiu com os amigos.' O termo 'com os amigos' é um adjunto adverbial de:",
+            options: ["Modo", "Instrumento", "Companhia", "Causa"],
+            answer: "Companhia",
+            solution: "Indica com quem a ação de sair foi praticada."
+        },
+        {
+            question: "Qual frase contém um adjunto adverbial de intensidade?",
+            options: ["O menino correu rapidamente.", "Cheguei cedo em casa.", "A prova estava difícil demais.", "Ele mora em Paris."],
+            answer: "A prova estava difícil demais.",
+            solution: "O advérbio 'demais' está intensificando o adjetivo 'difícil'."
+        },
+        {
+            question: "'Ele cortou o pão com uma faca.' O termo destacado é um adjunto adverbial de:",
+            options: ["Modo", "Meio", "Instrumento", "Companhia"],
+            answer: "Instrumento",
+            solution: "'Com uma faca' indica a ferramenta, o instrumento utilizado para realizar a ação."
+        },
+        {
+            question: "Na frase 'Certamente, ele entendeu a matéria', o advérbio 'certamente' expressa:",
+            options: ["Modo", "Afirmação", "Dúvida", "Conclusão"],
+            answer: "Afirmação",
+            solution: "'Certamente' é um advérbio que reforça a ideia, conferindo um valor de afirmação ou certeza."
+        },
+        {
+            question: "Em 'Morreu de fome', o termo 'de fome' é um adjunto adverbial de:",
+            options: ["Modo", "Causa", "Finalidade", "Intensidade"],
+            answer: "Causa",
+            solution: "A expressão 'de fome' indica o motivo, a causa da morte."
+        },
+        {
+            question: "Qual o adjunto adverbial de tempo em 'Sempre estudo à noite'?",
+            options: ["Sempre", "à noite", "Sempre, à noite", "Não há"],
+            answer: "Sempre, à noite",
+            solution: "A frase possui dois adjuntos adverbiais de tempo: 'Sempre' (frequência) e 'à noite' (período)."
+        },
+        {
+            question: "Na frase 'Falamos sobre economia', o termo 'sobre economia' expressa:",
+            options: ["Causa", "Finalidade", "Meio", "Assunto"],
+            answer: "Assunto",
+            solution: "Indica o tema, o assunto sobre o qual se falou."
+        },
+        {
+            question: "'Ele caminhava lentamente pela rua.' Os adjuntos adverbiais são, respectivamente, de:",
+            options: ["Modo e lugar", "Tempo e modo", "Intensidade e lugar", "Modo e tempo"],
+            answer: "Modo e lugar",
+            solution: "'Lentamente' indica o modo como ele caminhava, e 'pela rua' indica o lugar."
+        },
+        {
+            question: "Qual das alternativas contém um adjunto adverbial de negação?",
+            options: ["Provavelmente choverá.", "Ele agiu bem.", "De modo algum eu farei isso.", "Estudei bastante."],
+            answer: "De modo algum eu farei isso.",
+            solution: "A locução adverbial 'de modo algum' tem um forte valor de negação."
+        },
+        {
+            question: "Em 'Viajarei de trem', o termo 'de trem' é um adjunto adverbial de:",
+            options: ["Instrumento", "Companhia", "Meio", "Lugar"],
+            answer: "Meio",
+            solution: "Indica o meio de transporte utilizado para a viagem."
+        },
+        {
+            question: "Na frase 'Estudo para passar no concurso', 'para passar no concurso' indica:",
+            options: ["Causa", "Consequência", "Finalidade", "Modo"],
+            answer: "Finalidade",
+            solution: "A oração indica o objetivo, a finalidade da ação de estudar."
+        },
+        {
+            question: "O termo 'bastante' em 'Eles conversaram bastante' é um adjunto adverbial de:",
+            options: ["Modo", "Intensidade", "Tempo", "Afirmação"],
+            answer: "Intensidade",
+            solution: "'Bastante' (equivalente a 'muito') intensifica a ação do verbo 'conversaram'."
+        },
+        {
+            question: "Qual a circunstância expressa por 'às cegas' em 'Ele confiava nela às cegas'?",
+            options: ["Lugar", "Tempo", "Modo", "Intensidade"],
+            answer: "Modo",
+            solution: "A expressão 'às cegas' indica a maneira, o modo como ele confiava nela (sem questionar, totalmente)."
+        },
+
+        // --- Português: Orações Coordenadas (15 Questões) ---
+        {
+            question: "Na frase 'Ele não veio nem ligou', a segunda oração é:",
+            options: ["Adversativa", "Alternativa", "Aditiva", "Explicativa"],
+            answer: "Aditiva",
+            solution: "A conjunção 'nem' (equivalente a 'e não') adiciona uma segunda informação negativa à primeira."
+        },
+        {
+            question: "Em 'Ame o próximo, pois a vida é curta', a segunda oração classifica-se como:",
+            options: ["Conclusiva", "Explicativa", "Causal", "Adversativa"],
+            answer: "Explicativa",
+            solution: "A conjunção 'pois' está explicando, justificando a ordem dada na oração anterior."
+        },
+        {
+            question: "Qual conjunção adversativa poderia substituir 'mas' em 'Tentei, mas falhei'?",
+            options: ["Logo", "Portanto", "Todavia", "Ou"],
+            answer: "Todavia",
+            solution: "'Todavia' é uma conjunção adversativa, assim como 'mas', 'porém', 'contudo' e 'entretanto'."
+        },
+        {
+            question: "As orações em 'Ora chora, ora ri' expressam uma relação de:",
+            options: ["Adição", "Oposição", "Alternância", "Conclusão"],
+            answer: "Alternância",
+            solution: "A estrutura 'ora... ora...' indica uma alternância de estados ou ações."
+        },
+        {
+            question: "'O doente piorou; deve, pois, ser hospitalizado.' A segunda oração é:",
+            options: ["Explicativa", "Aditiva", "Conclusiva", "Adversativa"],
+            answer: "Conclusiva",
+            solution: "A conjunção 'pois', quando está deslocada (depois do verbo), tem valor de conclusão, equivalendo a 'portanto'."
+        },
+        {
+            question: "Identifique o período composto por coordenação.",
+            options: ["É preciso que você venha.", "Ele disse que viria.", "Estudei, por isso passei.", "Quando ele chegou, eu saí."],
+            answer: "Estudei, por isso passei.",
+            solution: "As orações 'Estudei' e 'por isso passei' são independentes sintaticamente e estão unidas por uma conjunção conclusiva."
+        },
+        {
+            question: "No período 'Ele trabalha e estuda', a relação entre as orações é de:",
+            options: ["Oposição", "Adição", "Explicação", "Alternância"],
+            answer: "Adição",
+            solution: "A conjunção 'e' expressa a soma de duas ações praticadas pelo sujeito."
+        },
+        {
+            question: "A conjunção 'no entanto' introduz uma oração:",
+            options: ["Aditiva", "Adversativa", "Conclusiva", "Alternativa"],
+            answer: "Adversativa",
+            solution: "'No entanto' é uma locução conjuntiva que expressa oposição, contraste."
+        },
+        {
+            question: "Em 'Desligue o celular, porque a aula vai começar', a segunda oração é:",
+            options: ["Adversativa", "Alternativa", "Conclusiva", "Explicativa"],
+            answer: "Explicativa",
+            solution: "A oração iniciada por 'porque' está dando a razão, a explicação para a ordem anterior."
+        },
+        {
+            question: "'Choveu muito, portanto as ruas alagaram.' A segunda oração é:",
+            options: ["Aditiva", "Adversativa", "Conclusiva", "Explicativa"],
+            answer: "Conclusiva",
+            solution: "A conjunção 'portanto' indica que o alagamento das ruas é uma consequência, uma conclusão do fato de ter chovido muito."
+        },
+        {
+            question: "Qual das frases abaixo tem uma oração coordenada sindética alternativa?",
+            options: ["Fui à festa, mas não dancei.", "Estude ou ficará de castigo.", "Ele não fala nem ouve.", "O tempo está nublado, logo choverá."],
+            answer: "Estude ou ficará de castigo.",
+            solution: "A conjunção 'ou' estabelece uma relação de escolha ou alternância entre as duas ideias."
+        },
+        {
+            question: "O período 'Acordei, levantei, tomei café' é formado por orações coordenadas:",
+            options: ["Sindéticas aditivas", "Assindéticas", "Sindéticas explicativas", "Sindéticas alternativas"],
+            answer: "Assindéticas",
+            solution: "As orações estão justapostas, unidas apenas por vírgulas, sem a presença de conjunções (síndetos)."
+        },
+        {
+            question: "Na frase 'Ele é muito rico, contudo não é feliz', a conjunção 'contudo' indica:",
+            options: ["Causa", "Consequência", "Oposição", "Adição"],
+            answer: "Oposição",
+            solution: "'Contudo' é uma conjunção adversativa, que expressa uma quebra de expectativa."
+        },
+        {
+            question: "Em 'Não só reclamou, como também não ajudou', a relação é de:",
+            options: ["Oposição", "Adição", "Alternância", "Conclusão"],
+            answer: "Adição",
+            solution: "A estrutura 'não só... como também...' adiciona uma segunda informação, reforçando a primeira."
+        },
+        {
+            question: "A oração 'Saia daqui, que você me irrita!' é classificada como:",
+            options: ["Aditiva", "Adversativa", "Conclusiva", "Explicativa"],
+            answer: "Explicativa",
+            solution: "O 'que' (com valor de 'pois') está explicando o motivo da ordem 'Saia daqui'."
+        },
+
+        // --- Português: Orações Subordinadas Substantivas (15 Questões) ---
+        {
+            question: "Em 'Ninguém soube se a notícia era verdadeira', a oração subordinada é:",
+            options: ["Subjetiva", "Objetiva direta", "Objetiva indireta", "Completiva nominal"],
+            answer: "Objetiva direta",
+            solution: "A oração 'se a notícia era verdadeira' completa o sentido do verbo transitivo direto 'soube'. (Ninguém soube isso)."
+        },
+        {
+            question: "Na frase 'O importante é que todos participem', a oração 'que todos participem' é:",
+            options: ["Subjetiva", "Objetiva direta", "Predicativa", "Apositiva"],
+            answer: "Predicativa",
+            solution: "A oração funciona como predicativo do sujeito 'O importante', pois se liga a ele através do verbo de ligação 'é'."
+        },
+        {
+            question: "Qual a função da oração 'de que o time venceria' em 'Estávamos confiantes de que o time venceria'?",
+            options: ["Objetiva indireta", "Completiva nominal", "Subjetiva", "Predicativa"],
+            answer: "Completiva nominal",
+            solution: "A oração completa o sentido do adjetivo 'confiantes' (um nome), e não de um verbo. Por isso, é completiva nominal."
+        },
+        {
+            question: "A oração 'que o exame fosse adiado' em 'Havia a esperança de que o exame fosse adiado' é:",
+            options: ["Objetiva indireta", "Completiva nominal", "Subjetiva", "Apositiva"],
+            answer: "Completiva nominal",
+            solution: "A oração completa o sentido do substantivo abstrato 'esperança'."
+        },
+        {
+            question: "'Urge que se tomem providências.' A oração subordinada é classificada como:",
+            options: ["Subjetiva", "Objetiva direta", "Objetiva indireta", "Apositiva"],
+            answer: "Subjetiva",
+            solution: "A oração 'que se tomem providências' funciona como sujeito do verbo 'Urge'. (Isso urge)."
+        },
+        {
+            question: "Em 'Todos querem a mesma coisa: que o bem vença.', a oração subordinada é:",
+            options: ["Predicativa", "Apositiva", "Objetiva direta", "Subjetiva"],
+            answer: "Apositiva",
+            solution: "A oração 'que o bem vença' explica, desenvolve o sentido do termo anterior 'a mesma coisa', funcionando como um aposto."
+        },
+        {
+            question: "Qual frase contém uma oração subordinada substantiva objetiva indireta?",
+            options: ["Insisto em que você fique.", "É bom que você fique.", "Quero que você fique.", "Meu desejo é que você fique."],
+            answer: "Insisto em que você fique.",
+            solution: "A oração 'em que você fique' completa o sentido do verbo transitivo indireto 'insistir', que exige a preposição 'em'."
+        },
+        {
+            question: "Em 'Consta que haverá um novo feriado', a oração 'que haverá um novo feriado' é:",
+            options: ["Objetiva direta", "Subjetiva", "Completiva nominal", "Apositiva"],
+            answer: "Subjetiva",
+            solution: "A oração funciona como sujeito do verbo 'Consta'. (Isso consta)."
+        },
+        {
+            question: "'Percebeu-se que era tarde demais.' A oração subordinada é:",
+            options: ["Objetiva direta", "Subjetiva", "Predicativa", "Completiva nominal"],
+            answer: "Subjetiva",
+            solution: "Com o verbo na voz passiva sintética ('Percebeu-se'), a oração substantiva exerce a função de sujeito. (Que era tarde demais foi percebido)."
+        },
+        {
+            question: "A oração 'de que ele era inocente' em 'Tínhamos a convicção de que ele era inocente' é:",
+            options: ["Objetiva indireta", "Completiva nominal", "Subjetiva", "Apositiva"],
+            answer: "Completiva nominal",
+            solution: "A oração completa o sentido do substantivo 'convicção'."
+        },
+        {
+            question: "Em 'A minha impressão é que vai chover', a oração subordinada é classificada como:",
+            options: ["Subjetiva", "Objetiva direta", "Predicativa", "Apositiva"],
+            answer: "Predicativa",
+            solution: "A oração 'que vai chover' funciona como predicativo do sujeito 'A minha impressão', ligada a ele pelo verbo 'é'."
+        },
+        {
+            question: "Qual a função da oração 'como o acidente aconteceu' em 'Ninguém explicou como o acidente aconteceu'?",
+            options: ["Subjetiva", "Objetiva direta", "Objetiva indireta", "Completiva nominal"],
+            answer: "Objetiva direta",
+            solution: "A oração completa o sentido do verbo transitivo direto 'explicou'. (Ninguém explicou isso)."
+        },
+        {
+            question: "Na frase 'Ele se esqueceu de que tinha um compromisso', a oração subordinada é:",
+            options: ["Objetiva direta", "Objetiva indireta", "Completiva nominal", "Subjetiva"],
+            answer: "Objetiva indireta",
+            solution: "A oração completa o sentido do verbo pronominal e transitivo indireto 'esqueceu-se', que rege a preposição 'de'."
+        },
+        {
+            question: "A oração 'que sejamos pontuais' em 'O diretor exige que sejamos pontuais' é:",
+            options: ["Subjetiva", "Objetiva direta", "Objetiva indireta", "Predicativa"],
+            answer: "Objetiva direta",
+            solution: "A oração funciona como objeto direto do verbo transitivo direto 'exige'."
+        },
+        {
+            question: "Qual a classificação da oração 'se haverá aula amanhã' em 'A dúvida era se haverá aula amanhã'?",
+            options: ["Predicativa", "Apositiva", "Subjetiva", "Objetiva direta"],
+            answer: "Predicativa",
+            solution: "A oração funciona como predicativo do sujeito 'A dúvida', ligada pelo verbo de ligação 'era'."
+        },
+
+        // --- Espanhol: Pronomes Relativos (15 Questões) ---
+        {
+            question: "Completa la frase: 'El restaurante ___ fuimos anoche es excelente.'",
+            options: ["que", "al que", "donde", "cuyo"],
+            answer: "al que",
+            solution: "Cuando 'ir' indica destino, se usa la preposición 'a'. El pronombre relativo correcto es 'al que' (a + el que) o 'adonde'."
+        },
+        {
+            question: "Elige la opción correcta: 'La mujer para ___ trabajo es muy amable.'",
+            options: ["que", "quien", "la que", "cuya"],
+            answer: "quien",
+            solution: "Después de una preposición como 'para', se usa 'quien' para referirse a una persona. 'Para la que' también sería correcto."
+        },
+        {
+            question: "Completa: 'No encuentro el documento del ___ me hablaste.'",
+            options: ["que", "cual", "quien", "cuyo"],
+            answer: "que",
+            solution: "'Del que' (de + el que) es la forma correcta para referirse a 'el documento' después de la preposición 'de'."
+        },
+        {
+            question: "En 'Ese es el motivo por ___ estoy feliz', falta:",
+            options: ["que", "el cual", "quien", "donde"],
+            answer: "el cual",
+            solution: "'Por el cual' es una estructura formal y correcta para indicar la razón o el motivo."
+        },
+        {
+            question: "'Es una persona en ___ se puede confiar.'",
+            options: ["que", "quien", "la que", "quién"],
+            answer: "quien",
+            solution: "Para referirse a una persona después de una preposição ('en'), se utiliza 'quien'. 'En la que' también es válido."
+        },
+        {
+            question: "Elige el pronombre correcto: 'Visité el museo ___ cuadros son de Picasso.'",
+            options: ["que", "cuyos", "donde", "cuales"],
+            answer: "cuyos",
+            solution: "'Cuyos' indica que los cuadros pertenecen al museo. Es masculino y plural para concordar con 'cuadros'."
+        },
+        {
+            question: "Completa la frase: 'La casa en ___ vivo es antigua.'",
+            options: ["que", "la que", "donde", "la cual"],
+            answer: "la que",
+            solution: "'En la que' o 'donde' son correctos para referirse a un lugar. 'En la que' se refiere específicamente a 'la casa'."
+        },
+        {
+            question: "El pronombre 'quien' se refiere exclusivamente a:",
+            options: ["Lugares", "Cosas", "Personas", "Ideas"],
+            answer: "Personas",
+            solution: "El pronombre relativo 'quien' (y su plural 'quienes') se utiliza únicamente para hacer referencia a personas."
+        },
+        {
+            question: "'Los estudiantes a ___ el profesor felicitó estaban muy contentos.'",
+            options: ["que", "quienes", "los que", "cuyos"],
+            answer: "quienes",
+            solution: "Se usa 'a quienes' para referirse a personas en plural cuando funcionan como objeto directo preposicional."
+        },
+        {
+            question: "Completa: 'La película ___ vi ayer me encantó.'",
+            options: ["que", "la cual", "quien", "donde"],
+            answer: "que",
+            solution: "'Que' es el pronombre más común y adecuado para referirse a 'la película'."
+        },
+        {
+            question: "'El año ___ nos graduamos fue 2020.'",
+            options: ["que", "en que", "cuando", "cuyo"],
+            answer: "en que",
+            solution: "Para referirse a un punto en el tiempo, es común usar la estructura 'en que' o 'en el cual'. 'Que' también es aceptado informalmente."
+        },
+        {
+            question: "Elige la opción correcta: 'Esa es la empresa ___ gerente es mi tío.'",
+            options: ["que", "donde", "cuyo", "quien"],
+            answer: "cuyo",
+            solution: "'Cuyo' indica la relación de pertenencia (el gerente de la empresa). Es masculino singular para concordar con 'gerente'."
+        },
+        {
+            question: "El pronombre 'donde' se usa para referirse a:",
+            options: ["Tiempo", "Modo", "Lugar", "Causa"],
+            answer: "Lugar",
+            solution: "'Donde' es un adverbio relativo que se utiliza para introducir oraciones que se refieren a un lugar."
+        },
+        {
+            question: "'Me presentaste a tu hermano, a ___ no conocía.'",
+            options: ["que", "quien", "el que", "cuyo"],
+            answer: "quien",
+            solution: "Se usa 'a quien' para referirse a una persona (tu hermano) cuando es el objeto directo."
+        },
+        {
+            question: "Completa: 'Hay muchas cosas ___ no entiendo.'",
+            options: ["que", "quienes", "cuales", "donde"],
+            answer: "que",
+            solution: "Para referirse a 'cosas' de forma general, se utiliza el pronombre 'que'."
+        },
+
+        // --- Espanhol: Pronomes Interrogativos (15 Questões) ---
+        {
+            question: "Completa la pregunta: '¿De ___ color es su coche?'",
+            options: ["qué", "cuál", "quién", "cómo"],
+            answer: "qué",
+            solution: "Cuando el interrogativo va seguido directamente por un sustantivo ('color'), se usa 'qué'."
+        },
+        {
+            question: "'No entiendo ___ quieres decir.' Esta es una pregunta indirecta. ¿Cuál es el pronombre correcto?",
+            options: ["que", "qué", "por que", "porque"],
+            answer: "qué",
+            solution: "En preguntas indirectas (introducidas por verbos como 'no sé', 'no entiendo', 'pregunto', etc.), se usan los pronombres interrogativos con tilde."
+        },
+        {
+            question: "'¿___ de los dos vestidos te gusta más?'",
+            options: ["Qué", "Cuál", "Quién", "Cuánto"],
+            answer: "Cuál",
+            solution: "Se usa 'cuál' cuando se pide una elección entre un número limitado y específico de opciones ('de los dos vestidos')."
+        },
+        {
+            question: "Completa la respuesta: '¿Por qué estás cansado?' - 'Estoy cansado ___ trabajé mucho.'",
+            options: ["por que", "porque", "por qué", "porqué"],
+            answer: "porque",
+            solution: "'Porque' (junto y sin tilde) es la conjunción que se usa para dar una respuesta, una causa o una explicación."
+        },
+        {
+            question: "Elige la opción correcta: '¿A ___ esperas?'",
+            options: ["que", "quién", "qué", "quien"],
+            answer: "quién",
+            solution: "Para preguntar por una persona que es objeto de una preposición ('a'), se usa 'quién' con tilde."
+        },
+        {
+            question: "'¿___ cuesta ese reloj?' - 'Cuesta cien euros.'",
+            options: ["Qué", "Cuál", "Cuánto", "Cómo"],
+            answer: "Cuánto",
+            solution: "'Cuánto' es el interrogativo que se usa para preguntar por el precio o la cantidad."
+        },
+        {
+            question: "'¿___ es la capital de Australia?'",
+            options: ["Qué", "Cuál", "Quién", "Dónde"],
+            answer: "Cuál",
+            solution: "Aunque en español se pregunta '¿Qué es...?' para definiciones, cuando se pide identificar un elemento específico (la capital, entre todas las ciudades), se usa 'cuál'."
+        },
+        {
+            question: "Completa: 'Dime ___ te gustaría hacer esta tarde.'",
+            options: ["que", "qué", "el que", "lo que"],
+            answer: "qué",
+            solution: "Esta es una pregunta indirecta. Se usa el interrogativo 'qué' con tilde para preguntar por la acción."
+        },
+        {
+            question: "'¿___ vas con tanta prisa?'",
+            options: ["Adónde", "Adonde", "A dónde", "A donde"],
+            answer: "A dónde",
+            solution: "'A dónde' (separado y con tilde) es la forma interrogativa para preguntar por el destino o la dirección de un movimiento."
+        },
+        {
+            question: "La palabra 'porqué' (junta y con tilde) es un:",
+            options: ["Verbo", "Adjetivo", "Sustantivo", "Pronombre"],
+            answer: "Sustantivo",
+            solution: "'El porqué' es un sustantivo masculino que significa 'la causa' o 'el motivo'. Ejemplo: 'No entiendo el porqué de tu decisión'."
+        },
+        {
+            question: "Elige la opción correcta: '¿___ de todos es tu hermano?'",
+            options: ["Qué", "Cuál", "Quién", "Cómo"],
+            answer: "Quién",
+            solution: "Se usa 'quién' para identificar a una persona dentro de un grupo."
+        },
+        {
+            question: "Completa: '¿___ opinas sobre este asunto?'",
+            options: ["Cuál", "Cómo", "Qué", "Cuánto"],
+            answer: "Qué",
+            solution: "Para preguntar por una opinión general sobre algo, se usa '¿Qué opinas?'."
+        },
+        {
+            question: "'¿___ has estado todo este tiempo?'",
+            options: ["Adónde", "Dónde", "De dónde", "Por dónde"],
+            answer: "Dónde",
+            solution: "'Dónde' se usa para preguntar por la ubicación (dónde estabas), mientras que 'adónde' se usa para preguntar por el destino (adónde ibas)."
+        },
+        {
+            question: "'¿Para ___ es este regalo?'",
+            options: ["qué", "quién", "cuál", "cómo"],
+            answer: "quién",
+            solution: "Se usa 'quién' para preguntar por la persona destinataria del regalo."
+        },
+        {
+            question: "Elige la opción correcta: '¿___ tipo de música te gusta?'",
+            options: ["Qué", "Cuál", "Cómo", "Cuánto"],
+            answer: "Qué",
+            solution: "Se utiliza 'qué' antes de un sustantivo ('tipo') para preguntar por una característica o clase."
+        },
+
+        // --- Inglês: Countable and Uncountable Nouns (10 Questões) ---
+        {
+            question: "Which of these is typically uncountable?",
+            options: ["suggestion", "problem", "luggage", "suitcase"],
+            answer: "luggage",
+            solution: "'Luggage' (or 'baggage') is an uncountable noun. We count the individual items: 'bags', 'suitcases'."
+        },
+        {
+            question: "Choose the correct sentence:",
+            options: ["I'd like a water, please.", "I'd like some waters, please.", "I'd like a glass of water, please.", "I'd like one water, please."],
+            answer: "I'd like a glass of water, please.",
+            solution: "'Water' is uncountable. To specify a quantity, we use a partitive phrase like 'a glass of' or 'a bottle of'."
+        },
+        {
+            question: "Is 'knowledge' countable or uncountable?",
+            options: ["Countable", "Uncountable", "Both", "It depends"],
+            answer: "Uncountable",
+            solution: "'Knowledge' is an abstract noun and is considered uncountable. It has no plural form."
+        },
+        {
+            question: "Which noun is countable?",
+            options: ["scenery", "view", "weather", "traffic"],
+            answer: "view",
+            solution: "'Scenery', 'weather', and 'traffic' are uncountable. 'View' is countable (e.g., 'There are two beautiful views from this window')."
+        },
+        {
+            question: "The word 'research' is:",
+            options: ["Countable", "Uncountable", "A verb only", "Always plural"],
+            answer: "Uncountable",
+            solution: "'Research' is an uncountable noun. We say 'a piece of research' or 'some research', not 'a research' or 'researches'."
+        },
+        {
+            question: "Which sentence is grammatically correct?",
+            options: ["I have a good news for you.", "I have some good news for you.", "I have good new for you.", "I have some good newses for you."],
+            answer: "I have some good news for you.",
+            solution: "'News' is an uncountable noun, so it cannot be used with 'a' and has no plural form. We use 'some' or 'a piece of'."
+        },
+        {
+            question: "Is the word 'spaghetti' countable or uncountable in English?",
+            options: ["Countable", "Uncountable", "Countable in the UK, uncountable in the US", "It's an adjective"],
+            answer: "Uncountable",
+            solution: "Like 'rice' or 'sand', 'spaghetti' is treated as a mass noun and is uncountable."
+        },
+        {
+            question: "Which of these is a countable noun?",
+            options: ["electricity", "light", "lamp", "energy"],
+            answer: "lamp",
+            solution: "'Lamp' is a specific, countable object. 'Electricity', 'light' (in a general sense), and 'energy' are uncountable concepts."
+        },
+        {
+            question: "The word 'travel' (as a general activity) is uncountable. Which related word is countable?",
+            options: ["transportation", "journey", "tourism", "movement"],
+            answer: "journey",
+            solution: "'Journey' is a countable noun (e.g., 'We had two long journeys'). The other options are uncountable abstract nouns."
+        },
+        {
+            question: "Choose the correct form: 'We saw ___ lightning during the storm.'",
+            options: ["a", "some", "many", "a lot"],
+            answer: "some",
+            solution: "'Lightning' is uncountable. We can say 'a flash of lightning' to count it, but when referring to it generally, we use 'some' or 'a lot of'."
+        },
+
+        // --- Inglês: Much and Many (10 Questões) ---
+        {
+            question: "Complete: 'There isn't ___ space in this room.'",
+            options: ["many", "much", "a few", "several"],
+            answer: "much",
+            solution: "'Space' (meaning room or area) is uncountable, so we use 'much' in negative sentences."
+        },
+        {
+            question: "How ___ mistakes did you make on the test?",
+            options: ["much", "many", "a little", "lot of"],
+            answer: "many",
+            solution: "'Mistakes' is a plural countable noun, so the correct interrogative is 'How many'."
+        },
+        {
+            question: "She put too ___ salt in the soup.",
+            options: ["many", "much", "few", "a lot"],
+            answer: "much",
+            solution: "'Salt' is uncountable. We use 'too much' with uncountable nouns to indicate an excessive amount."
+        },
+        {
+            question: "I don't know ___ of the students in this class.",
+            options: ["much", "many", "a great deal", "a large amount"],
+            answer: "many",
+            solution: "'Students' is a plural countable noun. We use 'many' in negative sentences."
+        },
+        {
+            question: "There is so ___ pollution in our city.",
+            options: ["many", "much", "few", "a few"],
+            answer: "much",
+            solution: "'Pollution' is an uncountable noun. We use 'so much' to emphasize a large quantity of an uncountable noun."
+        },
+        {
+            question: "How ___ slices of pizza do you want?",
+            options: ["much", "many", "a little", "a great deal of"],
+            answer: "many",
+            solution: "Even though 'pizza' can be uncountable, the word 'slices' is countable, so we must use 'many'."
+        },
+        {
+            question: "I don't have ___ patience for this.",
+            options: ["many", "much", "a few", "several"],
+            answer: "much",
+            solution: "'Patience' is an uncountable abstract noun. We use 'much' in negative sentences."
+        },
+        {
+            question: "He has ___ interesting ideas.",
+            options: ["so much", "too much", "so many", "a lot"],
+            answer: "so many",
+            solution: "'Ideas' is a plural countable noun. We use 'so many' to emphasize a large quantity of a countable noun."
+        },
+        {
+            question: "There wasn't ___ traffic this morning.",
+            options: ["many", "much", "a few", "several"],
+            answer: "much",
+            solution: "'Traffic' is an uncountable noun, so we use 'much' in negative sentences."
+        },
+        {
+            question: "How ___ times do I have to tell you?",
+            options: ["much", "many", "a great deal of", "a little"],
+            answer: "many",
+            solution: "'Times' (referring to occurrences) is a countable noun. Therefore, we use 'How many'."
+        },
+
+        // --- Inglês: Little, Few, A little, A few (10 Questões) ---
+        {
+            question: "He speaks very ___ English, so it's difficult to understand him.",
+            options: ["a little", "little", "a few", "few"],
+            answer: "little",
+            solution: "'English' (as a language) is uncountable. The context is negative ('difficult to understand'), so we use 'little' (meaning 'almost no')."
+        },
+        {
+            question: "I have ___ apples. We can make a pie.",
+            options: ["a little", "little", "a few", "few"],
+            answer: "a few",
+            solution: "'Apples' is countable. The context is positive ('we can make a pie'), so we use 'a few' (meaning 'a small but sufficient number')."
+        },
+        {
+            question: "Which one has a negative meaning?",
+            options: ["a little", "a few", "little", "many"],
+            answer: "little",
+            solution: "'Little' (with uncountable nouns) and 'few' (with countable nouns) both have a negative connotation, meaning 'almost none' or 'not enough'."
+        },
+        {
+            question: "I need ___ more time to finish the project.",
+            options: ["a little", "little", "a few", "few"],
+            answer: "a little",
+            solution: "'Time' is uncountable. The request is for a small, additional amount, which is a positive context, so we use 'a little'."
+        },
+        {
+            question: "Very ___ people can answer this question. It's extremely difficult.",
+            options: ["little", "a little", "few", "a few"],
+            answer: "few",
+            solution: "'People' is countable. The context is negative ('extremely difficult'), implying that not many people can answer. Therefore, 'few' is correct."
+        },
+        {
+            question: "We only have ___ milk left. We should buy more.",
+            options: ["a little", "little", "a few", "few"],
+            answer: "little",
+            solution: "'Milk' is uncountable. The need to buy more indicates a negative situation (the amount is insufficient), so we use 'little'."
+        },
+        {
+            question: "I know ___ good restaurants in this area if you're hungry.",
+            options: ["a little", "little", "a few", "few"],
+            answer: "a few",
+            solution: "'Restaurants' is countable. The offer to recommend some is a positive context, so 'a few' (meaning 'some') is the correct choice."
+        },
+        {
+            question: "There was ___ traffic on the road, so we arrived early.",
+            options: ["a little", "little", "a few", "few"],
+            answer: "little",
+            solution: "'Traffic' is uncountable. Arriving early means there was 'not much' traffic, which is a positive outcome from a 'negative' quantity. 'Little' means 'almost no'."
+        },
+        {
+            question: "He added ___ salt to the soup. It tasted much better.",
+            options: ["a little", "little", "a few", "few"],
+            answer: "a little",
+            solution: "'Salt' is uncountable. The result was positive ('tasted better'), so he added a small but sufficient amount, which is 'a little'."
+        },
+        {
+            question: "'I'm sorry, I have ___ questions for you,' said the detective.",
+            options: ["a little", "little", "a few", "few"],
+            answer: "a few",
+            solution: "'Questions' is countable. 'A few' is used to mean 'some' or 'a small number' in a neutral or positive sense."
         }
     ];
 
